@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040828531FFCD37E00ACA526 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040828511FFCD37E00ACA526 /* ProfileVC.swift */; };
+		040828541FFCD37E00ACA526 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040828521FFCD37E00ACA526 /* ProfileVC.xib */; };
 		2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */; };
 		2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EC1FFCCA2700895E02 /* ViewController.swift */; };
 		2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0EE1FFCCA2700895E02 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040828511FFCD37E00ACA526 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		040828521FFCD37E00ACA526 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		12938E0ED91B3ED9FD123E98 /* Pods-ProjetEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.release.xcconfig"; sourceTree = "<group>"; };
 		2F17F0E71FFCCA2700895E02 /* ProjetEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				2F17F1051FFCD1E700895E02 /* ViewController.xib */,
 				2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */,
 				2F17F0EE1FFCCA2700895E02 /* Main.storyboard */,
+				040828511FFCD37E00ACA526 /* ProfileVC.swift */,
+				040828521FFCD37E00ACA526 /* ProfileVC.xib */,
 				2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */,
 				2F17F1021FFCD1A300895E02 /* SlideMenu.h */,
 				2F17F0F11FFCCA2700895E02 /* Assets.xcassets */,
@@ -165,6 +171,7 @@
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
+				040828541FFCD37E00ACA526 /* ProfileVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040828531FFCD37E00ACA526 /* ProfileVC.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
 				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
