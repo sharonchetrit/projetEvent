@@ -12,7 +12,7 @@
 		2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0EE1FFCCA2700895E02 /* Main.storyboard */; };
 		2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0F11FFCCA2700895E02 /* Assets.xcassets */; };
 		2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */; };
-		2F17F0FD1FFCCCC200895E02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0FC1FFCCCC200895E02 /* BaseViewController.swift */; };
+		2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		2F17F0F11FFCCA2700895E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F17F0F41FFCCA2700895E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F17F0F61FFCCA2700895E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F17F0FC1FFCCCC200895E02 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = "../../Emoji Dictionary/EmojiDictionary/EmojiDictionary/BaseViewController.swift"; sourceTree = "<group>"; };
+		2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			children = (
 				2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */,
 				2F17F0EC1FFCCA2700895E02 /* ViewController.swift */,
-				2F17F0FC1FFCCCC200895E02 /* BaseViewController.swift */,
+				2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */,
 				2F17F0EE1FFCCA2700895E02 /* Main.storyboard */,
 				2F17F0F11FFCCA2700895E02 /* Assets.xcassets */,
 				2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */,
@@ -141,7 +141,7 @@
 			files = (
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
-				2F17F0FD1FFCCCC200895E02 /* BaseViewController.swift in Sources */,
+				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
