@@ -15,6 +15,8 @@
 		2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */; };
 		2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */; };
 		2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F1051FFCD1E700895E02 /* ViewController.xib */; };
+		976D8DB51FFCD53D00D6ACDB /* CurrentEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976D8DB31FFCD53D00D6ACDB /* CurrentEventsVC.swift */; };
+		976D8DB61FFCD53D00D6ACDB /* CurrentEventsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 976D8DB41FFCD53D00D6ACDB /* CurrentEventsVC.xib */; };
 		F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		2F17F1051FFCD1E700895E02 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjetEvent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2E307186830B6ACCA216EC /* Pods-ProjetEvent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.debug.xcconfig"; sourceTree = "<group>"; };
+		976D8DB31FFCD53D00D6ACDB /* CurrentEventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentEventsVC.swift; sourceTree = "<group>"; };
+		976D8DB41FFCD53D00D6ACDB /* CurrentEventsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentEventsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */,
 				2F17F0EE1FFCCA2700895E02 /* Main.storyboard */,
 				2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */,
+				976D8DB31FFCD53D00D6ACDB /* CurrentEventsVC.swift */,
+				976D8DB41FFCD53D00D6ACDB /* CurrentEventsVC.xib */,
 				2F17F1021FFCD1A300895E02 /* SlideMenu.h */,
 				2F17F0F11FFCCA2700895E02 /* Assets.xcassets */,
 				2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */,
@@ -164,6 +170,7 @@
 				2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
+				976D8DB61FFCD53D00D6ACDB /* CurrentEventsVC.xib in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
+				976D8DB51FFCD53D00D6ACDB /* CurrentEventsVC.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
 				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
 				2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */,
