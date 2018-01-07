@@ -10,7 +10,7 @@ import UIKit
 
 class MenuViewController: BaseViewController {
 
-    @IBAction func share(_ sender: Any)
+    @IBAction func share(_ sender: UIButton)
     {
         self.performSegue(withIdentifier: "shareSegue", sender: nil)
     }
