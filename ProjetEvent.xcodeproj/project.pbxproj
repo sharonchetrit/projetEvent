@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */; };
+		04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */; };
+		04EF8D761FFE6DF400AEF046 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF8D751FFE6DF400AEF046 /* User.swift */; };
 		2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */; };
 		2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EC1FFCCA2700895E02 /* ViewController.swift */; };
 		2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0EE1FFCCA2700895E02 /* Main.storyboard */; };
@@ -15,7 +18,7 @@
 		2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */; };
 		2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */; };
 		2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F1051FFCD1E700895E02 /* ViewController.xib */; };
-		32CC80171FFCD5CC0090EB8A /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80161FFCD5CC0090EB8A /* Events.storyboard */; };
+		32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80161FFCD5CC0090EB8A /* Event.storyboard */; };
 		32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80181FFCD5DA0090EB8A /* Menu.storyboard */; };
 		32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC801A1FFCD5E90090EB8A /* Profile.storyboard */; };
 		32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		04EF8D751FFE6DF400AEF046 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12938E0ED91B3ED9FD123E98 /* Pods-ProjetEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.release.xcconfig"; sourceTree = "<group>"; };
 		2F17F0E71FFCCA2700895E02 /* ProjetEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +41,7 @@
 		2F17F1021FFCD1A300895E02 /* SlideMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenu.h; sourceTree = "<group>"; };
 		2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuVC.swift; sourceTree = "<group>"; };
 		2F17F1051FFCD1E700895E02 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		32CC80161FFCD5CC0090EB8A /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		32CC80161FFCD5CC0090EB8A /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
 		32CC80181FFCD5DA0090EB8A /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		32CC801A1FFCD5E90090EB8A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEventDeckController.swift; sourceTree = "<group>"; };
@@ -55,6 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04EF8D741FFE6D4400AEF046 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */,
+				04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		04EF8D771FFE706100AEF046 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04EF8D751FFE6DF400AEF046 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2F17F0DE1FFCCA2700895E02 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,8 @@
 				2F17F1051FFCD1E700895E02 /* ViewController.xib */,
 				2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */,
 				32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */,
+				04EF8D771FFE706100AEF046 /* Model */,
+				04EF8D741FFE6D4400AEF046 /* profile */,
 				32CC801C1FFCD6470090EB8A /* Storyboards */,
 				2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */,
 				2F17F1021FFCD1A300895E02 /* SlideMenu.h */,
@@ -95,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				2F17F0EE1FFCCA2700895E02 /* Main.storyboard */,
-				32CC80161FFCD5CC0090EB8A /* Events.storyboard */,
+				32CC80161FFCD5CC0090EB8A /* Event.storyboard */,
 				32CC80181FFCD5DA0090EB8A /* Menu.storyboard */,
 				32CC801A1FFCD5E90090EB8A /* Profile.storyboard */,
 			);
@@ -183,11 +208,12 @@
 			files = (
 				2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
+				04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
 				32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
 				32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */,
-				32CC80171FFCD5CC0090EB8A /* Events.storyboard in Resources */,
+				32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,11 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
 				32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
 				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
 				2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */,
+				04EF8D761FFE6DF400AEF046 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProjetEvent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = institute.developer.ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProjetEvent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = institute.developer.ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
