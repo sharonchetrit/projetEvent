@@ -11,6 +11,7 @@ import ViewDeck
 
 class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var firstNameTxt: UITextField!
     @IBOutlet weak var surnameTxt: UITextField!
@@ -20,15 +21,46 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var confirmPassTxt: UITextField!
     
+    @IBOutlet weak var confirmButton: UIBarButtonItem!
     
+   
+    @IBAction func txtEditingChange(_ sender: UITextField)
+    {
+        updateConfirmButton()
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        birthTxt.delegate = self
+        birthTxt.keyboardType = .numberPad
+        
+        updateConfirmButton()
         // Do any additional setup after loading the view.
     }
-    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        //Format Date of Birth dd-MM-yyyy
+        
+        //initially identify your textfield
+        
+        if textField == birthTxt {
+            
+            // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
+            if (birthTxt?.text?.characters.count == 2) || (birthTxt?.text?.characters.count == 5) {
+                //Handle backspace being pressed
+                if !(string == "") {
+                    // append the text
+                    birthTxt?.text = (birthTxt?.text)! + "-"
+                }
+            }
+            // check the condition not exceed 9 chars
+            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+        }
+        else {
+            return true
+        }
+       
+    }
     
     @IBAction func addPhoto(_ sender: Any) {
         let alertView = UIAlertController(title: "Do you want", message: nil, preferredStyle: .actionSheet)
@@ -83,6 +115,18 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
             }
         }
         return true
+    }
+    func updateConfirmButton()
+    {
+        let name = firstNameTxt.text ?? ""
+        let surname = surnameTxt.text ?? ""
+        let birth = birthTxt.text ?? ""
+        let email = emailTxt.text ?? ""
+        let phone = phoneTxt.text ?? ""
+        let password = passwordTxt.text ?? ""
+        let confirmPass = confirmPassTxt.text ?? ""
+        
+        confirmButton.isEnabled = !name.isEmpty && !surname.isEmpty && !birth.isEmpty && !email.isEmpty && !phone.isEmpty && !password.isEmpty && !confirmPass.isEmpty
     }
     
     @IBAction func menu(_ sender: Any)
