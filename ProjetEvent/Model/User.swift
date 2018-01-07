@@ -9,10 +9,10 @@
 import Foundation
 
 
-class User
+class User : NSObject
 {
-    var name: String
-    var surname: String
+    var name: String?
+    var surname: String?
     
 }
 

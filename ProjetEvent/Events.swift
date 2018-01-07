@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Events: NSObject, NSCoding {
+class Events: NSObject {
     
     
     

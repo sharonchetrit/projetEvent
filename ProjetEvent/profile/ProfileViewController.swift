@@ -79,7 +79,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         }else
         {
             linkedTextField.resignFirstResponder()
-                self.save(nil)
+//                self.save(nil)
             }
         }
         return true
