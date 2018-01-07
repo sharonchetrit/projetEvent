@@ -9,6 +9,5 @@
 #ifndef SlideMenu_h
 #define SlideMenu_h
 
-#import <ViewDeck/ViewDeck.h>
 
 #endif /* SlideMenu_h */
