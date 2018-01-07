@@ -19,7 +19,7 @@ class ProjectEventDeckController: IIViewDeckController
         
     }()
     
-    lazy var eventsController : UIViewController = {
+    lazy var eventController : UIViewController = {
         
         let storyboard : UIStoryboard = UIStoryboard(name: "Event", bundle: Bundle.main)
         
@@ -40,8 +40,13 @@ class ProjectEventDeckController: IIViewDeckController
         super.init(coder: aDecoder)
         
         self.leftViewController = self.menuController
-        self.centerViewController = self.eventsController
+        self.centerViewController = self.eventController
+        self.rightViewController = nil
         
-        self.isPanningEnabled = false
+        self.isPanningEnabled = true
+    }
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
     }
 }

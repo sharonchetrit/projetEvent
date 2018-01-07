@@ -10,20 +10,61 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="CA0-in-HSt">
             <objects>
-                <viewController id="YN1-l4-u8f" sceneMemberID="viewController">
+                <viewController id="YN1-l4-u8f" customClass="MenuViewController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hQa-4h-EF2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nkL-eh-05W"/>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="hQa-4h-EF2" id="Ad1-oA-AbB"/>
+                        <segue destination="zWL-90-JzF" kind="show" identifier="ratingSegue" id="okN-ov-Ms5"/>
+                        <segue destination="kdD-J3-kbH" kind="show" identifier="shareSegue" id="erT-dt-GHo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3o-p7-HtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-855" y="67"/>
+        </scene>
+        <!--Share View Controller-->
+        <scene sceneID="suR-44-wZj">
+            <objects>
+                <viewController id="kdD-J3-kbH" customClass="ShareViewController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8dn-3o-N2h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BKI-9A-baF"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="8dn-3o-N2h" id="3PO-gq-kXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zb2-hY-3gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="460"/>
+        </scene>
+        <!--Ratting View Controller-->
+        <scene sceneID="xuD-nv-zZt">
+            <objects>
+                <viewController id="zWL-90-JzF" customClass="RattingViewController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nff-wu-m36">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ktH-gB-wRD"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="nff-wu-m36" id="Iba-8J-j9t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpa-cU-o0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="-399"/>
         </scene>
     </scenes>
 </document>

@@ -32,25 +32,25 @@
                     <view key="view" contentMode="scaleToFill" id="29k-dK-HrP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.84552049529999995" green="1" blue="0.24825940739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="efK-Vx-QCa"/>
                     </view>
                     <navigationItem key="navigationItem" id="EIZ-Ib-BhN"/>
                     <connections>
-                        <segue destination="7y4-Kh-K0v" kind="show" id="FvK-ad-qtW">
+                        <segue destination="7y4-Kh-K0v" kind="show" identifier="ShareController" id="FvK-ad-qtW">
                             <nil key="action"/>
                         </segue>
-                        <segue destination="7Sb-La-84K" kind="presentation" id="RYS-Xm-6fg"/>
+                        <segue destination="7Sb-La-84K" kind="presentation" identifier="RattingController" id="RYS-Xm-6fg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0I-M4-LpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1878" y="-526"/>
         </scene>
-        <!--View Controller-->
+        <!--Share View Controller-->
         <scene sceneID="h2j-kv-23T">
             <objects>
-                <viewController id="7y4-Kh-K0v" sceneMemberID="viewController">
+                <viewController id="7y4-Kh-K0v" customClass="ShareViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EwY-ig-xLl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="2745" y="-526"/>
         </scene>
-        <!--View Controller-->
+        <!--Ratting View Controller-->
         <scene sceneID="dq4-qO-xxg">
             <objects>
-                <viewController id="7Sb-La-84K" sceneMemberID="viewController">
+                <viewController id="7Sb-La-84K" customClass="RattingViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WQO-fW-y49">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
