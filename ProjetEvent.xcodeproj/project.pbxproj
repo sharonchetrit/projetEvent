@@ -36,6 +36,8 @@
 		32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80181FFCD5DA0090EB8A /* Menu.storyboard */; };
 		32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC801A1FFCD5E90090EB8A /* Profile.storyboard */; };
 		32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */; };
+		971F699920021B83005DE261 /* CurrentEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F699720021B83005DE261 /* CurrentEventTableViewCell.swift */; };
+		971F699A20021B83005DE261 /* CurrentEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 971F699820021B83005DE261 /* CurrentEventTableViewCell.xib */; };
 		F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEventDeckController.swift; sourceTree = "<group>"; };
 		333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjetEvent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2E307186830B6ACCA216EC /* Pods-ProjetEvent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.debug.xcconfig"; sourceTree = "<group>"; };
+		971F699720021B83005DE261 /* CurrentEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrentEventTableViewCell.swift; path = ProjetEvent/CurrentEventTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		971F699820021B83005DE261 /* CurrentEventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CurrentEventTableViewCell.xib; path = ProjetEvent/CurrentEventTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 			children = (
 				2F04601820021662004D6E00 /* CurrentEventsVC.swift */,
 				2F04601C20021662004D6E00 /* CurrentEventsVC.xib */,
+				971F699720021B83005DE261 /* CurrentEventTableViewCell.swift */,
+				971F699820021B83005DE261 /* CurrentEventTableViewCell.xib */,
 				2F04601920021662004D6E00 /* EventTableViewController.swift */,
 				2F04601B20021662004D6E00 /* EventViewController.swift */,
 				2F04601A20021662004D6E00 /* EventViewController.xib */,
@@ -281,6 +287,7 @@
 				04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */,
 				2F04602D200216A6004D6E00 /* ShareViewController.xib in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
+				971F699A20021B83005DE261 /* CurrentEventTableViewCell.xib in Resources */,
 				32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */,
 				2F04602720021699004D6E00 /* MenuViewController.xib in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
@@ -357,6 +364,7 @@
 				2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */,
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
+				971F699920021B83005DE261 /* CurrentEventTableViewCell.swift in Sources */,
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
 				32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */,
 				2F04602620021699004D6E00 /* MenuViewController.swift in Sources */,

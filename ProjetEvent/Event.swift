@@ -18,11 +18,13 @@ class Event: NSObject
     var name : String
     var depart : String
     var arrive : String
+    var eventDescription : String
     
-    init(name:String, depart:String, arrive:String) {
+    init(name:String, depart:String, arrive:String,eventDescription: String) {
         self.name = name
         self.depart = depart
         self.arrive = arrive
+        self.eventDescription = eventDescription
     }
 
     
