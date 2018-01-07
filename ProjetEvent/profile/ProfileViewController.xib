@@ -113,11 +113,15 @@
                         </textField>
                     </subviews>
                 </stackView>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l8V-74-WSj">
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8V-74-WSj">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <items>
                         <navigationItem title="Inscription" id="cBQ-Ia-QJb">
+                            <barButtonItem key="leftBarButtonItem" title="Menu" id="7UI-RA-5Mr">
+                                <connections>
+                                    <action selector="menu:" destination="-1" id="10Z-Mv-rvL"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem key="rightBarButtonItem" enabled="NO" title="Confirm" id="ode-Ft-I4c">
                                 <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </barButtonItem>
@@ -128,13 +132,16 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="do3-zH-KGt" secondAttribute="trailing" constant="16" id="5UU-xl-tS7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l8V-74-WSj" secondAttribute="trailing" id="6F6-Vr-J1B"/>
                 <constraint firstItem="do3-zH-KGt" firstAttribute="leading" secondItem="27C-2S-luZ" secondAttribute="trailing" constant="-343" id="71d-ch-Vbq"/>
                 <constraint firstItem="ad6-Vn-nOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="AER-db-DWp"/>
                 <constraint firstItem="27C-2S-luZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="AWk-cD-dt0"/>
                 <constraint firstItem="4iD-rf-3NS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="H5b-19-jPR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="l8V-74-WSj" secondAttribute="top" constant="20" id="J1G-6N-b1V"/>
                 <constraint firstItem="do3-zH-KGt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Jfl-Xf-u1o"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ad6-Vn-nOj" secondAttribute="bottom" constant="177" id="PSF-So-37j"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4iD-rf-3NS" secondAttribute="trailing" constant="16" id="Zeg-5o-nKo"/>
+                <constraint firstItem="l8V-74-WSj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kZh-kT-rOr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="27C-2S-luZ" secondAttribute="trailing" constant="16" id="pEd-ne-NR6"/>
                 <constraint firstItem="ad6-Vn-nOj" firstAttribute="leading" secondItem="do3-zH-KGt" secondAttribute="trailing" constant="-343" id="pbA-DW-Ek3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ad6-Vn-nOj" secondAttribute="trailing" constant="16" id="ti8-a6-o6k"/>

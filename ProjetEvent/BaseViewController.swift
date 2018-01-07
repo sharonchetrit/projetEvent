@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ViewDeck
 
 class BaseViewController: UIViewController {
     
@@ -40,5 +41,4 @@ class BaseViewController: UIViewController {
         
         
     }
-
 }

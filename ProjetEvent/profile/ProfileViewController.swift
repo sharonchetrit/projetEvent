@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ViewDeck
 
 class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
@@ -84,4 +85,8 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         return true
     }
     
+    @IBAction func menu(_ sender: Any)
+    {
+        self.viewDeckController?.open(.left, animated: true)
+    }
 }
