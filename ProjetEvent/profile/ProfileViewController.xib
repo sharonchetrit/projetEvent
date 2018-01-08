@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -94,17 +94,17 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ad6-Vn-nOj">
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ad6-Vn-nOj">
                     <rect key="frame" x="16" y="430" width="343" height="60"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HO-3o-LEu">
+                        <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HO-3o-LEu">
                             <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGC-dl-NbJ">
+                        <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGC-dl-NbJ">
                             <rect key="frame" x="0.0" y="30" width="343" height="30"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="textColor"/>
@@ -131,20 +131,17 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="do3-zH-KGt" secondAttribute="trailing" constant="16" id="5UU-xl-tS7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l8V-74-WSj" secondAttribute="trailing" id="6F6-Vr-J1B"/>
-                <constraint firstItem="do3-zH-KGt" firstAttribute="leading" secondItem="27C-2S-luZ" secondAttribute="trailing" constant="-343" id="71d-ch-Vbq"/>
-                <constraint firstItem="ad6-Vn-nOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="AER-db-DWp"/>
-                <constraint firstItem="27C-2S-luZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="AWk-cD-dt0"/>
-                <constraint firstItem="4iD-rf-3NS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="H5b-19-jPR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="do3-zH-KGt" secondAttribute="trailing" constant="16" id="CX6-Yh-aAe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ad6-Vn-nOj" secondAttribute="trailing" constant="16" id="GNf-Yx-AZl"/>
+                <constraint firstItem="4iD-rf-3NS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Hmy-Bk-kNf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="l8V-74-WSj" secondAttribute="top" constant="20" id="J1G-6N-b1V"/>
-                <constraint firstItem="do3-zH-KGt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Jfl-Xf-u1o"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ad6-Vn-nOj" secondAttribute="bottom" constant="177" id="PSF-So-37j"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4iD-rf-3NS" secondAttribute="trailing" constant="16" id="Zeg-5o-nKo"/>
+                <constraint firstItem="ad6-Vn-nOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="gXl-8a-4Rf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4iD-rf-3NS" secondAttribute="trailing" constant="16" id="hfT-pV-Gkw"/>
                 <constraint firstItem="l8V-74-WSj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kZh-kT-rOr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="27C-2S-luZ" secondAttribute="trailing" constant="16" id="pEd-ne-NR6"/>
-                <constraint firstItem="ad6-Vn-nOj" firstAttribute="leading" secondItem="do3-zH-KGt" secondAttribute="trailing" constant="-343" id="pbA-DW-Ek3"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ad6-Vn-nOj" secondAttribute="trailing" constant="16" id="ti8-a6-o6k"/>
+                <constraint firstItem="do3-zH-KGt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="tmq-OG-SJK"/>
+                <constraint firstItem="27C-2S-luZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vk1-ke-KLT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="27C-2S-luZ" secondAttribute="trailing" constant="16" id="yjQ-gq-9Ue"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="26.5" y="51.5"/>
