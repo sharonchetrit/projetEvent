@@ -7,5 +7,6 @@ target 'ProjetEvent' do
 
   # Pods for ProjetEvent
   pod 'ViewDeck'
-
+  pod 'ShareKit'
+  
 end

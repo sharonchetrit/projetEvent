@@ -102,9 +102,33 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Facebook-iOS-SDK/FacebookSDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ISO8601DateFormatter/ISO8601DateFormatter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LiveSDK/LiveSDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PKMultipartInputStream/PKMultipartInputStream.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PinterestSDK/PinterestSDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SAMTextView/SAMTextView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SSKeychain/SSKeychain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ShareKit/ShareKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ViewDeck/ViewDeck.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Facebook-iOS-SDK/FacebookSDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ISO8601DateFormatter/ISO8601DateFormatter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LiveSDK/LiveSDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PKMultipartInputStream/PKMultipartInputStream.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PinterestSDK/PinterestSDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SAMTextView/SAMTextView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SSKeychain/SSKeychain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ShareKit/ShareKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ViewDeck/ViewDeck.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
