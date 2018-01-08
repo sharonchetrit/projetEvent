@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class MenuViewController: BaseViewController {
 
@@ -17,7 +18,12 @@ class MenuViewController: BaseViewController {
     
     @IBAction func ratting(_ sender: Any)
     {
-        self.performSegue(withIdentifier: "ratingSegue", sender: nil)
+//        self.performSegue(withIdentifier: "ratingSegue", sender: nil)
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        } else {
+            
+        }
     }
     
     @IBAction func profile(_ sender: Any)

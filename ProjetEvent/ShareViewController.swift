@@ -8,14 +8,17 @@
 
 import UIKit
 import MessageUI
+import ViewDeck
 
-class ShareViewController: UIViewController {
+class ShareViewController: BaseViewController {
     
 
     
     @IBAction func menu(_ sender: Any) {
-        self.viewDeckController?.open(.left, animated: true)
+//        self.viewDeckController?.open(.left, animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
+    
     
    
     @IBAction func shareToEmail(_ sender: Any) {
