@@ -37,4 +37,5 @@ class MenuViewController: BaseViewController {
             slideMenuController.closeSide(true)
         }
     }
+    
 }

@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGa-5u-2gR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="-525"/>
+            <point key="canvasLocation" x="732" y="-527"/>
         </scene>
         <!--Event View Controller-->
         <scene sceneID="3Os-TK-X6S">
@@ -32,25 +32,23 @@
                     <view key="view" contentMode="scaleToFill" id="29k-dK-HrP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.84552049529999995" green="1" blue="0.24825940739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="efK-Vx-QCa"/>
                     </view>
                     <navigationItem key="navigationItem" id="EIZ-Ib-BhN"/>
                     <connections>
-                        <segue destination="7y4-Kh-K0v" kind="show" identifier="ShareController" id="FvK-ad-qtW">
-                            <nil key="action"/>
-                        </segue>
                         <segue destination="7Sb-La-84K" kind="presentation" identifier="RattingController" id="RYS-Xm-6fg"/>
+                        <segue destination="7y4-Kh-K0v" kind="presentation" identifier="AddEventSegway" id="WDQ-Gt-Rdd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0I-M4-LpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1878" y="-526"/>
         </scene>
-        <!--Share View Controller-->
+        <!--Add Event View Controller-->
         <scene sceneID="h2j-kv-23T">
             <objects>
-                <viewController id="7y4-Kh-K0v" customClass="ShareViewController" sceneMemberID="viewController">
+                <viewController id="7y4-Kh-K0v" customClass="AddEventViewController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EwY-ig-xLl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
