@@ -10,7 +10,13 @@ import UIKit
 import MessageUI
 
 
-class ShareViewController: BaseViewController {
+
+class ShareViewController: BaseViewController, UINavigationControllerDelegate {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
 
     
@@ -40,3 +46,4 @@ class ShareViewController: BaseViewController {
             print("Done🔨") })
     }
 }
+
