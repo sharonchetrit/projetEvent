@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,45 +19,61 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1S-eB-T04">
-                    <rect key="frame" x="139.5" y="101" width="96" height="30"/>
-                    <state key="normal" title="Share the app"/>
+                <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1S-eB-T04">
+                    <rect key="frame" x="96" y="90" width="182" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Share the app">
+                        <color key="titleColor" red="0.048979922279999998" green="0.0076440927210000001" blue="0.043904799090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
                     <connections>
                         <action selector="share:" destination="-1" eventType="touchUpInside" id="fwM-LG-PQg"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhF-ig-m8S" customClass="Pr">
-                    <rect key="frame" x="141.5" y="177" width="92" height="30"/>
-                    <state key="normal" title="Give a ratting"/>
-                    <connections>
-                        <action selector="ratting:" destination="-1" eventType="touchUpInside" id="HiN-iH-KLO"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukQ-X5-f7q">
-                    <rect key="frame" x="164" y="262" width="46" height="30"/>
-                    <state key="normal" title="Events"/>
+                    <rect key="frame" x="96" y="262" width="182" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Events">
+                        <color key="titleColor" red="0.048979922279999998" green="0.0076440927210000001" blue="0.043904799090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
                     <connections>
                         <action selector="events:" destination="-1" eventType="touchUpInside" id="Cig-N6-f4J"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijU-uG-253">
-                    <rect key="frame" x="165" y="358" width="44" height="30"/>
-                    <state key="normal" title="Profile"/>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijU-uG-253">
+                    <rect key="frame" x="96" y="348" width="182" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Profile">
+                        <color key="titleColor" red="0.048979922279999998" green="0.0076440927210000001" blue="0.043904799090000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
                     <connections>
                         <action selector="profile:" destination="-1" eventType="touchUpInside" id="bfv-4z-b9b"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhF-ig-m8S">
+                    <rect key="frame" x="96" y="176" width="182" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Give a ratting">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ratting:" destination="-1" eventType="touchUpInside" id="HiN-iH-KLO"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.85699379280821919" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ukQ-X5-f7q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Agb-at-hTr"/>
-                <constraint firstItem="PhF-ig-m8S" firstAttribute="top" secondItem="p1S-eB-T04" secondAttribute="bottom" constant="46" id="C8l-0f-bhT"/>
-                <constraint firstItem="PhF-ig-m8S" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GQX-1h-ffQ"/>
-                <constraint firstItem="p1S-eB-T04" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N4j-bj-jyH"/>
-                <constraint firstItem="ijU-uG-253" firstAttribute="top" secondItem="ukQ-X5-f7q" secondAttribute="bottom" constant="66" id="a7S-dc-exj"/>
-                <constraint firstItem="ijU-uG-253" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eKe-2s-EgT"/>
-                <constraint firstItem="ukQ-X5-f7q" firstAttribute="top" secondItem="PhF-ig-m8S" secondAttribute="bottom" constant="55" id="iGz-qh-oHq"/>
-                <constraint firstItem="p1S-eB-T04" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="81" id="pIo-hO-8ux"/>
+                <constraint firstItem="p1S-eB-T04" firstAttribute="trailing" secondItem="PhF-ig-m8S" secondAttribute="trailing" id="Bns-mk-nH2"/>
+                <constraint firstItem="ukQ-X5-f7q" firstAttribute="top" secondItem="PhF-ig-m8S" secondAttribute="bottom" constant="50" id="MbG-8S-b7G"/>
+                <constraint firstItem="PhF-ig-m8S" firstAttribute="top" secondItem="p1S-eB-T04" secondAttribute="bottom" constant="50" id="Ovv-VS-zZf"/>
+                <constraint firstItem="PhF-ig-m8S" firstAttribute="leading" secondItem="ukQ-X5-f7q" secondAttribute="leading" id="aYd-50-R3O"/>
+                <constraint firstItem="ijU-uG-253" firstAttribute="top" secondItem="ukQ-X5-f7q" secondAttribute="bottom" constant="50" id="cT1-fj-Cz2"/>
+                <constraint firstItem="PhF-ig-m8S" firstAttribute="trailing" secondItem="ukQ-X5-f7q" secondAttribute="trailing" id="hKP-LU-R75"/>
+                <constraint firstItem="p1S-eB-T04" firstAttribute="leading" secondItem="PhF-ig-m8S" secondAttribute="leading" id="j5a-Qf-KVp"/>
+                <constraint firstItem="p1S-eB-T04" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lJe-FO-n7l"/>
+                <constraint firstItem="p1S-eB-T04" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="96" id="lNC-5q-KEp"/>
+                <constraint firstItem="ukQ-X5-f7q" firstAttribute="trailing" secondItem="ijU-uG-253" secondAttribute="trailing" id="mH1-FG-1pd"/>
+                <constraint firstItem="p1S-eB-T04" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="yKd-TX-2eQ"/>
+                <constraint firstItem="ukQ-X5-f7q" firstAttribute="leading" secondItem="ijU-uG-253" secondAttribute="leading" id="ytj-Kk-vXd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="132.5"/>

@@ -7,15 +7,29 @@
 //
 
 import UIKit
-
+import StoreKit
 
 
 class RattingViewController: BaseViewController {
 
     
+    
     @IBAction func menu(_ sender: Any) {
         self.viewDeckController?.open(.left, animated: true)
+        
+        self.dismiss(animated: true, completion: nil)
     }
-
+    
+   
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        } else {
+            
+        }
+        
+    }
 
 }
