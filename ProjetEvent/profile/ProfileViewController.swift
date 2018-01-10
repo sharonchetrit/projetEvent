@@ -42,7 +42,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         
         birthTxt.delegate = self
         birthTxt.keyboardType = .numberPad
-        phoneTxt.keyboardType = .numberPad
+        phoneTxt.keyboardType = .phonePad
         
         self.updateConfirmButton()
         self.registerForKeyboardNotifications()
@@ -106,6 +106,9 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
             return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
         }
         if textField == phoneTxt {
+            if (phoneTxt?.text?.first == "+"){
+                return !(textField.text!.characters.count > 11 && (string.characters.count ) > range.length)
+            }
             return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
         }
         else {
