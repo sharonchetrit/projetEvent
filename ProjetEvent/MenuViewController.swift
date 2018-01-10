@@ -8,38 +8,44 @@
 
 import UIKit
 import StoreKit
-import ShareKit
+import ViewDeck
+import FBSDKShareKit
 
 class MenuViewController: BaseViewController {
-
-    @IBAction func share(_ sender: UIButton)
+    
+    
+    @IBOutlet weak var shareBtn: FBSDKShareButton!
+    
+    @IBAction func share(_ sender: FBSDKShareButton)
     {
-//        self.performSegue(withIdentifier: "shareSegue", sender: nil)
-        // Create the item to share (in this example, a url)
-//        NSURL *url = [NSURL URLWithString:@"http://getsharekit.com"];
-//        SHKItem *item = [SHKItem URL:url title:@"ShareKit is Awesome!" contentType:SHKURLContentTypeWebpage];
+        // Example content. Replace with content from your app.
+//        FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
+//        content.contentURL = [NSURL URLWithString:@"https://developers.facebook.com"];
 //
-//        // Get the ShareKit action sheet
-//        SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
-//
-//        // ShareKit detects top view controller (the one intended to present ShareKit UI) automatically,
-//        // but sometimes it may not find one. To be safe, set it explicitly
-//        [SHK setRootViewController:self];
-//
-//        // Display the action sheet
-//        SHKAlertController *alertController = [SHKAlertController actionSheetForItem:item];
-//        [alertController setModalPresentationStyle:UIModalPresentationPopover];
-//        UIPopoverPresentationController *popPresenter = [alertController popoverPresentationController];
-//        popPresenter.barButtonItem = self.toolbarItems[1];
-//        [self presentViewController:alertController animated:YES completion:nil];
+//        FBSDKShareDialog *dialog = [[FBSDKShareDialog alloc] init];
+//        dialog.fromViewController = self;
+//        dialog.content = content;
+//        dialog.mode = FBSDKShareDialogModeShareSheet;
+//        [dialog show];
+        func viewDidLoad() {
+            super.viewDidLoad()
+            let content = FBSDKShareLinkContent()
+            content.contentURL = URL(string: "https://www.facebook.com/FacebookDevelopers")
+            let shareButton = FBSDKShareButton()
+            shareButton.shareContent = content
+            shareButton.center = view.center
+            view.addSubview(shareButton as? UIView ?? UIView())
+        }
         
-        let url : URL = URL(string: "https://developers.institute/")!
-        let item : SHKItem = SHKItem.url(url, title: "Developers Institute is awesome!", contentType: SHKURLContentTypeWebpage) as! SHKItem
+        var contentURL = URL(string: "https://www.facebook.com")
+        var imageURL = URL(string: "http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Facebook_Headquarters_Menlo_Park.jpg/2880px-Facebook_Headquarters_Menlo_Park.jpg")
+        shareBtn.shareContent = FBSDKShareLinkContent(contentURL: contentURL, contentTitle: "My Share Title", contentDescription: "Lorem ipsum dolor sit amet.", imageURL: imageURL, peopleIDs: ["1561082740838259"], placeID: "166793820034304", ref: "myRefId")
         
-        let actionSheet : SHKAlertController = SHKAlertController.actionSheet(for: item)
-        
-        self.present(actionSheet, animated: true, completion: nil)
     }
+    
+    
+    
+    
     
     @IBAction func ratting(_ sender: Any)
     {

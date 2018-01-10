@@ -24,12 +24,9 @@
 		2F04602F200216A6004D6E00 /* RattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602B200216A6004D6E00 /* RattingViewController.swift */; };
 		2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04603020021730004D6E00 /* LinkedTextField.swift */; };
 		2F04603520022346004D6E00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F04603420022346004D6E00 /* SystemConfiguration.framework */; };
-		2F0460372002234F004D6E00 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0460362002234E004D6E00 /* Security.framework */; };
-		2F04603920022363004D6E00 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F04603820022363004D6E00 /* MessageUI.framework */; };
 		2F04603B20022EAA004D6E00 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F04603A20022EA9004D6E00 /* Social.framework */; };
 		2F04603D20025809004D6E00 /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04603C20025809004D6E00 /* ShareViewController.xib */; };
 		2F1660B7200369D60043845F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1660B6200369D60043845F /* StoreKit.framework */; };
-		2F1660BB2003AD6F0043845F /* ProjetEventSHKConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1660BA2003AD6F0043845F /* ProjetEventSHKConfigurator.swift */; };
 		2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */; };
 		2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EC1FFCCA2700895E02 /* ViewController.swift */; };
 		2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0EE1FFCCA2700895E02 /* Main.storyboard */; };
@@ -38,11 +35,17 @@
 		2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */; };
 		2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */; };
 		2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F1051FFCD1E700895E02 /* ViewController.xib */; };
+		2F6091942004BF0C00AF48BB /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F60918E2004BF0B00AF48BB /* FBSDKPlacesKit.framework */; };
+		2F6091952004BF0C00AF48BB /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F60918F2004BF0B00AF48BB /* FBSDKShareKit.framework */; };
+		2F6091962004BF0C00AF48BB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6091902004BF0B00AF48BB /* FBSDKLoginKit.framework */; };
+		2F6091972004BF0C00AF48BB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6091912004BF0B00AF48BB /* Bolts.framework */; };
+		2F6091982004BF0C00AF48BB /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6091922004BF0C00AF48BB /* FBSDKMessengerShareKit.framework */; };
+		2F6091992004BF0C00AF48BB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6091932004BF0C00AF48BB /* FBSDKCoreKit.framework */; };
 		32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80161FFCD5CC0090EB8A /* Event.storyboard */; };
 		32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80181FFCD5DA0090EB8A /* Menu.storyboard */; };
 		32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC801A1FFCD5E90090EB8A /* Profile.storyboard */; };
 		32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */; };
-		F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */; };
+		61BF7B0CC017F6BA92BF8892 /* Pods_ProjetEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +72,6 @@
 		2F04603A20022EA9004D6E00 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		2F04603C20025809004D6E00 /* ShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShareViewController.xib; path = ProjetEvent/ShareViewController.xib; sourceTree = SOURCE_ROOT; };
 		2F1660B6200369D60043845F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		2F1660BA2003AD6F0043845F /* ProjetEventSHKConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetEventSHKConfigurator.swift; sourceTree = "<group>"; };
 		2F17F0E71FFCCA2700895E02 /* ProjetEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F17F0EC1FFCCA2700895E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,12 @@
 		2F17F1021FFCD1A300895E02 /* SlideMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenu.h; sourceTree = "<group>"; };
 		2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuVC.swift; sourceTree = "<group>"; };
 		2F17F1051FFCD1E700895E02 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		2F60918E2004BF0B00AF48BB /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKPlacesKit.framework; sourceTree = "<group>"; };
+		2F60918F2004BF0B00AF48BB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		2F6091902004BF0B00AF48BB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		2F6091912004BF0B00AF48BB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		2F6091922004BF0C00AF48BB /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		2F6091932004BF0C00AF48BB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		32CC80161FFCD5CC0090EB8A /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
 		32CC80181FFCD5DA0090EB8A /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		32CC801A1FFCD5E90090EB8A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -95,11 +103,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F1660B7200369D60043845F /* StoreKit.framework in Frameworks */,
+				2F6091942004BF0C00AF48BB /* FBSDKPlacesKit.framework in Frameworks */,
+				2F6091952004BF0C00AF48BB /* FBSDKShareKit.framework in Frameworks */,
 				2F04603B20022EAA004D6E00 /* Social.framework in Frameworks */,
-				2F04603920022363004D6E00 /* MessageUI.framework in Frameworks */,
-				2F0460372002234F004D6E00 /* Security.framework in Frameworks */,
+				2F6091982004BF0C00AF48BB /* FBSDKMessengerShareKit.framework in Frameworks */,
+				2F6091992004BF0C00AF48BB /* FBSDKCoreKit.framework in Frameworks */,
+				2F6091962004BF0C00AF48BB /* FBSDKLoginKit.framework in Frameworks */,
 				2F04603520022346004D6E00 /* SystemConfiguration.framework in Frameworks */,
-				F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */,
+				61BF7B0CC017F6BA92BF8892 /* Pods_ProjetEvent.framework in Frameworks */,
+				2F6091972004BF0C00AF48BB /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +169,6 @@
 			children = (
 				2F04602420021699004D6E00 /* MenuViewController.swift */,
 				2F04602520021699004D6E00 /* MenuViewController.xib */,
-				2F1660BA2003AD6F0043845F /* ProjetEventSHKConfigurator.swift */,
 				2F04602B200216A6004D6E00 /* RattingViewController.swift */,
 				2F046028200216A6004D6E00 /* RattingViewController.xib */,
 				2F04603C20025809004D6E00 /* ShareViewController.xib */,
@@ -224,6 +235,12 @@
 		7DC4EAEDF1097BE2E70B61AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F6091912004BF0B00AF48BB /* Bolts.framework */,
+				2F6091932004BF0C00AF48BB /* FBSDKCoreKit.framework */,
+				2F6091902004BF0B00AF48BB /* FBSDKLoginKit.framework */,
+				2F6091922004BF0C00AF48BB /* FBSDKMessengerShareKit.framework */,
+				2F60918E2004BF0B00AF48BB /* FBSDKPlacesKit.framework */,
+				2F60918F2004BF0B00AF48BB /* FBSDKShareKit.framework */,
 				2F1660B6200369D60043845F /* StoreKit.framework */,
 				2F04603A20022EA9004D6E00 /* Social.framework */,
 				2F04603820022363004D6E00 /* MessageUI.framework */,
@@ -355,34 +372,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/Facebook-iOS-SDK/FacebookSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/ISO8601DateFormatter/ISO8601DateFormatter.framework",
-				"${BUILT_PRODUCTS_DIR}/LiveSDK/LiveSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/PKMultipartInputStream/PKMultipartInputStream.framework",
-				"${BUILT_PRODUCTS_DIR}/PinterestSDK/PinterestSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
-				"${BUILT_PRODUCTS_DIR}/SAMTextView/SAMTextView.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SSKeychain/SSKeychain.framework",
-				"${BUILT_PRODUCTS_DIR}/ShareKit/ShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewDeck/ViewDeck.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISO8601DateFormatter.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LiveSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKMultipartInputStream.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinterestSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMTextView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSKeychain.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewDeck.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +392,6 @@
 			files = (
 				2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */,
 				2F04602E200216A6004D6E00 /* ShareViewController.swift in Sources */,
-				2F1660BB2003AD6F0043845F /* ProjetEventSHKConfigurator.swift in Sources */,
 				2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */,
 				2F0460142002163A004D6E00 /* Event.swift in Sources */,
 				2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */,
@@ -553,6 +545,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7X4HS8M86;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "~/ProjetsDI/FacebookSDKs-iOS-4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/ProjetsDI/FacebookSDKs-iOS-4",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ViewDeck\"",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = ProjetEvent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -560,6 +558,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ./ProjetEvent/SlideMenu.h;
 				SWIFT_VERSION = 4.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "~/ProjetsDI/FacebookSDKs-iOS-4";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -571,6 +570,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7X4HS8M86;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "~/ProjetsDI/FacebookSDKs-iOS-4";
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/ProjetsDI/FacebookSDKs-iOS-4",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ViewDeck\"",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = ProjetEvent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -578,6 +583,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ./ProjetEvent/SlideMenu.h;
 				SWIFT_VERSION = 4.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "~/ProjetsDI/FacebookSDKs-iOS-4";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
