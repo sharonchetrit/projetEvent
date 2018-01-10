@@ -11,37 +11,48 @@ import StoreKit
 import ViewDeck
 import FBSDKShareKit
 
-class MenuViewController: BaseViewController {
+class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "")
+        cell.textLabel?.text = "share"
+        
+        return cell
+    }
+    
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let shareVC = ShareViewController(nibName: "ShareViewController", bundle: Bundle.main)
+        
+        
+        
+        switch(indexPath.section, indexPath.row) {
+            
+        case (0, 0):
+            self.present(shareVC, animated: true, completion: { () in
+                print("Done🔨") })
+       
+        default :
+            break
+        }
+        
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tblView.delegate = self
+        tblView.dataSource = self
         
     }
     
-    
-    @IBAction func share(_ sender: FBSDKShareButton)
-    {
-        // Example content. Replace with content from your app.
-//        FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
-//        content.contentURL = [NSURL URLWithString:@"https://developers.facebook.com"];
-//
-//        FBSDKShareDialog *dialog = [[FBSDKShareDialog alloc] init];
-//        dialog.fromViewController = self;
-//        dialog.content = content;
-//        dialog.mode = FBSDKShareDialogModeShareSheet;
-//        [dialog show];
-        
-        let content = FBSDKShareLinkContent()
-        content.contentURL = URL(string: "https://sharonchetrit.wixsite.com/event")
-        
-        let dialog: FBSDKShareDialog = FBSDKShareDialog()
-        dialog.fromViewController = self
-        dialog.shareContent = content
-        dialog.mode = .shareSheet
-        dialog.show()
-        
-    }
-    
+    @IBOutlet weak var tblView: UITableView!
     
     
     
