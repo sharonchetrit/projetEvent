@@ -8,17 +8,16 @@
 
 import UIKit
 
-class Event: Codable
+class Event: NSObject, NSCoding
 {
-    static func ==(lhs: Event, rhs: Event) -> Bool {
-        return lhs.name == rhs.name
-    }
-    
-    
+
     var name : String
     var depart : String
     var arrive : String
     var eventDescription : String
+    
+    static let DocumentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("events")
     
     init(name:String, depart:String, arrive:String,eventDescription: String) {
         self.name = name
@@ -35,11 +34,23 @@ class Event: Codable
         self.eventDescription = (dictionary["eventDescription"] as? String)!
     }
 
-    static var archiveURL: URL{
-        get{
-            let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            return documentDirectory.appendingPathComponent("events").appendingPathExtension(".plist")
-        }
+    
+    
+    func serialize() -> Dictionary<String,Any>
+    {
+        var dict : Dictionary<String,Any> = Dictionary()
+        
+        dict["name"] = self.name
+        dict["depart"] = self.depart
+        dict["arrive"] = self.arrive
+        dict["eventDescription"] = self.eventDescription
+        
+        return dict
+    }
+    
+    static func loadFromFile() -> Array<Event>?
+    {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Event.ArchiveURL.path) as? [Event]
     }
     
     static func loadSampleFromPlist() -> [Event]
@@ -66,17 +77,7 @@ class Event: Codable
         return sampleEvent
     }
     
-    static func loadFromFile() -> Array<Event>?
-    {
-        let propertyListDecoder = PropertyListDecoder()
-        if let eventsData = try? Data(contentsOf: archiveURL){
-            if let eventsArray = try? propertyListDecoder.decode(Array<Event>.self, from: eventsData){
-                return eventsArray
-            }
-        }
-        return nil
-        
-    }
+    
     
     static func loadEventSample() -> Array<Event>
     {
@@ -90,15 +91,63 @@ class Event: Codable
     
     static func saveToFile(events:Array<Event> )
     {
-        let propertyListEncoder = PropertyListEncoder()
-        if let eventEncoded = try? propertyListEncoder.encode(events)
-        {
-            try? eventEncoded.write(to: archiveURL, options: .noFileProtection)
-        }
+        NSKeyedArchiver.archiveRootObject(events, toFile: Event.ArchiveURL.path)
         
     }
         
+    static func openFromUserDefaults() -> [Event]?
+    {
+        var sampleEvents : [Event] = []
+        
+        if let eventDicts : [Dictionary<String,Any>] = UserDefaults.standard.object(forKey: "Event") as? [Dictionary<String, Any>]
+        {
+            for dict in eventDicts
+            {
+                let event : Event = Event(dictionary: dict)
+                sampleEvents.append(event)
+            }
+        }
+        else
+        {
+            return nil
+        }
+        
+        return sampleEvents
+        
+    }
     
-  
+    static func saveOnUserDefaults(events: [Event] )
+    {
+        // serialize
+        
+        var eventDicts : [Dictionary<String,Any>] = []
+        
+        for event : Event in events
+        {
+            eventDicts.append(event.serialize())
+        }
+        
+        UserDefaults.standard.set(eventDicts, forKey: "Event")
+    }
+    
+    required convenience init?(coder aDecoder: NSCoder)
+    {
+        guard let name = aDecoder.decodeObject(forKey: "name") as? String,
+            let depart = aDecoder.decodeObject(forKey: "depart") as? String,
+            let arrive = aDecoder.decodeObject(forKey: "arrive") as? String,
+            let eventDescription = aDecoder.decodeObject(forKey: "eventDescription") as? String
+            else {
+                return nil
+        }
+        
+        self.init(name: name, depart: depart, arrive: arrive, eventDescription: eventDescription)
+    }
+    func encode(with aCoder: NSCoder) {
+        
+        aCoder.encode(name, forKey: "name")
+        aCoder.encode(depart, forKey: "depart")
+        aCoder.encode(arrive, forKey: "arrive")
+        aCoder.encode(eventDescription, forKey: "eventDescription")
+    }
     
 }

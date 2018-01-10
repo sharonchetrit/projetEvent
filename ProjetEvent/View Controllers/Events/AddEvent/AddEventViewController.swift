@@ -22,6 +22,8 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
     @IBOutlet weak var txtFieldArrive: UITextField!
     @IBOutlet weak var txtFieldDescription: UITextField!
     
+    weak var delegate : AddEventDelegate?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +57,7 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
 //    }
 //
     
-    weak var delegate : AddEventDelegate?
+    
     
     @IBAction  func save(_ sender: Any?)
     {

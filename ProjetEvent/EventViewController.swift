@@ -8,13 +8,19 @@
 
 import UIKit
 
-class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource
+class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,AddEventDelegate
 {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var events : [Event] = Event.loadSampleFromPlist()
-    
+    lazy var events : [Event] = {
+        if let userDefaultEvents = Event.openFromUserDefaults()
+        {
+            return userDefaultEvents
+        }
+        
+        return Event.loadSampleFromPlist()
+    }()
     
     override func viewDidLoad()
     {
@@ -50,8 +56,23 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
         self.performSegue(withIdentifier: "AddEventSegway", sender: nil)
     }
     
+    func addEvent(event: Event)
+    {
+        // save the data here
+        
+        self.events.append(event)
+        
+        Event.saveOnUserDefaults(events: self.events)
+        
+        self.tableView.reloadData()
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let addVC : AddEventViewController = segue.destination as? AddEventViewController
+        {
+            addVC.delegate = self
+        }
+    }
     
     
     
