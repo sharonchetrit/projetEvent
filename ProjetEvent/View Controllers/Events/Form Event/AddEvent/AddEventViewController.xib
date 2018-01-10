@@ -51,7 +51,7 @@
                     <rect key="frame" x="55" y="238" width="290" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     <connections>
                         <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="CKR-O5-xZb"/>
                         <outlet property="delegate" destination="-1" id="X5y-0g-phN"/>
@@ -62,7 +62,7 @@
                     <rect key="frame" x="55" y="176" width="290" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     <connections>
                         <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="aYb-R5-d9K"/>
                         <outlet property="delegate" destination="-1" id="YCp-iU-sG8"/>
@@ -76,7 +76,7 @@
                         <navigationItem title="AddEvent" id="b70-Rr-mO9">
                             <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LGF-XM-ve2">
                                 <connections>
-                                    <action selector="unwindToThisWithSegue:" destination="-2" id="BZ3-Xy-noB"/>
+                                    <action selector="cancel:" destination="-1" id="b1k-Ez-bZA"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem key="rightBarButtonItem" systemItem="save" id="qla-Vv-Jq0">

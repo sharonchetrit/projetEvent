@@ -42,8 +42,6 @@
 		971F69A2200228E5005DE261 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F69A0200228E5005DE261 /* AddEventViewController.swift */; };
 		971F69A3200228E5005DE261 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 971F69A1200228E5005DE261 /* AddEventViewController.xib */; };
 		971F69A620022D94005DE261 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 971F69A520022D94005DE261 /* events.plist */; };
-		9759AC4B2006024400033490 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759AC492006024400033490 /* EditEventViewController.swift */; };
-		9759AC4C2006024400033490 /* EditEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9759AC4A2006024400033490 /* EditEventViewController.xib */; };
 		97BE2B832004B65A00D1FF8F /* CurrentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE2B812004B65A00D1FF8F /* CurrentTableViewCell.swift */; };
 		97BE2B852004BA4500D1FF8F /* CurrentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */; };
 		F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */; };
@@ -91,8 +89,6 @@
 		971F69A0200228E5005DE261 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		971F69A1200228E5005DE261 /* AddEventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
 		971F69A520022D94005DE261 /* events.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
-		9759AC492006024400033490 /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
-		9759AC4A2006024400033490 /* EditEventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditEventViewController.xib; sourceTree = "<group>"; };
 		97BE2B812004B65A00D1FF8F /* CurrentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTableViewCell.swift; sourceTree = "<group>"; };
 		97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,8 +152,7 @@
 				2F04601B20021662004D6E00 /* EventViewController.swift */,
 				2F04601A20021662004D6E00 /* EventViewController.xib */,
 				97BE2B802004B44700D1FF8F /* currentTableViewCell */,
-				9759AC4D2006025600033490 /* EditEvent */,
-				971F69A4200228EE005DE261 /* AddEvent */,
+				9759AC4E2006189200033490 /* Form Event */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -253,14 +248,12 @@
 			path = AddEvent;
 			sourceTree = "<group>";
 		};
-		9759AC4D2006025600033490 /* EditEvent */ = {
+		9759AC4E2006189200033490 /* Form Event */ = {
 			isa = PBXGroup;
 			children = (
-				9759AC492006024400033490 /* EditEventViewController.swift */,
-				9759AC4A2006024400033490 /* EditEventViewController.xib */,
+				971F69A4200228EE005DE261 /* AddEvent */,
 			);
-			name = EditEvent;
-			path = "New Group";
+			path = "Form Event";
 			sourceTree = "<group>";
 		};
 		97BE2B802004B44700D1FF8F /* currentTableViewCell */ = {
@@ -337,7 +330,6 @@
 				97BE2B852004BA4500D1FF8F /* CurrentTableViewCell.xib in Resources */,
 				2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */,
 				2F04601F20021662004D6E00 /* EventViewController.xib in Resources */,
-				9759AC4C2006024400033490 /* EditEventViewController.xib in Resources */,
 				2F04602C200216A6004D6E00 /* RattingViewController.xib in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
 				971F69A3200228E5005DE261 /* AddEventViewController.xib in Resources */,
@@ -418,7 +410,6 @@
 				2F04602E200216A6004D6E00 /* ShareViewController.swift in Sources */,
 				2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */,
 				2F0460142002163A004D6E00 /* Event.swift in Sources */,
-				9759AC4B2006024400033490 /* EditEventViewController.swift in Sources */,
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
@@ -569,6 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T853SDQS2V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -576,7 +568,7 @@
 				INFOPLIST_FILE = ProjetEvent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = institute.developer.ProjetEvent;
+				PRODUCT_BUNDLE_IDENTIFIER = ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ./ProjetEvent/SlideMenu.h;
 				SWIFT_VERSION = 4.0;
@@ -590,6 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T853SDQS2V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -597,7 +590,7 @@
 				INFOPLIST_FILE = ProjetEvent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = institute.developer.ProjetEvent;
+				PRODUCT_BUNDLE_IDENTIFIER = ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ./ProjetEvent/SlideMenu.h;
 				SWIFT_VERSION = 4.0;

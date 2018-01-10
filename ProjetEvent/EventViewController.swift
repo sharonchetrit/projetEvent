@@ -11,6 +11,8 @@ import UIKit
 class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,AddEventDelegate
 {
     
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     lazy var events : [Event] = {
@@ -51,6 +53,13 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let event : Event = self.events[indexPath.row]
+        
+        self.performSegue(withIdentifier: "AddEventSegway", sender: event)
+    }
+    
     @IBAction func addEvent(_ sender: Any)
     {
         self.performSegue(withIdentifier: "AddEventSegway", sender: nil)
@@ -67,10 +76,21 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
         self.tableView.reloadData()
     }
     
+    func updateEvent(event: Event)
+    {
+        self.events[(self.tableView.indexPathForSelectedRow?.row)!] = event
+        
+        Event.saveOnUserDefaults(events: self.events)
+        
+        self.tableView.reloadData()
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let addVC : AddEventViewController = segue.destination as? AddEventViewController
         {
             addVC.delegate = self
+            addVC.event = sender as? Event
         }
     }
     
