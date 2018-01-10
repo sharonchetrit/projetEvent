@@ -12,6 +12,10 @@ import ViewDeck
 class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     
+    
+    @IBOutlet var containerView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var firstNameTxt: UITextField!
     @IBOutlet weak var surnameTxt: UITextField!
@@ -24,20 +28,65 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     @IBOutlet weak var confirmButton: UIBarButtonItem!
     
    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        self.containerView.autoresizingMask = UIViewAutoresizing(rawValue: UIViewAutoresizing.RawValue(UInt8(UIViewAutoresizing.flexibleWidth.rawValue) | UInt8(UIViewAutoresizing.flexibleHeight.rawValue)))
+        
+        self.containerView.frame = CGRect(x: 0, y: 0, width: self.scrollView.frame.size.width, height: self.containerView.frame.size.height)
+        
+        self.scrollView.contentSize = self.containerView.frame.size
+        self.scrollView.addSubview(self.containerView)
+        
+        birthTxt.delegate = self
+        birthTxt.keyboardType = .numberPad
+        phoneTxt.keyboardType = .numberPad
+        
+        self.updateConfirmButton()
+        self.registerForKeyboardNotifications()
+    }
+    
+    
     @IBAction func txtEditingChange(_ sender: UITextField)
     {
         updateConfirmButton()
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        birthTxt.delegate = self
-        birthTxt.keyboardType = .numberPad
+    @IBAction func confirmAction(_ sender: Any)
+    {
+        let pass = passwordTxt.text
+        let confPass = confirmPassTxt.text
         
-        updateConfirmButton()
-        // Do any additional setup after loading the view.
+        if pass == confPass
+        {
+        let alertView = UIAlertController(title: "Welcome", message: "You create an account", preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertView.addAction(cancelAction)
+        
+        self.present(alertView, animated: true, completion: nil)
+        }else
+        {
+            let alertView = UIAlertController(title: "ERROR", message: "Confirm Password Incorect", preferredStyle: .alert)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alertView.addAction(cancelAction)
+            
+            self.present(alertView, animated: true, completion: nil)
+        }
+}
+
+    
+    
+    func registerForKeyboardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown(_:)), name: .UIKeyboardDidShow, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillBeHidden(_:)), name: .UIKeyboardWillHide, object: nil)
     }
+   
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         //Format Date of Birth dd-MM-yyyy
         
@@ -56,10 +105,12 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
             // check the condition not exceed 9 chars
             return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
         }
+        if textField == phoneTxt {
+            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+        }
         else {
             return true
         }
-       
     }
     
     @IBAction func addPhoto(_ sender: Any) {
@@ -111,7 +162,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         }else
         {
             linkedTextField.resignFirstResponder()
-//                self.save(nil)
+            
             }
         }
         return true
@@ -129,8 +180,40 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         confirmButton.isEnabled = !name.isEmpty && !surname.isEmpty && !birth.isEmpty && !email.isEmpty && !phone.isEmpty && !password.isEmpty && !confirmPass.isEmpty
     }
     
+    
+    @objc func keyboardWasShown(_ notificiation: NSNotification)
+    {
+        struct keyboard
+        {
+            static var userInfo : [AnyHashable : Any]?
+        }
+        
+        if( keyboard.userInfo == nil )
+        {
+            keyboard.userInfo = notificiation.userInfo
+        }
+        
+        if let keyboardFrameValue : NSValue =  keyboard.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue
+        {
+            let keyboardFrame = keyboardFrameValue.cgRectValue
+            let keyboardSize = keyboardFrame.size
+            
+            
+            let contentInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize.height, 0.0)
+            self.scrollView.contentInset = contentInsets
+            self.scrollView.scrollIndicatorInsets = contentInsets
+        }
+    }
+    
+    @objc func keyboardWillBeHidden(_ notification: NSNotification) {
+        let contentInsets = UIEdgeInsets.zero
+        self.scrollView.contentInset = contentInsets
+        self.scrollView.scrollIndicatorInsets = contentInsets
+    }
+    
     @IBAction func menu(_ sender: Any)
     {
         self.viewDeckController?.open(.left, animated: true)
     }
+
 }

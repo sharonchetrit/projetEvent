@@ -7,10 +7,12 @@
 //
 
 import UIKit
-
+import ViewDeck
 
 
 class RattingViewController: BaseViewController {
+    
+    
 
     
     @IBAction func menu(_ sender: Any) {

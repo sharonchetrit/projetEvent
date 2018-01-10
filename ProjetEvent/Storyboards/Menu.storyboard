@@ -59,7 +59,7 @@
                         <viewLayoutGuide key="safeArea" id="ktH-gB-wRD"/>
                     </view>
                     <connections>
-                        <outlet property="mainView" destination="nff-wu-m36" id="Iba-8J-j9t"/>
+                        <outlet property="mainView" destination="nff-wu-m36" id="KC5-eH-XsL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kpa-cU-o0m" userLabel="First Responder" sceneMemberID="firstResponder"/>

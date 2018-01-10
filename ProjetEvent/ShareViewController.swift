@@ -8,10 +8,17 @@
 
 import UIKit
 
-class ShareViewController: BaseViewController {
+
+class ShareViewController: BaseViewController, UINavigationControllerDelegate {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
     @IBAction func menu(_ sender: Any) {
         self.viewDeckController?.open(.left, animated: true)
     }
     
 }
+
