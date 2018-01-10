@@ -43,11 +43,14 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         birthTxt.delegate = self
         birthTxt.keyboardType = .numberPad
         phoneTxt.keyboardType = .phonePad
+        emailTxt.keyboardType = .emailAddress
         
         self.updateConfirmButton()
         self.registerForKeyboardNotifications()
+        
+        imageView.layer.cornerRadius = imageView.frame.width / 4.0
+        imageView.clipsToBounds = true
     }
-    
     
     @IBAction func txtEditingChange(_ sender: UITextField)
     {

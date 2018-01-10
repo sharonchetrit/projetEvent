@@ -9,11 +9,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="ProjetEvent" customModuleProvider="target">
             <connections>
@@ -23,7 +18,7 @@
                 <outlet property="containerView" destination="i5M-Pr-FkT" id="Stb-ud-E07"/>
                 <outlet property="emailTxt" destination="wHL-E4-mUB" id="miH-ai-uY6"/>
                 <outlet property="firstNameTxt" destination="Pj5-MB-mnq" id="OXm-1G-8t7"/>
-                <outlet property="imageView" destination="ky2-tp-sh1" id="QJg-cP-MZX"/>
+                <outlet property="imageView" destination="mn4-Jj-4RF" id="UeU-r9-Qpv"/>
                 <outlet property="mainView" destination="Orh-Dk-WIm" id="m0i-cx-2Ob"/>
                 <outlet property="passwordTxt" destination="2HO-3o-LEu" id="4bR-LJ-WCZ"/>
                 <outlet property="phoneTxt" destination="IgO-Cy-TYh" id="o00-hl-G2b"/>
@@ -36,22 +31,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="710"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="ky2-tp-sh1">
-                    <rect key="frame" x="16" y="39" width="86" height="99"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwq-w2-llJ">
-                    <rect key="frame" x="114" y="73" width="146" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                    <state key="normal" title="+ Add a photo">
-                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="addPhoto:" destination="-1" eventType="touchUpInside" id="uMJ-7B-VM6"/>
-                    </connections>
-                </button>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="27C-2S-luZ">
+                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="27C-2S-luZ">
                     <rect key="frame" x="16" y="174" width="343" height="60"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="first name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pj5-MB-mnq" userLabel="Linked Text Field" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
@@ -121,7 +101,7 @@
                         </textField>
                     </subviews>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ad6-Vn-nOj">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ad6-Vn-nOj">
                     <rect key="frame" x="16" y="402" width="343" height="60"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HO-3o-LEu" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
@@ -149,25 +129,44 @@
                         </textField>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwq-w2-llJ">
+                    <rect key="frame" x="16" y="58" width="214" height="83"/>
+                    <state key="normal" title="+ Add a photo">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addPhoto:" destination="-1" eventType="touchUpInside" id="uMJ-7B-VM6"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="mn4-Jj-4RF">
+                    <rect key="frame" x="16" y="58" width="89" height="83"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="mn4-Jj-4RF" firstAttribute="centerY" secondItem="Bwq-w2-llJ" secondAttribute="centerY" id="4R7-cl-ugF"/>
                 <constraint firstItem="ad6-Vn-nOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="5kN-50-kcN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ad6-Vn-nOj" secondAttribute="bottom" priority="250" constant="248" id="Dqn-EE-fFL"/>
+                <constraint firstItem="27C-2S-luZ" firstAttribute="top" secondItem="Bwq-w2-llJ" secondAttribute="bottom" constant="33" id="LOL-Ux-atD"/>
                 <constraint firstItem="4iD-rf-3NS" firstAttribute="top" secondItem="27C-2S-luZ" secondAttribute="bottom" constant="26" id="Oub-zg-MUk"/>
+                <constraint firstItem="Bwq-w2-llJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="TCV-GZ-LhR"/>
                 <constraint firstItem="do3-zH-KGt" firstAttribute="top" secondItem="4iD-rf-3NS" secondAttribute="bottom" constant="26" id="TSy-68-rto"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ad6-Vn-nOj" secondAttribute="trailing" constant="16" id="XfJ-Ke-NQb"/>
+                <constraint firstItem="27C-2S-luZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="154" id="Xrh-nP-VL7"/>
                 <constraint firstItem="4iD-rf-3NS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="afU-oP-Qxh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4iD-rf-3NS" secondAttribute="trailing" constant="16" id="bIQ-ey-Ayt"/>
                 <constraint firstItem="27C-2S-luZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="crw-KH-ohV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="27C-2S-luZ" secondAttribute="trailing" constant="16" id="d82-lr-VnX"/>
                 <constraint firstItem="do3-zH-KGt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="eOG-6c-cod"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ad6-Vn-nOj" secondAttribute="bottom" constant="248" id="gYr-8W-hF6"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="do3-zH-KGt" secondAttribute="trailing" constant="16" id="mWE-8a-rB9"/>
                 <constraint firstItem="ad6-Vn-nOj" firstAttribute="top" secondItem="do3-zH-KGt" secondAttribute="bottom" constant="26" id="tR3-Iw-gAF"/>
+                <constraint firstItem="Bwq-w2-llJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="38" id="xD4-pP-nFD"/>
+                <constraint firstItem="mn4-Jj-4RF" firstAttribute="centerX" secondItem="Bwq-w2-llJ" secondAttribute="centerX" constant="-62.5" id="xvs-Me-xb0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bwq-w2-llJ" secondAttribute="trailing" constant="145" id="ybw-Kp-xct"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="15" y="73"/>
+            <point key="canvasLocation" x="14.5" y="73"/>
         </view>
         <view contentMode="scaleToFill" id="Orh-Dk-WIm">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -210,6 +209,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Photo" width="178" height="166"/>
+        <image name="Photo" width="89" height="83"/>
     </resources>
 </document>
