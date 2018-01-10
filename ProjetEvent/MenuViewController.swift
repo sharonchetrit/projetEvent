@@ -13,8 +13,11 @@ import FBSDKShareKit
 
 class MenuViewController: BaseViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
     
-    @IBOutlet weak var shareBtn: FBSDKShareButton!
     
     @IBAction func share(_ sender: FBSDKShareButton)
     {
@@ -27,19 +30,15 @@ class MenuViewController: BaseViewController {
 //        dialog.content = content;
 //        dialog.mode = FBSDKShareDialogModeShareSheet;
 //        [dialog show];
-        func viewDidLoad() {
-            super.viewDidLoad()
-            let content = FBSDKShareLinkContent()
-            content.contentURL = URL(string: "https://www.facebook.com/FacebookDevelopers")
-            let shareButton = FBSDKShareButton()
-            shareButton.shareContent = content
-            shareButton.center = view.center
-            view.addSubview(shareButton as? UIView ?? UIView())
-        }
         
-        var contentURL = URL(string: "https://www.facebook.com")
-        var imageURL = URL(string: "http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Facebook_Headquarters_Menlo_Park.jpg/2880px-Facebook_Headquarters_Menlo_Park.jpg")
-        shareBtn.shareContent = FBSDKShareLinkContent(contentURL: contentURL, contentTitle: "My Share Title", contentDescription: "Lorem ipsum dolor sit amet.", imageURL: imageURL, peopleIDs: ["1561082740838259"], placeID: "166793820034304", ref: "myRefId")
+        let content = FBSDKShareLinkContent()
+        content.contentURL = URL(string: "https://sharonchetrit.wixsite.com/event")
+        
+        let dialog: FBSDKShareDialog = FBSDKShareDialog()
+        dialog.fromViewController = self
+        dialog.shareContent = content
+        dialog.mode = .shareSheet
+        dialog.show()
         
     }
     
