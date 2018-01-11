@@ -11,11 +11,13 @@ import UIKit
 protocol AddEventDelegate : NSObjectProtocol // MUST inherit from NSObjectProtocol
 {
     func addEvent(event: Event)
+    func updateEvent(event: Event)
 }
 
 class AddEventViewController: BaseViewController,UITextFieldDelegate {
     
-    var event : Event?
+    weak var event : Event?
+    @IBOutlet weak var navBar: UINavigationBar!
     
     @IBOutlet weak var txtFieldEvent: UITextField!
     @IBOutlet weak var txtFieldDepart: UITextField!
@@ -27,12 +29,10 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        txtFieldDepart.delegate = self
-        txtFieldDepart.keyboardType = .numberPad
-        txtFieldArrive.delegate = self
-        txtFieldArrive.keyboardType = .numberPad
         
-        if let event = event {
+        if let event = event
+        {
+            self.navBar.topItem?.title = event.name
             txtFieldEvent.text = event.name
             txtFieldDepart.text = event.depart
             txtFieldArrive.text = event.arrive
@@ -61,18 +61,30 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
     
     @IBAction  func save(_ sender: Any?)
     {
-        self.dismiss(animated: true)
         if let eventCharacter : String = self.txtFieldEvent.text
         {
             if let depart : String = self.txtFieldDepart.text
             {
                 if let arrive : String = self.txtFieldArrive.text
                 {
-                    if let description = self.txtFieldDescription.text{
+                    if let description = self.txtFieldDescription.text
+                    {
+                        if let event = self.event
+                        {
+                            event.name = eventCharacter
+                            event.depart = depart
+                            event.arrive = arrive
+                            event.eventDescription = description
+                            
+                            self.delegate?.updateEvent(event: event)
+                        }
+                        else
+                        {
+                            let event = Event(name: eventCharacter, depart: depart, arrive: arrive, eventDescription: description)
+                            
+                            self.delegate?.addEvent(event: event)
+                        }
                         
-                        let event = Event(name: eventCharacter, depart: depart, arrive: arrive, eventDescription: description)
-                        
-                        self.delegate?.addEvent(event: event)
                         
                         self.dismiss(animated: true) {
                             

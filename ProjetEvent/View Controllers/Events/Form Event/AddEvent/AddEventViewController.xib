@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddEventViewController" customModule="ProjetEvent" customModuleProvider="target">
             <connections>
                 <outlet property="mainView" destination="i5M-Pr-FkT" id="9nK-Kz-xzf"/>
+                <outlet property="navBar" destination="yzZ-Ce-Fzu" id="HZK-PZ-ea7"/>
                 <outlet property="saveButton" destination="qla-Vv-Jq0" id="SPt-FA-2OY"/>
                 <outlet property="txtFieldArrive" destination="w8F-Xl-1Zf" id="ugL-Zv-Cox"/>
                 <outlet property="txtFieldDepart" destination="Lgs-V4-aUz" id="D6W-Fa-aHP"/>
@@ -51,7 +51,7 @@
                     <rect key="frame" x="55" y="238" width="290" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     <connections>
                         <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="CKR-O5-xZb"/>
                         <outlet property="delegate" destination="-1" id="X5y-0g-phN"/>
@@ -62,21 +62,20 @@
                     <rect key="frame" x="55" y="176" width="290" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     <connections>
                         <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="aYb-R5-d9K"/>
                         <outlet property="delegate" destination="-1" id="YCp-iU-sG8"/>
                         <outlet property="nextField" destination="w8F-Xl-1Zf" id="bnI-c1-h0t"/>
                     </connections>
                 </textField>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzZ-Ce-Fzu">
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzZ-Ce-Fzu">
                     <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <items>
-                        <navigationItem title="AddEvent" id="b70-Rr-mO9">
+                        <navigationItem title="Add Event" id="b70-Rr-mO9">
                             <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LGF-XM-ve2">
                                 <connections>
-                                    <action selector="unwindToThisWithSegue:" destination="-2" id="BZ3-Xy-noB"/>
+                                    <action selector="cancel:" destination="-1" id="b1k-Ez-bZA"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem key="rightBarButtonItem" systemItem="save" id="qla-Vv-Jq0">
@@ -97,7 +96,10 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XRX-sb-fKt" secondAttribute="trailing" constant="30" id="Kmk-hJ-KId"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="w8F-Xl-1Zf" secondAttribute="trailing" constant="30" id="Rjd-cl-oCq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lgs-V4-aUz" secondAttribute="trailing" constant="30" id="SaB-wG-upZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yzZ-Ce-Fzu" secondAttribute="trailing" id="ZSJ-Uu-F8o"/>
                 <constraint firstItem="XRX-sb-fKt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55" id="ZrJ-25-HC8"/>
+                <constraint firstItem="yzZ-Ce-Fzu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gXP-Vc-eDA"/>
+                <constraint firstItem="yzZ-Ce-Fzu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gwy-RS-4yB"/>
                 <constraint firstItem="w8F-Xl-1Zf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55" id="ibO-eN-QjK"/>
                 <constraint firstItem="XRX-sb-fKt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="102" id="owl-GZ-tnG"/>
                 <constraint firstItem="Lgs-V4-aUz" firstAttribute="top" secondItem="XRX-sb-fKt" secondAttribute="bottom" constant="24" id="r3B-Mb-CTG"/>
