@@ -11,12 +11,9 @@
 		04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */; };
 		04EF8D761FFE6DF400AEF046 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF8D751FFE6DF400AEF046 /* User.swift */; };
 		2F0460142002163A004D6E00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0460122002163A004D6E00 /* Event.swift */; };
-		2F0460152002163A004D6E00 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0460132002163A004D6E00 /* Events.swift */; };
-		2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04601820021662004D6E00 /* CurrentEventsVC.swift */; };
 		2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04601920021662004D6E00 /* EventTableViewController.swift */; };
 		2F04601F20021662004D6E00 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04601A20021662004D6E00 /* EventViewController.xib */; };
 		2F04602020021662004D6E00 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04601B20021662004D6E00 /* EventViewController.swift */; };
-		2F04602120021662004D6E00 /* CurrentEventsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04601C20021662004D6E00 /* CurrentEventsVC.xib */; };
 		2F04602620021699004D6E00 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602420021699004D6E00 /* MenuViewController.swift */; };
 		2F04602720021699004D6E00 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04602520021699004D6E00 /* MenuViewController.xib */; };
 		2F04602C200216A6004D6E00 /* RattingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F046028200216A6004D6E00 /* RattingViewController.xib */; };
@@ -24,6 +21,8 @@
 		2F04602E200216A6004D6E00 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602A200216A6004D6E00 /* ShareViewController.swift */; };
 		2F04602F200216A6004D6E00 /* RattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602B200216A6004D6E00 /* RattingViewController.swift */; };
 		2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04603020021730004D6E00 /* LinkedTextField.swift */; };
+		2F12D9AD2007709E00DA676A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12D9AC2007709E00DA676A /* MenuItem.swift */; };
+		2F12D9AF200770DE00DA676A /* defaultMenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F12D9AE200770DE00DA676A /* defaultMenuItems.plist */; };
 		2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */; };
 		2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EC1FFCCA2700895E02 /* ViewController.swift */; };
 		2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0EE1FFCCA2700895E02 /* Main.storyboard */; };
@@ -36,6 +35,17 @@
 		32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80181FFCD5DA0090EB8A /* Menu.storyboard */; };
 		32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC801A1FFCD5E90090EB8A /* Profile.storyboard */; };
 		32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */; };
+		32CC803D200612B90090EB8A /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC8037200612B80090EB8A /* FBSDKMessengerShareKit.framework */; };
+		32CC803E200612B90090EB8A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC8038200612B80090EB8A /* Bolts.framework */; };
+		32CC803F200612B90090EB8A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC8039200612B80090EB8A /* FBSDKCoreKit.framework */; };
+		32CC8040200612B90090EB8A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC803A200612B80090EB8A /* FBSDKShareKit.framework */; };
+		32CC8041200612B90090EB8A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC803B200612B90090EB8A /* FBSDKLoginKit.framework */; };
+		32CC8042200612B90090EB8A /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC803C200612B90090EB8A /* FBSDKPlacesKit.framework */; };
+		971F69A2200228E5005DE261 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F69A0200228E5005DE261 /* AddEventViewController.swift */; };
+		971F69A3200228E5005DE261 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 971F69A1200228E5005DE261 /* AddEventViewController.xib */; };
+		971F69A620022D94005DE261 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 971F69A520022D94005DE261 /* events.plist */; };
+		97BE2B832004B65A00D1FF8F /* CurrentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE2B812004B65A00D1FF8F /* CurrentTableViewCell.swift */; };
+		97BE2B852004BA4500D1FF8F /* CurrentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */; };
 		F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,12 +55,9 @@
 		04EF8D751FFE6DF400AEF046 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12938E0ED91B3ED9FD123E98 /* Pods-ProjetEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.release.xcconfig"; sourceTree = "<group>"; };
 		2F0460122002163A004D6E00 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = ProjetEvent/Event.swift; sourceTree = SOURCE_ROOT; };
-		2F0460132002163A004D6E00 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Events.swift; path = ProjetEvent/Events.swift; sourceTree = SOURCE_ROOT; };
-		2F04601820021662004D6E00 /* CurrentEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentEventsVC.swift; path = ProjetEvent/CurrentEventsVC.swift; sourceTree = SOURCE_ROOT; };
 		2F04601920021662004D6E00 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTableViewController.swift; path = ProjetEvent/EventTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04601A20021662004D6E00 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventViewController.xib; path = ProjetEvent/EventViewController.xib; sourceTree = SOURCE_ROOT; };
 		2F04601B20021662004D6E00 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = ProjetEvent/EventViewController.swift; sourceTree = SOURCE_ROOT; };
-		2F04601C20021662004D6E00 /* CurrentEventsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CurrentEventsVC.xib; path = ProjetEvent/CurrentEventsVC.xib; sourceTree = SOURCE_ROOT; };
 		2F04602420021699004D6E00 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ProjetEvent/MenuViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04602520021699004D6E00 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuViewController.xib; path = ProjetEvent/MenuViewController.xib; sourceTree = SOURCE_ROOT; };
 		2F046028200216A6004D6E00 /* RattingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RattingViewController.xib; path = ProjetEvent/RattingViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -58,6 +65,8 @@
 		2F04602A200216A6004D6E00 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareViewController.swift; path = ProjetEvent/ShareViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04602B200216A6004D6E00 /* RattingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RattingViewController.swift; path = ProjetEvent/RattingViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04603020021730004D6E00 /* LinkedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedTextField.swift; sourceTree = "<group>"; };
+		2F12D9AC2007709E00DA676A /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = ProjetEvent/MenuItem.swift; sourceTree = SOURCE_ROOT; };
+		2F12D9AE200770DE00DA676A /* defaultMenuItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = defaultMenuItems.plist; path = ProjetEvent/defaultMenuItems.plist; sourceTree = SOURCE_ROOT; };
 		2F17F0E71FFCCA2700895E02 /* ProjetEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F17F0EC1FFCCA2700895E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,8 +82,19 @@
 		32CC80181FFCD5DA0090EB8A /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		32CC801A1FFCD5E90090EB8A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEventDeckController.swift; sourceTree = "<group>"; };
+		32CC8037200612B80090EB8A /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		32CC8038200612B80090EB8A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		32CC8039200612B80090EB8A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		32CC803A200612B80090EB8A /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		32CC803B200612B90090EB8A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		32CC803C200612B90090EB8A /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKPlacesKit.framework; sourceTree = "<group>"; };
 		333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjetEvent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2E307186830B6ACCA216EC /* Pods-ProjetEvent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.debug.xcconfig"; sourceTree = "<group>"; };
+		971F69A0200228E5005DE261 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		971F69A1200228E5005DE261 /* AddEventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
+		971F69A520022D94005DE261 /* events.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
+		97BE2B812004B65A00D1FF8F /* CurrentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTableViewCell.swift; sourceTree = "<group>"; };
+		97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +102,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CC803E200612B90090EB8A /* Bolts.framework in Frameworks */,
+				32CC803F200612B90090EB8A /* FBSDKCoreKit.framework in Frameworks */,
+				32CC8041200612B90090EB8A /* FBSDKLoginKit.framework in Frameworks */,
+				32CC8040200612B90090EB8A /* FBSDKShareKit.framework in Frameworks */,
+				32CC8042200612B90090EB8A /* FBSDKPlacesKit.framework in Frameworks */,
+				32CC803D200612B90090EB8A /* FBSDKMessengerShareKit.framework in Frameworks */,
 				F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,7 +138,9 @@
 			children = (
 				04EF8D751FFE6DF400AEF046 /* User.swift */,
 				2F0460122002163A004D6E00 /* Event.swift */,
-				2F0460132002163A004D6E00 /* Events.swift */,
+				2F12D9AC2007709E00DA676A /* MenuItem.swift */,
+				2F12D9AE200770DE00DA676A /* defaultMenuItems.plist */,
+				971F69A520022D94005DE261 /* events.plist */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,11 +162,11 @@
 		2F0460172002164A004D6E00 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				2F04601820021662004D6E00 /* CurrentEventsVC.swift */,
-				2F04601C20021662004D6E00 /* CurrentEventsVC.xib */,
 				2F04601920021662004D6E00 /* EventTableViewController.swift */,
 				2F04601B20021662004D6E00 /* EventViewController.swift */,
 				2F04601A20021662004D6E00 /* EventViewController.xib */,
+				97BE2B802004B44700D1FF8F /* currentTableViewCell */,
+				9759AC4E2006189200033490 /* Form Event */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -214,9 +242,41 @@
 		7DC4EAEDF1097BE2E70B61AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32CC8038200612B80090EB8A /* Bolts.framework */,
+				32CC8039200612B80090EB8A /* FBSDKCoreKit.framework */,
+				32CC803B200612B90090EB8A /* FBSDKLoginKit.framework */,
+				32CC8037200612B80090EB8A /* FBSDKMessengerShareKit.framework */,
+				32CC803C200612B90090EB8A /* FBSDKPlacesKit.framework */,
+				32CC803A200612B80090EB8A /* FBSDKShareKit.framework */,
 				333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		971F69A4200228EE005DE261 /* AddEvent */ = {
+			isa = PBXGroup;
+			children = (
+				971F69A0200228E5005DE261 /* AddEventViewController.swift */,
+				971F69A1200228E5005DE261 /* AddEventViewController.xib */,
+			);
+			path = AddEvent;
+			sourceTree = "<group>";
+		};
+		9759AC4E2006189200033490 /* Form Event */ = {
+			isa = PBXGroup;
+			children = (
+				971F69A4200228EE005DE261 /* AddEvent */,
+			);
+			path = "Form Event";
+			sourceTree = "<group>";
+		};
+		97BE2B802004B44700D1FF8F /* currentTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				97BE2B812004B65A00D1FF8F /* CurrentTableViewCell.swift */,
+				97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */,
+			);
+			path = currentTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,14 +341,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BE2B852004BA4500D1FF8F /* CurrentTableViewCell.xib in Resources */,
 				2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */,
 				2F04601F20021662004D6E00 /* EventViewController.xib in Resources */,
 				2F04602C200216A6004D6E00 /* RattingViewController.xib in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
-				2F04602120021662004D6E00 /* CurrentEventsVC.xib in Resources */,
+				971F69A3200228E5005DE261 /* AddEventViewController.xib in Resources */,
 				04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */,
 				2F04602D200216A6004D6E00 /* ShareViewController.xib in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
+				971F69A620022D94005DE261 /* events.plist in Resources */,
+				2F12D9AF200770DE00DA676A /* defaultMenuItems.plist in Resources */,
 				32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */,
 				2F04602720021699004D6E00 /* MenuViewController.xib in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
@@ -362,16 +425,17 @@
 				2F04602E200216A6004D6E00 /* ShareViewController.swift in Sources */,
 				2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */,
 				2F0460142002163A004D6E00 /* Event.swift in Sources */,
-				2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */,
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
 				32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */,
+				971F69A2200228E5005DE261 /* AddEventViewController.swift in Sources */,
 				2F04602620021699004D6E00 /* MenuViewController.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
+				97BE2B832004B65A00D1FF8F /* CurrentTableViewCell.swift in Sources */,
 				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
 				2F04602F200216A6004D6E00 /* RattingViewController.swift in Sources */,
-				2F0460152002163A004D6E00 /* Events.swift in Sources */,
+				2F12D9AD2007709E00DA676A /* MenuItem.swift in Sources */,
 				2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */,
 				04EF8D761FFE6DF400AEF046 /* User.swift in Sources */,
 			);
@@ -512,13 +576,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = 9549XCZNE7;
 				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+=======
+				DEVELOPMENT_TEAM = T853SDQS2V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ProjetEvent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+>>>>>>> master
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Developers.institute.ProjetEvent;
+				PRODUCT_BUNDLE_IDENTIFIER = ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = ./ProjetEvent/SlideMenu.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,13 +604,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = 9549XCZNE7;
 				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Plist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+=======
+				DEVELOPMENT_TEAM = T853SDQS2V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ProjetEvent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+>>>>>>> master
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Developers.institute.ProjetEvent;
+				PRODUCT_BUNDLE_IDENTIFIER = ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = ./ProjetEvent/SlideMenu.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

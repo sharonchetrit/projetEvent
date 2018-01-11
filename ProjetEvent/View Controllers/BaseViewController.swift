@@ -41,5 +41,19 @@ class BaseViewController: UIViewController {
         
         
     }
+    
+    @IBAction func share(_ sender: FBSDKShareButton)
+    {
+        
+        let content = FBSDKShareLinkContent()
+        content.contentURL = URL(string: "https://sharonchetrit.wixsite.com/event")
+        
+        let dialog: FBSDKShareDialog = FBSDKShareDialog()
+        dialog.fromViewController = self
+        dialog.shareContent = content
+        dialog.mode = .shareSheet
+        dialog.show()
+        
+    }
 
 }

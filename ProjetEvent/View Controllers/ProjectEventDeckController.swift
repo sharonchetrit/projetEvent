@@ -40,7 +40,7 @@ class ProjectEventDeckController: IIViewDeckController
         super.init(coder: aDecoder)
         
         self.leftViewController = self.menuController
-        self.centerViewController = self.profileController
+        self.centerViewController = self.eventController
         self.rightViewController = nil
         
         self.isPanningEnabled = true

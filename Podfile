@@ -6,8 +6,7 @@ target 'ProjetEvent' do
   use_frameworks!
 
   # Pods for ProjetEvent
-
   pod 'ViewDeck'
-
-
+  #pod 'ShareKit'
+  
 end
