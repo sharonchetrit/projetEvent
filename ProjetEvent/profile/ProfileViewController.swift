@@ -42,12 +42,15 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         
         birthTxt.delegate = self
         birthTxt.keyboardType = .numberPad
-        phoneTxt.keyboardType = .numberPad
+        phoneTxt.keyboardType = .phonePad
+        emailTxt.keyboardType = .emailAddress
         
         self.updateConfirmButton()
         self.registerForKeyboardNotifications()
+        
+        imageView.layer.cornerRadius = imageView.frame.width / 4.0
+        imageView.clipsToBounds = true
     }
-    
     
     @IBAction func txtEditingChange(_ sender: UITextField)
     {
@@ -106,6 +109,9 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
             return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
         }
         if textField == phoneTxt {
+            if (phoneTxt?.text?.first == "+"){
+                return !(textField.text!.characters.count > 11 && (string.characters.count ) > range.length)
+            }
             return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
         }
         else {
