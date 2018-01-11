@@ -21,16 +21,28 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hmz-CY-zL0">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hmz-CY-zL0">
                     <rect key="frame" x="0.0" y="61" width="375" height="606"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MPc-B9-SJU"/>
+                        <outlet property="delegate" destination="-1" id="bbY-mr-Vfv"/>
+                    </connections>
                 </tableView>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoJ-wY-gZZ">
                     <rect key="frame" x="0.0" y="17" width="375" height="44"/>
                     <items>
-                        <navigationItem title="Title" id="bAP-ad-k8J">
-                            <barButtonItem key="leftBarButtonItem" title="Menu" id="Bsh-He-vpO"/>
-                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="R2W-md-W8b"/>
+                        <navigationItem title="Project Event" id="bAP-ad-k8J">
+                            <barButtonItem key="leftBarButtonItem" title="Menu" id="Bsh-He-vpO">
+                                <connections>
+                                    <action selector="menu:" destination="-1" id="Hsj-Id-aLo"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="R2W-md-W8b">
+                                <connections>
+                                    <action selector="addEvent:" destination="-1" id="Bog-80-RhG"/>
+                                </connections>
+                            </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>

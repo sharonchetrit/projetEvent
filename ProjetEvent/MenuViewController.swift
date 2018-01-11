@@ -7,17 +7,33 @@
 //
 
 import UIKit
+import StoreKit
+import ViewDeck
+import FBSDKShareKit
 
-class MenuViewController: BaseViewController {
-
-    @IBAction func share(_ sender: Any)
-    {
-        self.performSegue(withIdentifier: "shareSegue", sender: nil)
+class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource
+{
+    @IBOutlet weak var tblView: UITableView!
+    
+    let menuItems = MenuItem.loadSampleFromPlist()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.tblView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
     }
+    
+    
+    
     
     @IBAction func ratting(_ sender: Any)
     {
-        self.performSegue(withIdentifier: "ratingSegue", sender: nil)
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        } else {
+            
+        }
     }
     
     @IBAction func profile(_ sender: Any)
@@ -37,4 +53,31 @@ class MenuViewController: BaseViewController {
             slideMenuController.closeSide(true)
         }
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return self.menuItems.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        
+        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let menuItem = self.menuItems[indexPath.row]
+        
+        cell.textLabel?.text = menuItem.title
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let menuItem = self.menuItems[indexPath.row]
+        
+        self.perform(menuItem.selector, with: nil)
+        
+    }
+    
 }

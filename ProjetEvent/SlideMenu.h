@@ -9,5 +9,7 @@
 #ifndef SlideMenu_h
 #define SlideMenu_h
 
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
 
 #endif /* SlideMenu_h */
