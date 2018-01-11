@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareViewController" customModule="ProjetEvent" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="GZW-zV-5zQ"/>
+                <outlet property="shareFB" destination="6ee-a8-kQB" id="rYE-3W-bYb"/>
+                <outlet property="sharebtn" destination="XLx-NG-Med" id="4X8-Pi-Nut"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="9rz-QH-t1w"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -39,6 +41,14 @@
                     <state key="normal" title="Share"/>
                     <connections>
                         <action selector="shareToEmail:" destination="-1" eventType="touchUpInside" id="sMx-D1-zCv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ee-a8-kQB" customClass="FBSDKShareButton">
+                    <rect key="frame" x="124" y="179" width="127" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="share to Facebook"/>
+                    <connections>
+                        <action selector="share:" destination="-1" eventType="touchUpInside" id="0mZ-hl-9V4"/>
                     </connections>
                 </button>
             </subviews>

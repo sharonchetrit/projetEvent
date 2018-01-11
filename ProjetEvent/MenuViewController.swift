@@ -11,55 +11,24 @@ import StoreKit
 import ViewDeck
 import FBSDKShareKit
 
-class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
+class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource
+{
+    @IBOutlet weak var tblView: UITableView!
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "")
-        cell.textLabel?.text = "share"
-        
-        return cell
-    }
-    
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-        let shareVC = ShareViewController(nibName: "ShareViewController", bundle: Bundle.main)
-        
-        
-        
-        switch(indexPath.section, indexPath.row) {
-            
-        case (0, 0):
-            self.present(shareVC, animated: true, completion: { () in
-                print("Done🔨") })
-       
-        default :
-            break
-        }
-        
-    }
-    
-    
+    let menuItems = MenuItem.loadSampleFromPlist()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tblView.delegate = self
-        tblView.dataSource = self
+        
+        self.tblView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
     }
-    
-    @IBOutlet weak var tblView: UITableView!
     
     
     
     
     @IBAction func ratting(_ sender: Any)
     {
-//        self.performSegue(withIdentifier: "ratingSegue", sender: nil)
         if #available(iOS 10.3, *) {
             SKStoreReviewController.requestReview()
         } else {
@@ -83,6 +52,32 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
             slideMenuController.centerViewController = slideMenuController.eventController
             slideMenuController.closeSide(true)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return self.menuItems.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        
+        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let menuItem = self.menuItems[indexPath.row]
+        
+        cell.textLabel?.text = menuItem.title
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let menuItem = self.menuItems[indexPath.row]
+        
+        self.perform(menuItem.selector, with: nil)
+        
     }
     
 }

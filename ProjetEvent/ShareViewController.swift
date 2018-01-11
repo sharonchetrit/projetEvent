@@ -12,21 +12,9 @@ import MessageUI
 
 class ShareViewController: BaseViewController {
     
-
-    @IBAction func share(_ sender: FBSDKShareButton)
-    {
-        
-        
-        let content = FBSDKShareLinkContent()
-        content.contentURL = URL(string: "https://sharonchetrit.wixsite.com/event")
-        
-        let dialog: FBSDKShareDialog = FBSDKShareDialog()
-        dialog.fromViewController = self
-        dialog.shareContent = content
-        dialog.mode = .shareSheet
-        dialog.show()
-        
-    }
+    @IBOutlet weak var shareFB: FBSDKShareButton!
+    
+    @IBOutlet weak var sharebtn: UIButton!
     
     
     @IBAction func menu(_ sender: Any) {
@@ -45,7 +33,7 @@ class ShareViewController: BaseViewController {
         
         var url : String = "https://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8"
         
-       var subject = "Share my app"
+        var subject = "Share my app"
         var body = "Please download this app here \(url)"
         
        mailVC.setSubject(subject)
