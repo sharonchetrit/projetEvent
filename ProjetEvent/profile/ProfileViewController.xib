@@ -138,18 +138,18 @@
                         <action selector="addPhoto:" destination="-1" eventType="touchUpInside" id="uMJ-7B-VM6"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="mn4-Jj-4RF">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="mn4-Jj-4RF">
                     <rect key="frame" x="16" y="58" width="89" height="83"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mn4-Jj-4RF" secondAttribute="bottom" constant="569" id="2vw-us-S8h"/>
                 <constraint firstItem="mn4-Jj-4RF" firstAttribute="centerY" secondItem="Bwq-w2-llJ" secondAttribute="centerY" id="4R7-cl-ugF"/>
                 <constraint firstItem="ad6-Vn-nOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="5kN-50-kcN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ad6-Vn-nOj" secondAttribute="bottom" priority="250" constant="248" id="Dqn-EE-fFL"/>
                 <constraint firstItem="mn4-Jj-4RF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Hyi-ov-b9Q"/>
                 <constraint firstItem="27C-2S-luZ" firstAttribute="top" secondItem="Bwq-w2-llJ" secondAttribute="bottom" constant="33" id="LOL-Ux-atD"/>
+                <constraint firstItem="27C-2S-luZ" firstAttribute="top" secondItem="mn4-Jj-4RF" secondAttribute="bottom" constant="33" id="NaS-FG-hV0"/>
                 <constraint firstItem="4iD-rf-3NS" firstAttribute="top" secondItem="27C-2S-luZ" secondAttribute="bottom" constant="26" id="Oub-zg-MUk"/>
                 <constraint firstItem="Bwq-w2-llJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="TCV-GZ-LhR"/>
                 <constraint firstItem="do3-zH-KGt" firstAttribute="top" secondItem="4iD-rf-3NS" secondAttribute="bottom" constant="26" id="TSy-68-rto"/>
