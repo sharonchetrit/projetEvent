@@ -54,6 +54,7 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
         let shareAction = UITableViewRowAction(style: .destructive, title: "Share") { (action, index) in
             print("saved action pressed")
             let event : Event = self.events[indexPath.row]
