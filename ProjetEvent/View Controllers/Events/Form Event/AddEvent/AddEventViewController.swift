@@ -16,7 +16,8 @@ protocol AddEventDelegate : NSObjectProtocol // MUST inherit from NSObjectProtoc
 
 class AddEventViewController: BaseViewController,UITextFieldDelegate {
     
-    var event : Event?
+    weak var event : Event?
+    @IBOutlet weak var navBar: UINavigationBar!
     
     @IBOutlet weak var txtFieldEvent: UITextField!
     @IBOutlet weak var txtFieldDepart: UITextField!
@@ -29,7 +30,9 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let event = event {
+        if let event = event
+        {
+            self.navBar.topItem?.title = event.name
             txtFieldEvent.text = event.name
             txtFieldDepart.text = event.depart
             txtFieldArrive.text = event.arrive

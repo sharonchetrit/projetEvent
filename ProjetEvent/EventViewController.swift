@@ -65,16 +65,28 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
         
         let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (action, index) in
             self.events.remove(at: indexPath.row)
+            
+            Event.saveOnUserDefaults(events: self.events)
+            
             self.tableView.deleteRows(at: [indexPath], with: .fade)
         }
         
-        return [deleteAction, shareAction]
+        let editAction = UITableViewRowAction(style: .normal, title: "Edit") { (action, index) in
+            
+            let event : Event = self.events[indexPath.row]
+                        
+            self.performSegue(withIdentifier: "AddEventSegway", sender: event)
+        }
+        
+        return [deleteAction, shareAction, editAction]
     }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let event : Event = self.events[indexPath.row]
+        
+        self.tableView.deselectRow(at: indexPath, animated: false)
         
         self.performSegue(withIdentifier: "AddEventSegway", sender: event)
     }
@@ -97,8 +109,6 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
     
     func updateEvent(event: Event)
     {
-        self.events[(self.tableView.indexPathForSelectedRow?.row)!] = event
-        
         Event.saveOnUserDefaults(events: self.events)
         
         self.tableView.reloadData()
