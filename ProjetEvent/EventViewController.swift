@@ -53,6 +53,25 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
         return cell
     }
     
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let shareAction = UITableViewRowAction(style: .destructive, title: "Share") { (action, index) in
+            print("saved action pressed")
+            let event : Event = self.events[indexPath.row]
+            let activityVC = UIActivityViewController(activityItems: ["\(event.name)"], applicationActivities: nil)
+            activityVC.popoverPresentationController?.sourceView = self.view
+            self.present(activityVC, animated: true, completion: nil)
+        }
+        shareAction.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (action, index) in
+            self.events.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        
+        return [deleteAction, shareAction]
+    }
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let event : Event = self.events[indexPath.row]
