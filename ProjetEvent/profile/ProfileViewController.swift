@@ -50,6 +50,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         
         imageView.layer.cornerRadius = imageView.frame.width / 4.0
         imageView.clipsToBounds = true
+        
     }
     
     @IBAction func txtEditingChange(_ sender: UITextField)

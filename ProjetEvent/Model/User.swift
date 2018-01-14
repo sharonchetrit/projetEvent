@@ -11,8 +11,15 @@ import Foundation
 
 class User : NSObject
 {
+    static var sharedInstance = User()
+    
     var name: String?
     var surname: String?
+    var birthday: String?
+    var email: String?
+    var phone: String?
+    var password: String?
+    var confirmPass: String?
     
 }
 

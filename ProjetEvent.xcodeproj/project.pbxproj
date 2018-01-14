@@ -123,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		048F33DA20076EEB00125050 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				2F17F0F61FFCCA2700895E02 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
 		04EF8D741FFE6D4400AEF046 /* profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,7 +226,7 @@
 				2F17F1021FFCD1A300895E02 /* SlideMenu.h */,
 				2F17F0F11FFCCA2700895E02 /* Assets.xcassets */,
 				2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */,
-				2F17F0F61FFCCA2700895E02 /* Info.plist */,
+				048F33DA20076EEB00125050 /* Plist */,
 			);
 			path = ProjetEvent;
 			sourceTree = "<group>";
@@ -584,6 +592,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
+				DEVELOPMENT_TEAM = 9549XCZNE7;
+				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+=======
 				DEVELOPMENT_TEAM = T853SDQS2V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -591,6 +604,7 @@
 				);
 				INFOPLIST_FILE = ProjetEvent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+>>>>>>> 4dbb063b0f6c6db0dcf10514182ca73f3fd3c701
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -606,6 +620,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
+				DEVELOPMENT_TEAM = 9549XCZNE7;
+				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+=======
 				DEVELOPMENT_TEAM = T853SDQS2V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -613,6 +632,7 @@
 				);
 				INFOPLIST_FILE = ProjetEvent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+>>>>>>> 4dbb063b0f6c6db0dcf10514182ca73f3fd3c701
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
