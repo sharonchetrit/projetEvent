@@ -24,7 +24,7 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         
         self.tblView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        
+        NotificationCenter.default.addObserver(self.tblView, selector: Selector("reloadData"), name: NSNotification.Name(rawValue: "UserProfileUpdated"), object: nil)
         
         self.tblView.register(UINib(nibName: "MenuItemTableViewCell" , bundle: Bundle.main), forCellReuseIdentifier: "MenuItemTableViewCell")
         self.tblView.register(UINib(nibName: "ProfileTableViewCell" , bundle: Bundle.main), forCellReuseIdentifier: "ProfileTableViewCell")

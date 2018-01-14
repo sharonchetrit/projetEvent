@@ -94,6 +94,9 @@ class User : NSObject
     static func saveOnUserDefaults(users: User )
     {
         UserDefaults.standard.set(users.serialize(), forKey: "User")
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "UserProfileUpdated"), object: nil)
+        
     }
 }
 
