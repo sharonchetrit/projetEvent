@@ -27,6 +27,8 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     
     @IBOutlet weak var confirmButton: UIBarButtonItem!
     
+    lazy var user : User = User.sharedInstance
+    
    
     
     override func viewDidLoad() {
@@ -51,7 +53,31 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         imageView.layer.cornerRadius = imageView.frame.width / 4.0
         imageView.clipsToBounds = true
         
+        self.firstNameTxt.text = self.user.name
+        self.surnameTxt.text = self.user.surname
+        self.phoneTxt.text = self.user.phone
+        self.birthTxt.text = self.user.birthday
+        self.passwordTxt.text = self.user.password
+        self.emailTxt.text = self.user.email
+        self.confirmPassTxt.text = self.user.confirmPass
+        
+        if let image : UIImage = self.user.profileImage
+        {
+            self.imageView.image = image
+        }
+//
+//        let image = UIImage(named: "Photo")
+//        let imageData: NSData = UIImagePNGRepresentation(image!)! as NSData
+//
+//        UserDefaults.standard.set(imageData, forKey: "savedImage")
+//
+//        let data = UserDefaults.standard.object(forKey: "savedImage") as! NSData
+//        imageView.image = UIImage(data: data as Data)
+        
+        
+        
     }
+    
     
     @IBAction func txtEditingChange(_ sender: UITextField)
     {
@@ -60,18 +86,17 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     
     @IBAction func confirmAction(_ sender: Any)
     {
-        let pass = passwordTxt.text
-        let confPass = confirmPassTxt.text
+        guard let pass : String = self.passwordTxt.text,
+            let confPass : String = self.confirmPassTxt.text,
+            pass == confPass,
+            let first_name : String = self.firstNameTxt.text,
+            let surname : String = self.surnameTxt.text,
+            let birthday : String = self.birthTxt.text,
+            let email : String = self.emailTxt.text,
+            let phone : String = self.phoneTxt.text,
+            let image : UIImage = self.imageView.image
         
-        if pass == confPass
-        {
-        let alertView = UIAlertController(title: "Welcome", message: "You create an account", preferredStyle: .alert)
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        alertView.addAction(cancelAction)
-        
-        self.present(alertView, animated: true, completion: nil)
-        }else
+        else
         {
             let alertView = UIAlertController(title: "ERROR", message: "Confirm Password Incorect", preferredStyle: .alert)
             
@@ -79,7 +104,28 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
             alertView.addAction(cancelAction)
             
             self.present(alertView, animated: true, completion: nil)
+            
+            return
         }
+        
+        self.user.password = pass
+        self.user.confirmPass = confPass
+        self.user.name = first_name
+        self.user.birthday = birthday
+        self.user.email = email
+        self.user.phone = phone
+        self.user.profileImage = image
+        self.user.surname = surname
+        
+        
+        User.saveOnUserDefaults(users: self.user)
+        
+        let alertView = UIAlertController(title: "Welcome", message: "You updated your account", preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertView.addAction(cancelAction)
+        
+        self.present(alertView, animated: true, completion: nil)
 }
 
     
@@ -111,7 +157,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         }
         if textField == phoneTxt {
             if (phoneTxt?.text?.first == "+"){
-                return !(textField.text!.characters.count > 11 && (string.characters.count ) > range.length)
+                return !(textField.text!.characters.count > 12 && (string.characters.count ) > range.length)
             }
             return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
         }
