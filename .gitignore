@@ -1,3 +1,2 @@
-Pods/Pods.xcodeproj/xcuserdata/davidmamou.xcuserdatad/xcschemes/xcschememanagement.plist
-ProjetEvent.xcodeproj/xcuserdata/davidmamou.xcuserdatad/xcschemes/xcschememanagement.plist
-ProjetEvent.xcworkspace/xcuserdata/davidmamou.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcurserdatad
+*.swp

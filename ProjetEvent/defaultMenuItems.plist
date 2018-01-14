@@ -4,27 +4,35 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>Profile</string>
+		<key>selector</key>
+		<string>profile:</string>
+		<key>cellType</key>
+		<string>ProfileTableViewCell</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Share</string>
 		<key>selector</key>
 		<string>share:</string>
+		<key>cellType</key>
+		<string>MenuItemTableViewCell</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>Rate</string>
 		<key>selector</key>
 		<string>ratting:</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>Profile</string>
-		<key>selector</key>
-		<string>profile:</string>
+		<key>cellType</key>
+		<string>MenuItemTableViewCell</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>Events</string>
 		<key>selector</key>
 		<string>events:</string>
+		<key>cellType</key>
+		<string>MenuItemTableViewCell</string>
 	</dict>
 </array>
 </plist>

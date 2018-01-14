@@ -38,8 +38,6 @@ class BaseViewController: UIViewController {
                 self.view.addSubview(self.mainView)
             }
         }
-        
-        
     }
     
     @IBAction func share(_ sender: FBSDKShareButton)

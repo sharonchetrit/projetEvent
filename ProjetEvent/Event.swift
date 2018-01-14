@@ -64,7 +64,7 @@ class Event: NSObject, NSCoding
             eventArray = NSArray(contentsOf: URL(fileURLWithPath: path)) as! [Any] // we get the array from the file here!!!!!!!
         }
         
-        if let array : [Dictionary<String,Any>] = eventArray as! [Dictionary<String, Any>] {
+        if let array : [Dictionary<String,Any>] = eventArray as? [Dictionary<String, Any>] {
             // Use your dict here
             
             for dict in array
