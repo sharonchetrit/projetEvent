@@ -32,6 +32,21 @@
 		2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */; };
 		2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */; };
 		2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F1051FFCD1E700895E02 /* ViewController.xib */; };
+		32BA591C200B984D008444C0 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */; };
+		32BA591D200B984D008444C0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5917200B984D008444C0 /* Bolts.framework */; };
+		32BA591E200B984D008444C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */; };
+		32BA591F200B984D008444C0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5919200B984D008444C0 /* FBSDKShareKit.framework */; };
+		32BA5920200B984D008444C0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA591A200B984D008444C0 /* FBSDKLoginKit.framework */; };
+		32BA5921200B984E008444C0 /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA591B200B984D008444C0 /* FBSDKPlacesKit.framework */; };
+		32BA592B200B9886008444C0 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5924200B9885008444C0 /* AddEventViewController.swift */; };
+		32BA592C200B9886008444C0 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5925200B9885008444C0 /* AddEventViewController.xib */; };
+		32BA592D200B9886008444C0 /* CurrentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */; };
+		32BA592E200B9886008444C0 /* CurrentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */; };
+		32BA592F200B9886008444C0 /* CurrentEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */; };
+		32BA5930200B9886008444C0 /* CurrentEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA592A200B9885008444C0 /* CurrentEventTableViewCell.swift */; };
+		32BA5933200B98AE008444C0 /* defaultMenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5931200B98AD008444C0 /* defaultMenuItems.plist */; };
+		32BA5934200B98AE008444C0 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5932200B98AD008444C0 /* MenuItem.swift */; };
+		32BA5936200B98C5008444C0 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5935200B98C5008444C0 /* events.plist */; };
 		32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80161FFCD5CC0090EB8A /* Event.storyboard */; };
 		32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80181FFCD5DA0090EB8A /* Menu.storyboard */; };
 		32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC801A1FFCD5E90090EB8A /* Profile.storyboard */; };
@@ -69,6 +84,21 @@
 		2F17F1021FFCD1A300895E02 /* SlideMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenu.h; sourceTree = "<group>"; };
 		2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuVC.swift; sourceTree = "<group>"; };
 		2F17F1051FFCD1E700895E02 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		32BA5917200B984D008444C0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		32BA5919200B984D008444C0 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		32BA591A200B984D008444C0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		32BA591B200B984D008444C0 /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKPlacesKit.framework; sourceTree = "<group>"; };
+		32BA5924200B9885008444C0 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		32BA5925200B9885008444C0 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
+		32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTableViewCell.swift; sourceTree = "<group>"; };
+		32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentTableViewCell.xib; sourceTree = "<group>"; };
+		32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentEventTableViewCell.xib; sourceTree = "<group>"; };
+		32BA592A200B9885008444C0 /* CurrentEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentEventTableViewCell.swift; sourceTree = "<group>"; };
+		32BA5931200B98AD008444C0 /* defaultMenuItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = defaultMenuItems.plist; path = ProjetEvent/defaultMenuItems.plist; sourceTree = SOURCE_ROOT; };
+		32BA5932200B98AD008444C0 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = ProjetEvent/MenuItem.swift; sourceTree = SOURCE_ROOT; };
+		32BA5935200B98C5008444C0 /* events.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
 		32CC80161FFCD5CC0090EB8A /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
 		32CC80181FFCD5DA0090EB8A /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		32CC801A1FFCD5E90090EB8A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -82,6 +112,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BA591D200B984D008444C0 /* Bolts.framework in Frameworks */,
+				32BA591E200B984D008444C0 /* FBSDKCoreKit.framework in Frameworks */,
+				32BA5920200B984D008444C0 /* FBSDKLoginKit.framework in Frameworks */,
+				32BA591F200B984D008444C0 /* FBSDKShareKit.framework in Frameworks */,
+				32BA5921200B984E008444C0 /* FBSDKPlacesKit.framework in Frameworks */,
+				32BA591C200B984D008444C0 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +141,9 @@
 				04EF8D751FFE6DF400AEF046 /* User.swift */,
 				2F0460122002163A004D6E00 /* Event.swift */,
 				2F0460132002163A004D6E00 /* Events.swift */,
+				32BA5935200B98C5008444C0 /* events.plist */,
+				32BA5931200B98AD008444C0 /* defaultMenuItems.plist */,
+				32BA5932200B98AD008444C0 /* MenuItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +170,8 @@
 				2F04601920021662004D6E00 /* EventTableViewController.swift */,
 				2F04601B20021662004D6E00 /* EventViewController.swift */,
 				2F04601A20021662004D6E00 /* EventViewController.xib */,
+				32BA5926200B9885008444C0 /* currentTableViewCell */,
+				32BA5922200B9885008444C0 /* Form Event */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -183,6 +224,34 @@
 			path = ProjetEvent;
 			sourceTree = "<group>";
 		};
+		32BA5922200B9885008444C0 /* Form Event */ = {
+			isa = PBXGroup;
+			children = (
+				32BA5923200B9885008444C0 /* AddEvent */,
+			);
+			path = "Form Event";
+			sourceTree = "<group>";
+		};
+		32BA5923200B9885008444C0 /* AddEvent */ = {
+			isa = PBXGroup;
+			children = (
+				32BA5924200B9885008444C0 /* AddEventViewController.swift */,
+				32BA5925200B9885008444C0 /* AddEventViewController.xib */,
+			);
+			path = AddEvent;
+			sourceTree = "<group>";
+		};
+		32BA5926200B9885008444C0 /* currentTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */,
+				32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */,
+				32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */,
+				32BA592A200B9885008444C0 /* CurrentEventTableViewCell.swift */,
+			);
+			path = currentTableViewCell;
+			sourceTree = "<group>";
+		};
 		32CC801C1FFCD6470090EB8A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +275,12 @@
 		7DC4EAEDF1097BE2E70B61AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32BA5917200B984D008444C0 /* Bolts.framework */,
+				32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */,
+				32BA591A200B984D008444C0 /* FBSDKLoginKit.framework */,
+				32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */,
+				32BA591B200B984D008444C0 /* FBSDKPlacesKit.framework */,
+				32BA5919200B984D008444C0 /* FBSDKShareKit.framework */,
 				333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */,
 			);
 			name = Frameworks;
@@ -274,18 +349,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */,
+				32BA592E200B9886008444C0 /* CurrentTableViewCell.xib in Resources */,
 				2F04601F20021662004D6E00 /* EventViewController.xib in Resources */,
 				2F04602C200216A6004D6E00 /* RattingViewController.xib in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
 				2F04602120021662004D6E00 /* CurrentEventsVC.xib in Resources */,
+				32BA592F200B9886008444C0 /* CurrentEventTableViewCell.xib in Resources */,
 				04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */,
 				2F04602D200216A6004D6E00 /* ShareViewController.xib in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
 				32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */,
+				32BA5936200B98C5008444C0 /* events.plist in Resources */,
+				32BA5933200B98AE008444C0 /* defaultMenuItems.plist in Resources */,
 				2F04602720021699004D6E00 /* MenuViewController.xib in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
 				32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */,
 				32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */,
+				32BA592C200B9886008444C0 /* AddEventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +402,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AFE0AD8EE2498EB733E53D35 /* [CP] Embed Pods Frameworks */ = {
@@ -352,13 +432,16 @@
 			files = (
 				2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */,
 				2F04602E200216A6004D6E00 /* ShareViewController.swift in Sources */,
+				32BA592B200B9886008444C0 /* AddEventViewController.swift in Sources */,
 				2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */,
 				2F0460142002163A004D6E00 /* Event.swift in Sources */,
 				2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */,
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
+				32BA5934200B98AE008444C0 /* MenuItem.swift in Sources */,
 				32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */,
+				32BA5930200B9886008444C0 /* CurrentEventTableViewCell.swift in Sources */,
 				2F04602620021699004D6E00 /* MenuViewController.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
 				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
@@ -366,6 +449,7 @@
 				2F0460152002163A004D6E00 /* Events.swift in Sources */,
 				2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */,
 				04EF8D761FFE6DF400AEF046 /* User.swift in Sources */,
+				32BA592D200B9886008444C0 /* CurrentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +589,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9549XCZNE7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -524,6 +612,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9549XCZNE7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
