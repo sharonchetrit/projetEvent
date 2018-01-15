@@ -9,9 +9,8 @@
 import UIKit
 import StoreKit
 
-
-class RattingViewController: BaseViewController{
-
+class RattingViewController: BaseViewController
+{
     
     @IBAction func menu(_ sender: Any) {
 //        self.viewDeckController?.open(.left, animated: true)

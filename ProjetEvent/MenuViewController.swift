@@ -76,7 +76,7 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         
         if menuItem.cellType == "ProfileTableViewCell"
         {
-            return 175
+            return 265
         }
         
         return 44.0
@@ -85,9 +85,10 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
+        tableView.deselectRow(at: indexPath, animated: false)
         let menuItem = self.menuItems[indexPath.row]
         self.perform(menuItem.selector, with: nil)
-}
+    }
     
     @IBAction func ratting(_ sender: Any)
     {
