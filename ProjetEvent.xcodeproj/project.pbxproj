@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0417830E200CB72800D215DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417830C200CB72800D215DE /* LoginViewController.swift */; };
+		0417830F200CB72800D215DE /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0417830D200CB72800D215DE /* LoginViewController.xib */; };
 		04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */; };
 		04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */; };
+		04C6AD14200F5B0300B1E8D7 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6AD12200F5B0300B1E8D7 /* CreateAccountViewController.swift */; };
+		04C6AD15200F5B0300B1E8D7 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C6AD13200F5B0300B1E8D7 /* CreateAccountViewController.xib */; };
 		04EF8D761FFE6DF400AEF046 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF8D751FFE6DF400AEF046 /* User.swift */; };
 		2F0460142002163A004D6E00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0460122002163A004D6E00 /* Event.swift */; };
 		2F0460152002163A004D6E00 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0460132002163A004D6E00 /* Events.swift */; };
@@ -40,8 +44,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0417830C200CB72800D215DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0417830D200CB72800D215DE /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		04C6AD12200F5B0300B1E8D7 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		04C6AD13200F5B0300B1E8D7 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
 		04EF8D751FFE6DF400AEF046 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12938E0ED91B3ED9FD123E98 /* Pods-ProjetEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.release.xcconfig"; sourceTree = "<group>"; };
 		2F0460122002163A004D6E00 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = ProjetEvent/Event.swift; sourceTree = SOURCE_ROOT; };
@@ -89,6 +97,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C6AD10200F5A9600B1E8D7 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				0417830D200CB72800D215DE /* LoginViewController.xib */,
+				0417830C200CB72800D215DE /* LoginViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		04C6AD11200F5ADF00B1E8D7 /* create Account */ = {
+			isa = PBXGroup;
+			children = (
+				04C6AD12200F5B0300B1E8D7 /* CreateAccountViewController.swift */,
+				04C6AD13200F5B0300B1E8D7 /* CreateAccountViewController.xib */,
+			);
+			path = "create Account";
+			sourceTree = "<group>";
+		};
 		04EF8D741FFE6D4400AEF046 /* profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +142,7 @@
 				2F17F1051FFCD1E700895E02 /* ViewController.xib */,
 				2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */,
 				32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */,
+				04C6AD10200F5A9600B1E8D7 /* login */,
 				2F04602320021689004D6E00 /* Menu */,
 				04EF8D741FFE6D4400AEF046 /* profile */,
 				2F0460172002164A004D6E00 /* Events */,
@@ -171,6 +198,7 @@
 			children = (
 				2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */,
 				2F04603020021730004D6E00 /* LinkedTextField.swift */,
+				04C6AD11200F5ADF00B1E8D7 /* create Account */,
 				2F04601120021626004D6E00 /* View Controllers */,
 				04EF8D771FFE706100AEF046 /* Model */,
 				32CC801C1FFCD6470090EB8A /* Storyboards */,
@@ -275,6 +303,7 @@
 			files = (
 				2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */,
 				2F04601F20021662004D6E00 /* EventViewController.xib in Resources */,
+				04C6AD15200F5B0300B1E8D7 /* CreateAccountViewController.xib in Resources */,
 				2F04602C200216A6004D6E00 /* RattingViewController.xib in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
 				2F04602120021662004D6E00 /* CurrentEventsVC.xib in Resources */,
@@ -285,6 +314,7 @@
 				2F04602720021699004D6E00 /* MenuViewController.xib in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
 				32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */,
+				0417830F200CB72800D215DE /* LoginViewController.xib in Resources */,
 				32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,10 +362,24 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewDeck/ViewDeck.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewDeck.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +400,7 @@
 				2F0460142002163A004D6E00 /* Event.swift in Sources */,
 				2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */,
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
+				04C6AD14200F5B0300B1E8D7 /* CreateAccountViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
 				32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */,
@@ -363,6 +408,7 @@
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
 				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
 				2F04602F200216A6004D6E00 /* RattingViewController.swift in Sources */,
+				0417830E200CB72800D215DE /* LoginViewController.swift in Sources */,
 				2F0460152002163A004D6E00 /* Events.swift in Sources */,
 				2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */,
 				04EF8D761FFE6DF400AEF046 /* User.swift in Sources */,

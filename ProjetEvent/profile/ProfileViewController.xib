@@ -13,7 +13,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="ProjetEvent" customModuleProvider="target">
             <connections>
                 <outlet property="birthTxt" destination="4iD-rf-3NS" id="qXh-Ae-YR8"/>
-                <outlet property="confirmButton" destination="S9i-qZ-xoB" id="hDu-dL-hyX"/>
                 <outlet property="confirmPassTxt" destination="HGC-dl-NbJ" id="0xD-Vm-YVK"/>
                 <outlet property="containerView" destination="i5M-Pr-FkT" id="Stb-ud-E07"/>
                 <outlet property="emailTxt" destination="wHL-E4-mUB" id="miH-ai-uY6"/>
@@ -22,6 +21,7 @@
                 <outlet property="mainView" destination="Orh-Dk-WIm" id="m0i-cx-2Ob"/>
                 <outlet property="passwordTxt" destination="2HO-3o-LEu" id="4bR-LJ-WCZ"/>
                 <outlet property="phoneTxt" destination="IgO-Cy-TYh" id="o00-hl-G2b"/>
+                <outlet property="saveButton" destination="S9i-qZ-xoB" id="hDu-dL-hyX"/>
                 <outlet property="scrollView" destination="wdX-Qt-Yld" id="kxA-8L-A28"/>
                 <outlet property="surnameTxt" destination="rSH-M3-RDY" id="kfm-8S-i4S"/>
             </connections>
@@ -170,7 +170,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="14.5" y="73"/>
+            <point key="canvasLocation" x="-24" y="73"/>
         </view>
         <view contentMode="scaleToFill" id="Orh-Dk-WIm">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -188,10 +188,10 @@
                                     <action selector="menu:" destination="-1" id="kMe-7a-gSm"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem key="rightBarButtonItem" title="Confirm" id="S9i-qZ-xoB">
+                            <barButtonItem key="rightBarButtonItem" title="Save" id="S9i-qZ-xoB">
                                 <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="confirmAction:" destination="-1" id="ntM-Cv-e07"/>
+                                    <action selector="saveAction:" destination="-1" id="ntM-Cv-e07"/>
                                 </connections>
                             </barButtonItem>
                         </navigationItem>

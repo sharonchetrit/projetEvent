@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialRoundedMTBold.ttf">
+            <string>ArialRoundedMTBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ProjetEvent" customModuleProvider="target">
+            <connections>
+                <outlet property="mailTxt" destination="8Aa-OL-aDx" id="eg3-Sr-lVQ"/>
+                <outlet property="mainView" destination="i5M-Pr-FkT" id="g9E-uI-cdl"/>
+                <outlet property="passTxt" destination="Py8-xJ-vzH" id="pg0-ya-YzB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="a6G-Ni-ynC">
+                    <rect key="frame" x="150" y="70" width="75" height="69"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Event" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fui-RV-Ly0">
+                    <rect key="frame" x="90" y="166" width="194.5" height="35"/>
+                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="kpK-dz-FJA">
+                    <rect key="frame" x="45" y="283" width="285" height="82"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Aa-OL-aDx" userLabel="LinkedTextField" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="285" height="40"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="aJX-Sr-c9U"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Xl2-aP-ysH"/>
+                                <outlet property="nextField" destination="Py8-xJ-vzH" id="seL-Xf-Cmt"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Py8-xJ-vzH" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="42" width="285" height="40"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="wY7-4x-Eye"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="EMq-ey-LoA"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap2-iU-o6R">
+                    <rect key="frame" x="117" y="400" width="142" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="qSF-Kg-az1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="Confirm" backgroundImage="Confirm">
+                        <color key="titleColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="confAction:" destination="-1" eventType="touchUpInside" id="F0b-Wa-MsW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KY-lG-H5k" customClass="FBSDKLoginButton">
+                    <rect key="frame" x="36" y="588" width="303" height="44"/>
+                    <connections>
+                        <action selector="Fb:" destination="-1" eventType="touchUpInside" id="2a9-jc-E7d"/>
+                        <outlet property="delegate" destination="-1" id="PAG-6Y-k3N"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFC-Pj-vqH">
+                    <rect key="frame" x="117" y="464" width="140" height="30"/>
+                    <state key="normal" title="Create an account">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="createAction:" destination="-1" eventType="touchUpInside" id="kBq-WM-7j5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ap2-iU-o6R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="117" id="4hQ-A6-Wbe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a6G-Ni-ynC" secondAttribute="trailing" constant="150" id="5lu-LR-0jX"/>
+                <constraint firstItem="Ap2-iU-o6R" firstAttribute="leading" secondItem="zFC-Pj-vqH" secondAttribute="trailing" constant="-140" id="7po-HU-teZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kpK-dz-FJA" secondAttribute="trailing" constant="45" id="Gro-Bq-eCT"/>
+                <constraint firstItem="7KY-lG-H5k" firstAttribute="top" secondItem="zFC-Pj-vqH" secondAttribute="bottom" constant="94" id="HLO-1m-Ux3"/>
+                <constraint firstItem="Fui-RV-Ly0" firstAttribute="top" secondItem="a6G-Ni-ynC" secondAttribute="bottom" constant="27" id="L06-cO-ikv"/>
+                <constraint firstItem="zFC-Pj-vqH" firstAttribute="centerX" secondItem="7KY-lG-H5k" secondAttribute="centerX" id="Mze-pC-lga"/>
+                <constraint firstItem="zFC-Pj-vqH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="117" id="Ntn-tl-xOj"/>
+                <constraint firstItem="7KY-lG-H5k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="36" id="Oo6-T1-cjW"/>
+                <constraint firstItem="kpK-dz-FJA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="Pis-0F-vAi"/>
+                <constraint firstItem="a6G-Ni-ynC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="150" id="QQ3-pe-pXR"/>
+                <constraint firstItem="Fui-RV-Ly0" firstAttribute="centerX" secondItem="a6G-Ni-ynC" secondAttribute="centerX" id="Z1j-pg-UiP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7KY-lG-H5k" secondAttribute="trailing" constant="36" id="Zkk-vD-Snr"/>
+                <constraint firstItem="kpK-dz-FJA" firstAttribute="top" secondItem="Fui-RV-Ly0" secondAttribute="bottom" constant="82" id="hUm-tF-BOR"/>
+                <constraint firstAttribute="bottom" secondItem="zFC-Pj-vqH" secondAttribute="bottom" constant="173" id="ipw-cu-r63"/>
+                <constraint firstItem="a6G-Ni-ynC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="mYU-mt-kZs"/>
+                <constraint firstItem="Ap2-iU-o6R" firstAttribute="top" secondItem="kpK-dz-FJA" secondAttribute="bottom" constant="35" id="tSK-8f-byS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7KY-lG-H5k" secondAttribute="bottom" constant="35" id="vKt-3t-vP3"/>
+                <constraint firstItem="Ap2-iU-o6R" firstAttribute="centerX" secondItem="kpK-dz-FJA" secondAttribute="centerX" id="xn3-r9-Gxb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Confirm" width="330" height="82"/>
+        <image name="Logo" width="68" height="69"/>
+    </resources>
+</document>

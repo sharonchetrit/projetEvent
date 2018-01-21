@@ -25,7 +25,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var confirmPassTxt: UITextField!
     
-    @IBOutlet weak var confirmButton: UIBarButtonItem!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     lazy var user : User = User.sharedInstance
     
@@ -47,7 +47,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         phoneTxt.keyboardType = .phonePad
         emailTxt.keyboardType = .emailAddress
         
-        self.updateConfirmButton()
+        self.updateSaveButton()
         self.registerForKeyboardNotifications()
         
         imageView.layer.cornerRadius = imageView.frame.width / 4.0
@@ -81,10 +81,10 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     
     @IBAction func txtEditingChange(_ sender: UITextField)
     {
-        updateConfirmButton()
+        updateSaveButton()
     }
     
-    @IBAction func confirmAction(_ sender: Any)
+    @IBAction func saveAction(_ sender: Any)
     {
         guard let pass : String = self.passwordTxt.text,
             let confPass : String = self.confirmPassTxt.text,
@@ -220,7 +220,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         }
         return true
     }
-    func updateConfirmButton()
+    func updateSaveButton()
     {
         let name = firstNameTxt.text ?? ""
         let surname = surnameTxt.text ?? ""
@@ -230,7 +230,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         let password = passwordTxt.text ?? ""
         let confirmPass = confirmPassTxt.text ?? ""
         
-        confirmButton.isEnabled = !name.isEmpty && !surname.isEmpty && !birth.isEmpty && !email.isEmpty && !phone.isEmpty && !password.isEmpty && !confirmPass.isEmpty
+        saveButton.isEnabled = !name.isEmpty && !surname.isEmpty && !birth.isEmpty && !email.isEmpty && !phone.isEmpty && !password.isEmpty && !confirmPass.isEmpty
     }
     
     

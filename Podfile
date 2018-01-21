@@ -8,6 +8,9 @@ target 'ProjetEvent' do
   # Pods for ProjetEvent
 
   pod 'ViewDeck'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
 
 
 end

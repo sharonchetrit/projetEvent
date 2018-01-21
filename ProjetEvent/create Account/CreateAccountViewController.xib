@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAccountViewController" customModule="ProjetEvent" customModuleProvider="target">
+            <connections>
+                <outlet property="birthTxt" destination="jkb-pa-OIk" id="TFX-QG-NrI"/>
+                <outlet property="confirmButton" destination="qNT-4f-xig" id="nUn-5s-nlM"/>
+                <outlet property="confirmPassTxt" destination="vcL-XJ-uaE" id="25I-Wp-MKe"/>
+                <outlet property="containerView" destination="Hw3-D1-xLn" id="hrt-2P-TIk"/>
+                <outlet property="emailTxt" destination="ryA-TT-BQU" id="Rmh-IU-PeL"/>
+                <outlet property="firstNameTxt" destination="yY6-d9-7iU" id="0ud-XS-N4D"/>
+                <outlet property="imageView" destination="bK5-4T-koG" id="mNt-Ko-qcC"/>
+                <outlet property="mainView" destination="i5M-Pr-FkT" id="mLQ-f1-g97"/>
+                <outlet property="passwordTxt" destination="0En-dS-29a" id="sX6-kE-fyJ"/>
+                <outlet property="phoneTxt" destination="8Lc-IN-22W" id="1BM-yd-3rH"/>
+                <outlet property="scroll" destination="7YL-rb-YIh" id="h9o-vg-4uU"/>
+                <outlet property="surnameTxt" destination="nUJ-dF-31U" id="tAP-18-PTG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7YL-rb-YIh">
+                    <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                </scrollView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urh-qg-BOY">
+                    <rect key="frame" x="0.0" y="20" width="375" height="48"/>
+                    <items>
+                        <navigationItem title="Inscription" id="OgX-73-pSw">
+                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cg2-bI-D3f">
+                                <connections>
+                                    <action selector="cancelButton:" destination="-1" id="hPl-vu-MaJ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" enabled="NO" title="Confirm" id="qNT-4f-xig">
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="confirmAction:" destination="-1" id="g1g-hG-Jxw"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7YL-rb-YIh" secondAttribute="bottom" id="Igd-nd-7lo"/>
+                <constraint firstItem="urh-qg-BOY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TRm-jR-CNo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7YL-rb-YIh" secondAttribute="trailing" id="eXO-V4-gGy"/>
+                <constraint firstItem="7YL-rb-YIh" firstAttribute="top" secondItem="urh-qg-BOY" secondAttribute="bottom" id="iCy-dd-HRO"/>
+                <constraint firstItem="7YL-rb-YIh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nEn-xV-yuv"/>
+                <constraint firstItem="7YL-rb-YIh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="48" id="olH-eb-zfz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="urh-qg-BOY" secondAttribute="trailing" id="sVx-9V-O9Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="urh-qg-BOY" secondAttribute="top" id="uAm-bb-nWw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="304.5" y="56.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="Hw3-D1-xLn">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="770"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EgO-to-eJk">
+                    <rect key="frame" x="16" y="185" width="343" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="first name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yY6-d9-7iU" userLabel="Linked Text Field" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            <connections>
+                                <action selector="TxtEdittingChange:" destination="-1" eventType="editingDidEnd" id="M2Q-Yg-AA9"/>
+                                <outlet property="delegate" destination="-1" id="QMG-mN-sVW"/>
+                                <outlet property="nextField" destination="nUJ-dF-31U" id="YnS-94-fDu"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUJ-dF-31U" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="30" width="343" height="30"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="nickname"/>
+                            <connections>
+                                <action selector="TxtEdittingChange:" destination="-1" eventType="editingDidEnd" id="bfj-PX-r9s"/>
+                                <outlet property="delegate" destination="-1" id="nvL-ta-ktf"/>
+                                <outlet property="nextField" destination="jkb-pa-OIk" id="WpN-eC-GWo"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jkb-pa-OIk" userLabel="Next Field" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
+                    <rect key="frame" x="16" y="271" width="343" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="TxtEdittingChange:" destination="-1" eventType="editingDidEnd" id="B4V-0k-zgH"/>
+                        <outlet property="delegate" destination="-1" id="WRe-vP-S3W"/>
+                        <outlet property="nextField" destination="ryA-TT-BQU" id="Ald-qQ-oxx"/>
+                    </connections>
+                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A1r-ch-AAj">
+                    <rect key="frame" x="16" y="327" width="343" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryA-TT-BQU" userLabel="Next Field" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            <connections>
+                                <action selector="TxtEdittingChange:" destination="-1" eventType="editingDidEnd" id="WPU-Id-BhI"/>
+                                <outlet property="delegate" destination="-1" id="iPe-yJ-Wxo"/>
+                                <outlet property="nextField" destination="8Lc-IN-22W" id="3wZ-to-G8A"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Lc-IN-22W" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="30" width="343" height="30"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                            <connections>
+                                <action selector="TxtEdittingChange:" destination="-1" eventType="editingDidEnd" id="cvb-oW-Jlf"/>
+                                <outlet property="delegate" destination="-1" id="frT-db-rJL"/>
+                                <outlet property="nextField" destination="0En-dS-29a" id="2Cx-ro-Vhc"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XWc-q8-Ejc">
+                    <rect key="frame" x="16" y="413" width="343" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0En-dS-29a" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <connections>
+                                <action selector="TxtEdittingChange:" destination="-1" eventType="editingDidEnd" id="XoR-3R-sag"/>
+                                <outlet property="delegate" destination="-1" id="yhi-PL-rRo"/>
+                                <outlet property="nextField" destination="vcL-XJ-uaE" id="Lqg-Oo-LCJ"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vcL-XJ-uaE" userLabel="Next Field" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="30" width="343" height="30"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <connections>
+                                <action selector="TxtEdittingChange:" destination="-1" eventType="editingDidEnd" id="dUh-rO-N74"/>
+                                <outlet property="delegate" destination="-1" id="P9m-Tr-gDF"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32U-hy-zZK">
+                    <rect key="frame" x="16" y="31" width="209" height="83"/>
+                    <state key="normal" title="+ Add a photo">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addPhoto:" destination="-1" eventType="touchUpInside" id="AxD-T6-F5d"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="bK5-4T-koG">
+                    <rect key="frame" x="16" y="31" width="89" height="83"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="L2C-Ms-IXo" firstAttribute="trailing" secondItem="jkb-pa-OIk" secondAttribute="trailing" constant="16" id="4Zz-l1-qeg"/>
+                <constraint firstItem="EgO-to-eJk" firstAttribute="top" secondItem="bK5-4T-koG" secondAttribute="bottom" constant="71" id="6on-q8-2Mi"/>
+                <constraint firstItem="L2C-Ms-IXo" firstAttribute="bottom" secondItem="XWc-q8-Ejc" secondAttribute="bottom" priority="250" constant="297" id="7fn-Z2-zHs"/>
+                <constraint firstItem="L2C-Ms-IXo" firstAttribute="trailing" secondItem="EgO-to-eJk" secondAttribute="trailing" constant="16" id="DwL-tW-2ds"/>
+                <constraint firstItem="jkb-pa-OIk" firstAttribute="top" secondItem="EgO-to-eJk" secondAttribute="bottom" constant="26" id="Edp-TK-i8J"/>
+                <constraint firstItem="L2C-Ms-IXo" firstAttribute="trailing" secondItem="A1r-ch-AAj" secondAttribute="trailing" constant="16" id="KLT-hs-XJR"/>
+                <constraint firstItem="32U-hy-zZK" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="M7P-Nq-eET"/>
+                <constraint firstItem="A1r-ch-AAj" firstAttribute="top" secondItem="jkb-pa-OIk" secondAttribute="bottom" constant="26" id="Rj9-DO-AVt"/>
+                <constraint firstItem="XWc-q8-Ejc" firstAttribute="top" secondItem="A1r-ch-AAj" secondAttribute="bottom" constant="26" id="SMd-md-fZP"/>
+                <constraint firstItem="jkb-pa-OIk" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="SR5-bZ-dli"/>
+                <constraint firstItem="L2C-Ms-IXo" firstAttribute="trailing" secondItem="XWc-q8-Ejc" secondAttribute="trailing" constant="16" id="UlY-lR-r4g"/>
+                <constraint firstItem="XWc-q8-Ejc" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="WtG-03-Jny"/>
+                <constraint firstItem="L2C-Ms-IXo" firstAttribute="trailing" secondItem="32U-hy-zZK" secondAttribute="trailing" constant="150" id="XId-4Q-9p6"/>
+                <constraint firstItem="A1r-ch-AAj" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="YXD-vx-XCG"/>
+                <constraint firstItem="bK5-4T-koG" firstAttribute="centerY" secondItem="32U-hy-zZK" secondAttribute="centerY" id="ciH-9I-e1B"/>
+                <constraint firstItem="32U-hy-zZK" firstAttribute="top" secondItem="L2C-Ms-IXo" secondAttribute="top" constant="11" id="hPo-HC-nfT"/>
+                <constraint firstItem="bK5-4T-koG" firstAttribute="centerX" secondItem="32U-hy-zZK" secondAttribute="centerX" constant="-60" id="qWE-Kx-pb7"/>
+                <constraint firstItem="EgO-to-eJk" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="sEP-iK-X6a"/>
+                <constraint firstItem="EgO-to-eJk" firstAttribute="top" secondItem="32U-hy-zZK" secondAttribute="bottom" constant="71" id="x2Y-n7-0RT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="L2C-Ms-IXo"/>
+            <point key="canvasLocation" x="-464.5" y="108"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Photo" width="89" height="83"/>
+    </resources>
+</document>
