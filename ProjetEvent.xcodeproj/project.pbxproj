@@ -64,7 +64,7 @@
 		04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		04EF8D751FFE6DF400AEF046 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12938E0ED91B3ED9FD123E98 /* Pods-ProjetEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.release.xcconfig"; sourceTree = "<group>"; };
-		2F0460122002163A004D6E00 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "ProjetEvent/View Controllers/Form CreditCard/Event.swift"; sourceTree = SOURCE_ROOT; };
+		2F0460122002163A004D6E00 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "ProjetEvent/CreditCard/CreditCard/Form CreditCard/Event.swift"; sourceTree = SOURCE_ROOT; };
 		2F04601920021662004D6E00 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTableViewController.swift; path = ProjetEvent/EventTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04601A20021662004D6E00 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventViewController.xib; path = ProjetEvent/EventViewController.xib; sourceTree = SOURCE_ROOT; };
 		2F04601B20021662004D6E00 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = ProjetEvent/EventViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -110,9 +110,9 @@
 		97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentTableViewCell.xib; sourceTree = "<group>"; };
 		97D875FD2014C28500B8811B /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		97D875FF2014C9C700B8811B /* creditCards.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = creditCards.plist; sourceTree = "<group>"; };
-		97D876022014CE3B00B8811B /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
-		97D876032014CE3B00B8811B /* CreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardViewController.xib; sourceTree = "<group>"; };
-		97D876062014D1C500B8811B /* CreditCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewController.swift; sourceTree = "<group>"; };
+		97D876022014CE3B00B8811B /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditCardViewController.swift; path = ProjetEvent/CreditCard/CreditCard/CreditCardViewController.swift; sourceTree = "<group>"; };
+		97D876032014CE3B00B8811B /* CreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CreditCardViewController.xib; path = ProjetEvent/CreditCard/CreditCard/CreditCardViewController.xib; sourceTree = "<group>"; };
+		97D876062014D1C500B8811B /* CreditCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditCardTableViewController.swift; path = ProjetEvent/CreditCard/CreditCard/CreditCardTableViewController.swift; sourceTree = "<group>"; };
 		97D876092014D20C00B8811B /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
 		97D8760A2014D20C00B8811B /* CreditCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,7 +222,7 @@
 				2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */,
 				2F04603020021730004D6E00 /* LinkedTextField.swift */,
 				2F04601120021626004D6E00 /* View Controllers */,
-				979E14422015EDF800C77C16 /* David */,
+				979E14422015EDF800C77C16 /* CreditCard */,
 				04EF8D771FFE706100AEF046 /* Model */,
 				32CC801C1FFCD6470090EB8A /* Storyboards */,
 				2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */,
@@ -292,15 +292,17 @@
 				9765862920153C0D005734C9 /* AddCreditCardViewController.swift */,
 				9765862A20153C0D005734C9 /* AddCreditCardViewController.xib */,
 			);
-			path = "Form CreditCard";
+			name = "Form CreditCard";
+			path = "ProjetEvent/CreditCard/CreditCard/Form CreditCard";
 			sourceTree = "<group>";
 		};
-		979E14422015EDF800C77C16 /* David */ = {
+		979E14422015EDF800C77C16 /* CreditCard */ = {
 			isa = PBXGroup;
 			children = (
 				97D876012014CDED00B8811B /* CreditCard */,
 			);
-			path = David;
+			name = CreditCard;
+			path = "CreditCard/CreditCard/Form CreditCard";
 			sourceTree = "<group>";
 		};
 		97BE2B802004B44700D1FF8F /* currentTableViewCell */ = {
@@ -321,7 +323,8 @@
 				9765862820153BBC005734C9 /* Form CreditCard */,
 				97D876082014D1D800B8811B /* creditCardTableVIewCell */,
 			);
-			path = CreditCard;
+			name = CreditCard;
+			path = ../../../..;
 			sourceTree = "<group>";
 		};
 		97D876082014D1D800B8811B /* creditCardTableVIewCell */ = {
@@ -330,7 +333,8 @@
 				97D876092014D20C00B8811B /* CreditCardTableViewCell.swift */,
 				97D8760A2014D20C00B8811B /* CreditCardTableViewCell.xib */,
 			);
-			path = creditCardTableVIewCell;
+			name = creditCardTableVIewCell;
+			path = ProjetEvent/CreditCard/CreditCard/creditCardTableVIewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
