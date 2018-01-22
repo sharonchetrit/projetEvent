@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class CreateAccountViewController: BaseViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
@@ -49,7 +52,7 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
         if textField == birthTxt {
             
             // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
-            if (birthTxt?.text?.characters.count == 2) || (birthTxt?.text?.characters.count == 5) {
+            if (birthTxt?.text?.count == 2) || (birthTxt?.text?.count == 5) {
                 //Handle backspace being pressed
                 if !(string == "") {
                     // append the text
@@ -77,41 +80,9 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
     
     @IBAction func confirmAction(_ sender: Any)
     {
-        performSegue(withIdentifier: "inscriptionToMainSegue", sender: nil)
-        
-        guard let pass : String = self.passwordTxt.text,
-            let confPass : String = self.confirmPassTxt.text,
-            pass == confPass,
-            let first_name : String = self.firstNameTxt.text,
-            let surname : String = self.surnameTxt.text,
-            let birthday : String = self.birthTxt.text,
-            let email : String = self.emailTxt.text,
-            let phone : String = self.phoneTxt.text,
-            let image : UIImage = self.imageView.image
-            else {
-                let alertView = UIAlertController(title: "ERROR", message: "Confirm Password Incorect", preferredStyle: .alert)
-                
-                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-                alertView.addAction(cancelAction)
-                
-                self.present(alertView, animated: true, completion: nil)
-                
+            handleRegister()
+                performSegue(withIdentifier: "inscriptionToMainSegue", sender: nil)
                 return
-                
-        }
-        
-        
-        self.user.password = pass
-        self.user.confirmPass = confPass
-        self.user.name = first_name
-        self.user.birthday = birthday
-        self.user.email = email
-        self.user.phone = phone
-        self.user.profileImage = image
-        self.user.surname = surname
-        
-        
-        User.saveOnUserDefaults(users: self.user)
     }
     
     func updateConfirmButton()
@@ -185,6 +156,65 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
             }
         }
         return true
+    }
+    
+    func handleRegister()
+    {
+        guard let firstName = firstNameTxt.text,
+            let surname = surnameTxt.text,
+            let birthday = birthTxt.text,
+            let email = emailTxt.text,
+            let phone = phoneTxt.text,
+            let pass = passwordTxt.text,
+            let image : UIImage = self.imageView.image,
+            let confPass = confirmPassTxt.text
+            else {return}
+        Auth.auth().createUser(withEmail: email, password: pass){ (user, error) in
+            if error != nil
+            {
+                print(error as Any)
+                return
+            }
+            guard let uid = user?.uid else
+            {return}
+            
+            let ref = Database.database().reference(fromURL: "https://projevent-457b4.firebaseio.com/")
+            
+            let userRef = ref.child("User").child(uid)
+            
+            let user = ["name": "\(firstName)",
+                "age": birthday,
+                "email": email,
+                "phone": phone,
+                "surname": surname,
+                "confirmPass": confPass]
+                
+            
+            userRef.updateChildValues(user, withCompletionBlock: {(err,ref) in
+                if err != nil
+                {
+                    print(err as Any)
+                    return
+                }
+                
+                
+                self.user.password = pass
+                self.user.confirmPass = confPass
+                self.user.name = firstName
+                self.user.birthday = birthday
+                self.user.email = email
+                self.user.phone = phone
+                self.user.profileImage = image
+                self.user.surname = surname
+                
+                
+                User.saveOnUserDefaults(users: self.user)
+
+                print("user saved succesfully")
+            })
+            self.navigationController?.popViewController(animated: true)
+        }
+        
     }
     
 }

@@ -13,6 +13,7 @@
 		04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */; };
 		04C6AD14200F5B0300B1E8D7 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6AD12200F5B0300B1E8D7 /* CreateAccountViewController.swift */; };
 		04C6AD15200F5B0300B1E8D7 /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C6AD13200F5B0300B1E8D7 /* CreateAccountViewController.xib */; };
+		04C848FD2015D0B40063E59F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C848FC2015D0B30063E59F /* GoogleService-Info.plist */; };
 		04EF8D761FFE6DF400AEF046 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF8D751FFE6DF400AEF046 /* User.swift */; };
 		2F0460142002163A004D6E00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0460122002163A004D6E00 /* Event.swift */; };
 		2F0460152002163A004D6E00 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0460132002163A004D6E00 /* Events.swift */; };
@@ -50,6 +51,7 @@
 		04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		04C6AD12200F5B0300B1E8D7 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		04C6AD13200F5B0300B1E8D7 /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		04C848FC2015D0B30063E59F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		04EF8D751FFE6DF400AEF046 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12938E0ED91B3ED9FD123E98 /* Pods-ProjetEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.release.xcconfig"; sourceTree = "<group>"; };
 		2F0460122002163A004D6E00 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = ProjetEvent/Event.swift; sourceTree = SOURCE_ROOT; };
@@ -206,6 +208,7 @@
 				2F17F1021FFCD1A300895E02 /* SlideMenu.h */,
 				2F17F0F11FFCCA2700895E02 /* Assets.xcassets */,
 				2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */,
+				04C848FC2015D0B30063E59F /* GoogleService-Info.plist */,
 				2F17F0F61FFCCA2700895E02 /* Info.plist */,
 			);
 			path = ProjetEvent;
@@ -310,6 +313,7 @@
 				04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */,
 				2F04602D200216A6004D6E00 /* ShareViewController.xib in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
+				04C848FD2015D0B40063E59F /* GoogleService-Info.plist in Resources */,
 				32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */,
 				2F04602720021699004D6E00 /* MenuViewController.xib in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
@@ -369,7 +373,11 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewDeck/ViewDeck.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -380,7 +388,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewDeck.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

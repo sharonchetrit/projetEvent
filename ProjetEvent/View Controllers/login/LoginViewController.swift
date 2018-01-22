@@ -8,6 +8,9 @@
 
 import UIKit
 import FBSDKLoginKit
+import Firebase
+import FirebaseAuth
+
 
 class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
 
@@ -24,7 +27,7 @@ class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextF
     
     @IBAction func confAction(_ sender: Any)
     {
-        performSegue(withIdentifier: "loginToMainSegue", sender: nil)
+        handleLogin()
     }
     
     @IBAction func createAction(_ sender: Any)
@@ -38,9 +41,26 @@ class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextF
     }
     
 
-    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!)
-    {
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
         
+        let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+//            self.fetchFB()
+            print(credential)
+
+        }
+        
+        
+        
+        self.performSegue(withIdentifier: "loginToMainSegue", sender: nil)
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton)
@@ -63,5 +83,38 @@ class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextF
         }
         return true
     }
+    
+    func handleLogin()
+    {
+        guard let email = mailTxt.text,
+            let password = passTxt.text else {return}
+        
+        Auth.auth().signIn(withEmail: email, password: password, completion: { [weak self] (user, error)  in
+            if error != nil
+            {
+                let alertView = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertView.addAction(okAction)
+                
+                self?.present(alertView, animated: true, completion: nil)
+                
+                return
+            }
+            self?.performSegue(withIdentifier: "loginToMainSegue", sender: nil)
+        })
+    }
+    
+    
+    func fetchFB()
+    {
+        if (FBSDKAccessToken.current() != nil) {
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name"]).start(completionHandler: {(_ connection: FBSDKGraphRequestConnection, _ result: Any, _ error: Error?) -> Void in
+                if error == nil {
 
+                    print("fetched user:\(result)")
+                }
+                } as! FBSDKGraphRequestHandler)
+        }
+    }
 }

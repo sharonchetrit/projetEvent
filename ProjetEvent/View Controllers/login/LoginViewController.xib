@@ -84,7 +84,6 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KY-lG-H5k" customClass="FBSDKLoginButton">
                     <rect key="frame" x="36" y="588" width="303" height="44"/>
                     <connections>
-                        <action selector="Fb:" destination="-1" eventType="touchUpInside" id="2a9-jc-E7d"/>
                         <outlet property="delegate" destination="-1" id="PAG-6Y-k3N"/>
                     </connections>
                 </button>
