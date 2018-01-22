@@ -24,6 +24,41 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
     @IBOutlet weak var txtFieldArrive: UITextField!
     @IBOutlet weak var txtFieldDescription: UITextField!
     
+    let datepicker = UIDatePicker()
+    let datepicker2 = UIDatePicker()
+    
+    func createDatePicker(){
+        
+        datepicker.datePickerMode = .date
+        datepicker2.datePickerMode = .date
+        
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(buttonPressed))
+        toolBar.setItems([doneButton], animated: false)
+        
+        txtFieldDepart.inputAccessoryView = toolBar
+        txtFieldDepart.inputView = datepicker
+        
+        txtFieldArrive.inputAccessoryView = toolBar
+        txtFieldArrive.inputView = datepicker2
+    }
+    
+    @objc func buttonPressed() {
+        
+        let dateFormatteur = DateFormatter()
+        dateFormatteur.dateStyle = .short
+        dateFormatteur.timeStyle = .none
+        txtFieldDepart.text = dateFormatteur.string(from: datepicker.date)
+        self.view.endEditing(true)
+        
+
+//        var endDate = dateFormatteur.calendar.date(byAdding: .day, value: 1, to: datepicker.date)
+        txtFieldArrive.text = dateFormatteur.string(from: datepicker2.date)
+        self.view.endEditing(true)
+
+    }
     weak var delegate : AddEventDelegate?
     
     
@@ -39,6 +74,7 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
             txtFieldDescription.text = event.eventDescription
         }
         updateSaveButtonState()
+        createDatePicker()
         
     }
     
@@ -112,47 +148,6 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
         
         return true
     }
-    
-    
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        //Format Date of Birth dd-MM-yyyy
-        
-        //initially identify your textfield
-        
-        if textField == txtFieldDepart {
-            
-            // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
-            if (txtFieldDepart?.text?.characters.count == 2) || (txtFieldDepart?.text?.characters.count == 5) {
-                //Handle backspace being pressed
-                if !(string == "") {
-                    // append the text
-                    txtFieldDepart?.text = (txtFieldDepart?.text)! + "-"
-                }
-            }
-            // check the condition not exceed 9 chars
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
-        }
-        if textField == txtFieldArrive {
-            
-            // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
-            if (txtFieldArrive?.text?.characters.count == 2) || (txtFieldArrive?.text?.characters.count == 5) {
-                //Handle backspace being pressed
-                if !(string == "") {
-                    // append the text
-                    txtFieldArrive?.text = (txtFieldArrive?.text)! + "-"
-                }
-            }
-            // check the condition not exceed 9 chars
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
-        }
-            
-        else {
-            return true
-        }
-        
-    }
-    
     
     
     @IBAction func textEditingChanged(_ sender: UITextField) {

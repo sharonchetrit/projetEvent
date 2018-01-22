@@ -44,8 +44,18 @@
 		971F69A2200228E5005DE261 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F69A0200228E5005DE261 /* AddEventViewController.swift */; };
 		971F69A3200228E5005DE261 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 971F69A1200228E5005DE261 /* AddEventViewController.xib */; };
 		971F69A620022D94005DE261 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 971F69A520022D94005DE261 /* events.plist */; };
+		9765862B20153C0D005734C9 /* AddCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9765862920153C0D005734C9 /* AddCreditCardViewController.swift */; };
+		9765862C20153C0D005734C9 /* AddCreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9765862A20153C0D005734C9 /* AddCreditCardViewController.xib */; };
+		979E14412015D0CA00C77C16 /* CreditCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979E14402015D0CA00C77C16 /* CreditCard.storyboard */; };
 		97BE2B832004B65A00D1FF8F /* CurrentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE2B812004B65A00D1FF8F /* CurrentTableViewCell.swift */; };
 		97BE2B852004BA4500D1FF8F /* CurrentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */; };
+		97D875FE2014C28500B8811B /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D875FD2014C28500B8811B /* CreditCard.swift */; };
+		97D876002014C9C700B8811B /* creditCards.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97D875FF2014C9C700B8811B /* creditCards.plist */; };
+		97D876042014CE3B00B8811B /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D876022014CE3B00B8811B /* CreditCardViewController.swift */; };
+		97D876052014CE3B00B8811B /* CreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D876032014CE3B00B8811B /* CreditCardViewController.xib */; };
+		97D876072014D1C500B8811B /* CreditCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D876062014D1C500B8811B /* CreditCardTableViewController.swift */; };
+		97D8760B2014D20C00B8811B /* CreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D876092014D20C00B8811B /* CreditCardTableViewCell.swift */; };
+		97D8760C2014D20C00B8811B /* CreditCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D8760A2014D20C00B8811B /* CreditCardTableViewCell.xib */; };
 		F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +64,7 @@
 		04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		04EF8D751FFE6DF400AEF046 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12938E0ED91B3ED9FD123E98 /* Pods-ProjetEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.release.xcconfig"; sourceTree = "<group>"; };
-		2F0460122002163A004D6E00 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = ProjetEvent/Event.swift; sourceTree = SOURCE_ROOT; };
+		2F0460122002163A004D6E00 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = "ProjetEvent/View Controllers/Form CreditCard/Event.swift"; sourceTree = SOURCE_ROOT; };
 		2F04601920021662004D6E00 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTableViewController.swift; path = ProjetEvent/EventTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04601A20021662004D6E00 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventViewController.xib; path = ProjetEvent/EventViewController.xib; sourceTree = SOURCE_ROOT; };
 		2F04601B20021662004D6E00 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = ProjetEvent/EventViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -93,8 +103,18 @@
 		971F69A0200228E5005DE261 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		971F69A1200228E5005DE261 /* AddEventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
 		971F69A520022D94005DE261 /* events.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
+		9765862920153C0D005734C9 /* AddCreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCreditCardViewController.swift; sourceTree = "<group>"; };
+		9765862A20153C0D005734C9 /* AddCreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCreditCardViewController.xib; sourceTree = "<group>"; };
+		979E14402015D0CA00C77C16 /* CreditCard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreditCard.storyboard; sourceTree = "<group>"; };
 		97BE2B812004B65A00D1FF8F /* CurrentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTableViewCell.swift; sourceTree = "<group>"; };
 		97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentTableViewCell.xib; sourceTree = "<group>"; };
+		97D875FD2014C28500B8811B /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		97D875FF2014C9C700B8811B /* creditCards.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = creditCards.plist; sourceTree = "<group>"; };
+		97D876022014CE3B00B8811B /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		97D876032014CE3B00B8811B /* CreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardViewController.xib; sourceTree = "<group>"; };
+		97D876062014D1C500B8811B /* CreditCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewController.swift; sourceTree = "<group>"; };
+		97D876092014D20C00B8811B /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
+		97D8760A2014D20C00B8811B /* CreditCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +149,11 @@
 			isa = PBXGroup;
 			children = (
 				04EF8D751FFE6DF400AEF046 /* User.swift */,
-				2F0460122002163A004D6E00 /* Event.swift */,
+				97D875FD2014C28500B8811B /* CreditCard.swift */,
 				2F12D9AC2007709E00DA676A /* MenuItem.swift */,
+				2F0460122002163A004D6E00 /* Event.swift */,
 				2F12D9AE200770DE00DA676A /* defaultMenuItems.plist */,
+				97D875FF2014C9C700B8811B /* creditCards.plist */,
 				971F69A520022D94005DE261 /* events.plist */,
 			);
 			path = Model;
@@ -200,6 +222,7 @@
 				2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */,
 				2F04603020021730004D6E00 /* LinkedTextField.swift */,
 				2F04601120021626004D6E00 /* View Controllers */,
+				979E14422015EDF800C77C16 /* David */,
 				04EF8D771FFE706100AEF046 /* Model */,
 				32CC801C1FFCD6470090EB8A /* Storyboards */,
 				2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */,
@@ -216,6 +239,7 @@
 			children = (
 				2F17F0EE1FFCCA2700895E02 /* Main.storyboard */,
 				32CC80161FFCD5CC0090EB8A /* Event.storyboard */,
+				979E14402015D0CA00C77C16 /* CreditCard.storyboard */,
 				32CC80181FFCD5DA0090EB8A /* Menu.storyboard */,
 				32CC801A1FFCD5E90090EB8A /* Profile.storyboard */,
 			);
@@ -262,6 +286,23 @@
 			path = "Form Event";
 			sourceTree = "<group>";
 		};
+		9765862820153BBC005734C9 /* Form CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				9765862920153C0D005734C9 /* AddCreditCardViewController.swift */,
+				9765862A20153C0D005734C9 /* AddCreditCardViewController.xib */,
+			);
+			path = "Form CreditCard";
+			sourceTree = "<group>";
+		};
+		979E14422015EDF800C77C16 /* David */ = {
+			isa = PBXGroup;
+			children = (
+				97D876012014CDED00B8811B /* CreditCard */,
+			);
+			path = David;
+			sourceTree = "<group>";
+		};
 		97BE2B802004B44700D1FF8F /* currentTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +310,27 @@
 				97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */,
 			);
 			path = currentTableViewCell;
+			sourceTree = "<group>";
+		};
+		97D876012014CDED00B8811B /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				97D876062014D1C500B8811B /* CreditCardTableViewController.swift */,
+				97D876022014CE3B00B8811B /* CreditCardViewController.swift */,
+				97D876032014CE3B00B8811B /* CreditCardViewController.xib */,
+				9765862820153BBC005734C9 /* Form CreditCard */,
+				97D876082014D1D800B8811B /* creditCardTableVIewCell */,
+			);
+			path = CreditCard;
+			sourceTree = "<group>";
+		};
+		97D876082014D1D800B8811B /* creditCardTableVIewCell */ = {
+			isa = PBXGroup;
+			children = (
+				97D876092014D20C00B8811B /* CreditCardTableViewCell.swift */,
+				97D8760A2014D20C00B8811B /* CreditCardTableViewCell.xib */,
+			);
+			path = creditCardTableVIewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				97BE2B852004BA4500D1FF8F /* CurrentTableViewCell.xib in Resources */,
+				97D876052014CE3B00B8811B /* CreditCardViewController.xib in Resources */,
 				2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */,
+				979E14412015D0CA00C77C16 /* CreditCard.storyboard in Resources */,
 				2F04601F20021662004D6E00 /* EventViewController.xib in Resources */,
 				2F04602C200216A6004D6E00 /* RattingViewController.xib in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
@@ -345,9 +409,12 @@
 				971F69A620022D94005DE261 /* events.plist in Resources */,
 				2F12D9AF200770DE00DA676A /* defaultMenuItems.plist in Resources */,
 				32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */,
+				9765862C20153C0D005734C9 /* AddCreditCardViewController.xib in Resources */,
 				2F04602720021699004D6E00 /* MenuViewController.xib in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
+				97D8760C2014D20C00B8811B /* CreditCardTableViewCell.xib in Resources */,
 				32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */,
+				97D876002014C9C700B8811B /* creditCards.plist in Resources */,
 				32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,15 +486,20 @@
 				2F0460142002163A004D6E00 /* Event.swift in Sources */,
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
+				97D876072014D1C500B8811B /* CreditCardTableViewController.swift in Sources */,
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
 				32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */,
+				97D876042014CE3B00B8811B /* CreditCardViewController.swift in Sources */,
 				971F69A2200228E5005DE261 /* AddEventViewController.swift in Sources */,
 				2F04602620021699004D6E00 /* MenuViewController.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
 				97BE2B832004B65A00D1FF8F /* CurrentTableViewCell.swift in Sources */,
+				97D875FE2014C28500B8811B /* CreditCard.swift in Sources */,
 				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
 				2F04602F200216A6004D6E00 /* RattingViewController.swift in Sources */,
 				2F12D9AD2007709E00DA676A /* MenuItem.swift in Sources */,
+				97D8760B2014D20C00B8811B /* CreditCardTableViewCell.swift in Sources */,
+				9765862B20153C0D005734C9 /* AddCreditCardViewController.swift in Sources */,
 				2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */,
 				04EF8D761FFE6DF400AEF046 /* User.swift in Sources */,
 			);

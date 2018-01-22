@@ -26,5 +26,11 @@
 		<key>selector</key>
 		<string>events:</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Credit Cards</string>
+		<key>selector</key>
+		<string>creditCard:</string>
+	</dict>
 </array>
 </plist>

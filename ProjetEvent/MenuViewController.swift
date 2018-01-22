@@ -54,6 +54,15 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    @IBAction func creditCard(_ sender: Any)
+    {
+        if let slideMenuController: ProjectEventDeckController = self.viewDeckController as? ProjectEventDeckController
+        {
+            slideMenuController.centerViewController = slideMenuController.creditCardController
+            slideMenuController.closeSide(true)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return self.menuItems.count

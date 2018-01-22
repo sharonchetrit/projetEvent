@@ -39,8 +39,8 @@ class ShareViewController: BaseViewController, UINavigationControllerDelegate {
         
         var url : String = "https://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8"
         
-        var subject = "Share my app"
-        var body = "Please download this app here \(url)"
+        let subject = "Share my app"
+        let body = "Please download this app here \(url)"
         
        mailVC.setSubject(subject)
        mailVC.setMessageBody(body, isHTML: false)
