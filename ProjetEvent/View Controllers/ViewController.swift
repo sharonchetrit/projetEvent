@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-
    /*
     
     var colors = [Color(name: "Share", color: UIColor.red),

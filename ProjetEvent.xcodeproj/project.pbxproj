@@ -11,7 +11,6 @@
 		04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */; };
 		04EF8D761FFE6DF400AEF046 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF8D751FFE6DF400AEF046 /* User.swift */; };
 		2F0460142002163A004D6E00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0460122002163A004D6E00 /* Event.swift */; };
-		2F0460152002163A004D6E00 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0460132002163A004D6E00 /* Events.swift */; };
 		2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04601820021662004D6E00 /* CurrentEventsVC.swift */; };
 		2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04601920021662004D6E00 /* EventTableViewController.swift */; };
 		2F04601F20021662004D6E00 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04601A20021662004D6E00 /* EventViewController.xib */; };
@@ -24,18 +23,26 @@
 		2F04602E200216A6004D6E00 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602A200216A6004D6E00 /* ShareViewController.swift */; };
 		2F04602F200216A6004D6E00 /* RattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602B200216A6004D6E00 /* RattingViewController.swift */; };
 		2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04603020021730004D6E00 /* LinkedTextField.swift */; };
+		2F1665D92015DF000026EF94 /* CreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */; };
+		2F1665DA2015DF000026EF94 /* CreditCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */; };
+		2F1665E3201605B90026EF94 /* AddCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */; };
+		2F1665E4201605B90026EF94 /* AddCreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1665E2201605B90026EF94 /* AddCreditCardViewController.xib */; };
 		2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */; };
 		2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EC1FFCCA2700895E02 /* ViewController.swift */; };
 		2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0EE1FFCCA2700895E02 /* Main.storyboard */; };
 		2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0F11FFCCA2700895E02 /* Assets.xcassets */; };
 		2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */; };
 		2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */; };
-		2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */; };
 		2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F1051FFCD1E700895E02 /* ViewController.xib */; };
+		2F194F3E201498B90052C0AA /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F194F3D201498B90052C0AA /* CreditCard.swift */; };
+		2F194F4020149D2D0052C0AA /* CreditCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F194F3F20149D2D0052C0AA /* CreditCardTableViewController.swift */; };
 		2FE5F31E200B9ADD0084A4A4 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */; };
 		2FE5F31F200B9ADD0084A4A4 /* MenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */; };
 		2FE5F320200B9ADD0084A4A4 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */; };
 		2FE5F321200B9ADD0084A4A4 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5F31D200B9ADD0084A4A4 /* MenuItemTableViewCell.swift */; };
+		2FFC8488200DFC5A003DE6B4 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFC8486200DFC5A003DE6B4 /* CreditCardViewController.swift */; };
+		2FFC8489200DFC5A003DE6B4 /* CreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFC8487200DFC5A003DE6B4 /* CreditCardViewController.xib */; };
+		2FFC848B200E01D1003DE6B4 /* CreditCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFC848A200E01D1003DE6B4 /* CreditCards.storyboard */; };
 		32BA591C200B984D008444C0 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */; };
 		32BA591D200B984D008444C0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5917200B984D008444C0 /* Bolts.framework */; };
 		32BA591E200B984D008444C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */; };
@@ -64,7 +71,6 @@
 		04EF8D751FFE6DF400AEF046 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12938E0ED91B3ED9FD123E98 /* Pods-ProjetEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.release.xcconfig"; sourceTree = "<group>"; };
 		2F0460122002163A004D6E00 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = ProjetEvent/Event.swift; sourceTree = SOURCE_ROOT; };
-		2F0460132002163A004D6E00 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Events.swift; path = ProjetEvent/Events.swift; sourceTree = SOURCE_ROOT; };
 		2F04601820021662004D6E00 /* CurrentEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentEventsVC.swift; path = ProjetEvent/CurrentEventsVC.swift; sourceTree = SOURCE_ROOT; };
 		2F04601920021662004D6E00 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTableViewController.swift; path = ProjetEvent/EventTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04601A20021662004D6E00 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventViewController.xib; path = ProjetEvent/EventViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -77,6 +83,10 @@
 		2F04602A200216A6004D6E00 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareViewController.swift; path = ProjetEvent/ShareViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04602B200216A6004D6E00 /* RattingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RattingViewController.swift; path = ProjetEvent/RattingViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04603020021730004D6E00 /* LinkedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedTextField.swift; sourceTree = "<group>"; };
+		2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
+		2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardTableViewCell.xib; sourceTree = "<group>"; };
+		2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCreditCardViewController.swift; sourceTree = "<group>"; };
+		2F1665E2201605B90026EF94 /* AddCreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCreditCardViewController.xib; sourceTree = "<group>"; };
 		2F17F0E71FFCCA2700895E02 /* ProjetEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F17F0EC1FFCCA2700895E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,12 +96,16 @@
 		2F17F0F61FFCCA2700895E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2F17F1021FFCD1A300895E02 /* SlideMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenu.h; sourceTree = "<group>"; };
-		2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuVC.swift; sourceTree = "<group>"; };
 		2F17F1051FFCD1E700895E02 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		2F194F3D201498B90052C0AA /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		2F194F3F20149D2D0052C0AA /* CreditCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewController.swift; sourceTree = "<group>"; };
 		2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemTableViewCell.xib; sourceTree = "<group>"; };
 		2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		2FE5F31D200B9ADD0084A4A4 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		2FFC8486200DFC5A003DE6B4 /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		2FFC8487200DFC5A003DE6B4 /* CreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardViewController.xib; sourceTree = "<group>"; };
+		2FFC848A200E01D1003DE6B4 /* CreditCards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreditCards.storyboard; sourceTree = "<group>"; };
 		32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		32BA5917200B984D008444C0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -148,7 +162,7 @@
 			children = (
 				04EF8D751FFE6DF400AEF046 /* User.swift */,
 				2F0460122002163A004D6E00 /* Event.swift */,
-				2F0460132002163A004D6E00 /* Events.swift */,
+				2F194F3D201498B90052C0AA /* CreditCard.swift */,
 				32BA5935200B98C5008444C0 /* events.plist */,
 				32BA5931200B98AD008444C0 /* defaultMenuItems.plist */,
 				32BA5932200B98AD008444C0 /* MenuItem.swift */,
@@ -175,8 +189,8 @@
 			children = (
 				2F04601820021662004D6E00 /* CurrentEventsVC.swift */,
 				2F04601C20021662004D6E00 /* CurrentEventsVC.xib */,
-				2F04601920021662004D6E00 /* EventTableViewController.swift */,
 				2F04601B20021662004D6E00 /* EventViewController.swift */,
+				2F04601920021662004D6E00 /* EventTableViewController.swift */,
 				2F04601A20021662004D6E00 /* EventViewController.xib */,
 				32BA5926200B9885008444C0 /* currentTableViewCell */,
 				32BA5922200B9885008444C0 /* Form Event */,
@@ -190,6 +204,11 @@
 				2F04602420021699004D6E00 /* MenuViewController.swift */,
 				2F04602520021699004D6E00 /* MenuViewController.xib */,
 				2FE5F31D200B9ADD0084A4A4 /* MenuItemTableViewCell.swift */,
+				2FFC8486200DFC5A003DE6B4 /* CreditCardViewController.swift */,
+				2FFC8487200DFC5A003DE6B4 /* CreditCardViewController.xib */,
+				2F194F3F20149D2D0052C0AA /* CreditCardTableViewController.swift */,
+				2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */,
+				2F1665E2201605B90026EF94 /* AddCreditCardViewController.xib */,
 				2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */,
 				2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */,
 				2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */,
@@ -227,7 +246,6 @@
 				2F04601120021626004D6E00 /* View Controllers */,
 				04EF8D771FFE706100AEF046 /* Model */,
 				32CC801C1FFCD6470090EB8A /* Storyboards */,
-				2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */,
 				2F17F1021FFCD1A300895E02 /* SlideMenu.h */,
 				2F17F0F11FFCCA2700895E02 /* Assets.xcassets */,
 				2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */,
@@ -256,6 +274,8 @@
 		32BA5926200B9885008444C0 /* currentTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */,
+				2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */,
 				32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */,
 				32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */,
 				32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */,
@@ -269,6 +289,7 @@
 			children = (
 				2F17F0EE1FFCCA2700895E02 /* Main.storyboard */,
 				32CC80161FFCD5CC0090EB8A /* Event.storyboard */,
+				2FFC848A200E01D1003DE6B4 /* CreditCards.storyboard */,
 				32CC80181FFCD5DA0090EB8A /* Menu.storyboard */,
 				32CC801A1FFCD5E90090EB8A /* Profile.storyboard */,
 			);
@@ -371,15 +392,19 @@
 				2F04602D200216A6004D6E00 /* ShareViewController.xib in Resources */,
 				2FE5F320200B9ADD0084A4A4 /* ProfileTableViewCell.xib in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
+				2FFC848B200E01D1003DE6B4 /* CreditCards.storyboard in Resources */,
 				32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */,
 				32BA5936200B98C5008444C0 /* events.plist in Resources */,
 				32BA5933200B98AE008444C0 /* defaultMenuItems.plist in Resources */,
 				2FE5F31F200B9ADD0084A4A4 /* MenuItemTableViewCell.xib in Resources */,
 				2F04602720021699004D6E00 /* MenuViewController.xib in Resources */,
+				2FFC8489200DFC5A003DE6B4 /* CreditCardViewController.xib in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
 				32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */,
 				32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */,
+				2F1665E4201605B90026EF94 /* AddCreditCardViewController.xib in Resources */,
 				32BA592C200B9886008444C0 /* AddEventViewController.xib in Resources */,
+				2F1665DA2015DF000026EF94 /* CreditCardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +469,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1665D92015DF000026EF94 /* CreditCardTableViewCell.swift in Sources */,
 				2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */,
+				2FFC8488200DFC5A003DE6B4 /* CreditCardViewController.swift in Sources */,
 				2F04602E200216A6004D6E00 /* ShareViewController.swift in Sources */,
 				32BA592B200B9886008444C0 /* AddEventViewController.swift in Sources */,
 				2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */,
@@ -459,12 +486,13 @@
 				2F04602620021699004D6E00 /* MenuViewController.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
 				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
+				2F194F3E201498B90052C0AA /* CreditCard.swift in Sources */,
 				2FE5F31E200B9ADD0084A4A4 /* ProfileTableViewCell.swift in Sources */,
+				2F1665E3201605B90026EF94 /* AddCreditCardViewController.swift in Sources */,
 				2F04602F200216A6004D6E00 /* RattingViewController.swift in Sources */,
-				2F0460152002163A004D6E00 /* Events.swift in Sources */,
-				2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */,
 				2FE5F321200B9ADD0084A4A4 /* MenuItemTableViewCell.swift in Sources */,
 				04EF8D761FFE6DF400AEF046 /* User.swift in Sources */,
+				2F194F4020149D2D0052C0AA /* CreditCardTableViewController.swift in Sources */,
 				32BA592D200B9886008444C0 /* CurrentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

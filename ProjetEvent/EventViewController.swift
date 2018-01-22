@@ -11,8 +11,6 @@ import UIKit
 class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,AddEventDelegate
 {
     
-    
-    
     @IBOutlet weak var tableView: UITableView!
     
     lazy var events : [Event] = {

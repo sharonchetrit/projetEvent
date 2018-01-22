@@ -33,7 +33,6 @@ class Event: NSObject, NSCoding
         self.arrive = (dictionary["arrive"] as? String)!
         self.eventDescription = (dictionary["eventDescription"] as? String)!
     }
-
     
     
     func serialize() -> Dictionary<String,Any>

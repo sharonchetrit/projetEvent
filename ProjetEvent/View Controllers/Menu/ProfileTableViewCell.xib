@@ -56,6 +56,9 @@
                         <state key="normal" title="Edit my profile">
                             <color key="titleColor" red="1" green="0.02654661375" blue="0.029965965939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </state>
+                        <connections>
+                            <action selector="editProfile:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TTa-F6-Cck"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

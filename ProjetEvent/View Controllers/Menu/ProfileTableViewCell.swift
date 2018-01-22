@@ -21,6 +21,10 @@ class ProfileTableViewCell: MenuItemTableViewCell
     
     @IBOutlet weak var lblTel: UILabel!
     
+    
+    @IBAction func editProfile(_ sender: Any) {
+    }
+    
     override func updateOnMenuItem(_ menuItem: MenuItem)
     {
         self.profileImageView.image = User.sharedInstance.profileImage
