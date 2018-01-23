@@ -170,7 +170,7 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32U-hy-zZK">
-                    <rect key="frame" x="16" y="31" width="209" height="83"/>
+                    <rect key="frame" x="16" y="46" width="209" height="83"/>
                     <state key="normal" title="+ Add a photo">
                         <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
@@ -179,18 +179,26 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="bK5-4T-koG">
-                    <rect key="frame" x="16" y="31" width="89" height="83"/>
+                    <rect key="frame" x="16" y="46" width="89" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="83" id="Dst-J9-I5L"/>
+                        <constraint firstAttribute="width" constant="89" id="S8n-eP-GeI"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="bK5-4T-koG" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="4Kn-kb-gfQ"/>
                 <constraint firstItem="L2C-Ms-IXo" firstAttribute="trailing" secondItem="jkb-pa-OIk" secondAttribute="trailing" constant="16" id="4Zz-l1-qeg"/>
-                <constraint firstItem="EgO-to-eJk" firstAttribute="top" secondItem="bK5-4T-koG" secondAttribute="bottom" constant="71" id="6on-q8-2Mi"/>
                 <constraint firstItem="L2C-Ms-IXo" firstAttribute="bottom" secondItem="XWc-q8-Ejc" secondAttribute="bottom" priority="250" constant="297" id="7fn-Z2-zHs"/>
+                <constraint firstItem="bK5-4T-koG" firstAttribute="top" secondItem="L2C-Ms-IXo" secondAttribute="top" constant="26" id="8mN-vH-Ktz"/>
+                <constraint firstItem="L2C-Ms-IXo" firstAttribute="trailing" secondItem="bK5-4T-koG" secondAttribute="trailing" constant="270" id="Buc-v1-4XW"/>
                 <constraint firstItem="L2C-Ms-IXo" firstAttribute="trailing" secondItem="EgO-to-eJk" secondAttribute="trailing" constant="16" id="DwL-tW-2ds"/>
                 <constraint firstItem="jkb-pa-OIk" firstAttribute="top" secondItem="EgO-to-eJk" secondAttribute="bottom" constant="26" id="Edp-TK-i8J"/>
+                <constraint firstItem="bK5-4T-koG" firstAttribute="centerY" secondItem="32U-hy-zZK" secondAttribute="centerY" id="IYk-lb-ebZ"/>
                 <constraint firstItem="L2C-Ms-IXo" firstAttribute="trailing" secondItem="A1r-ch-AAj" secondAttribute="trailing" constant="16" id="KLT-hs-XJR"/>
                 <constraint firstItem="32U-hy-zZK" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="M7P-Nq-eET"/>
+                <constraint firstItem="32U-hy-zZK" firstAttribute="top" secondItem="L2C-Ms-IXo" secondAttribute="top" constant="26" id="OWd-XU-2gb"/>
                 <constraint firstItem="A1r-ch-AAj" firstAttribute="top" secondItem="jkb-pa-OIk" secondAttribute="bottom" constant="26" id="Rj9-DO-AVt"/>
                 <constraint firstItem="XWc-q8-Ejc" firstAttribute="top" secondItem="A1r-ch-AAj" secondAttribute="bottom" constant="26" id="SMd-md-fZP"/>
                 <constraint firstItem="jkb-pa-OIk" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="SR5-bZ-dli"/>
@@ -198,11 +206,10 @@
                 <constraint firstItem="XWc-q8-Ejc" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="WtG-03-Jny"/>
                 <constraint firstItem="L2C-Ms-IXo" firstAttribute="trailing" secondItem="32U-hy-zZK" secondAttribute="trailing" constant="150" id="XId-4Q-9p6"/>
                 <constraint firstItem="A1r-ch-AAj" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="YXD-vx-XCG"/>
+                <constraint firstItem="EgO-to-eJk" firstAttribute="top" secondItem="bK5-4T-koG" secondAttribute="bottom" constant="56" id="Zzq-qM-GkE"/>
                 <constraint firstItem="bK5-4T-koG" firstAttribute="centerY" secondItem="32U-hy-zZK" secondAttribute="centerY" id="ciH-9I-e1B"/>
-                <constraint firstItem="32U-hy-zZK" firstAttribute="top" secondItem="L2C-Ms-IXo" secondAttribute="top" constant="11" id="hPo-HC-nfT"/>
-                <constraint firstItem="bK5-4T-koG" firstAttribute="centerX" secondItem="32U-hy-zZK" secondAttribute="centerX" constant="-60" id="qWE-Kx-pb7"/>
                 <constraint firstItem="EgO-to-eJk" firstAttribute="leading" secondItem="L2C-Ms-IXo" secondAttribute="leading" constant="16" id="sEP-iK-X6a"/>
-                <constraint firstItem="EgO-to-eJk" firstAttribute="top" secondItem="32U-hy-zZK" secondAttribute="bottom" constant="71" id="x2Y-n7-0RT"/>
+                <constraint firstItem="EgO-to-eJk" firstAttribute="top" secondItem="32U-hy-zZK" secondAttribute="bottom" constant="56" id="x2Y-n7-0RT"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="L2C-Ms-IXo"/>

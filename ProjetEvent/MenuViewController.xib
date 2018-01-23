@@ -56,14 +56,6 @@
                         <action selector="logOut:" destination="-1" eventType="touchUpInside" id="vck-A2-onJ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gph-Ca-sTk">
-                    <rect key="frame" x="158" y="527" width="56" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="FetchFb"/>
-                    <connections>
-                        <action selector="fetchButton:" destination="-1" eventType="touchUpInside" id="fkh-Os-qgR"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>

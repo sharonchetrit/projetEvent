@@ -27,8 +27,8 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var scroll: UIScrollView!
     
-    lazy var user : User = User.sharedInstance
-
+//    lazy var user : User = User.sharedInstance
+    var user : User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,8 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
         self.scroll.contentSize = self.containerView.frame.size
         self.scroll.addSubview(self.containerView)
         
-        
+        imageView.layer.cornerRadius = imageView.frame.width / 4.0
+        imageView.clipsToBounds = true
         
     }
     
@@ -60,13 +61,13 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
                 }
             }
             // check the condition not exceed 9 chars
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+            return !(textField.text!.count > 9 && (string.count ) > range.length)
         }
         if textField == phoneTxt {
             if (phoneTxt?.text?.first == "+"){
-                return !(textField.text!.characters.count > 12 && (string.characters.count ) > range.length)
+                return !(textField.text!.count > 12 && (string.count ) > range.length)
             }
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+            return !(textField.text!.count > 9 && (string.count ) > range.length)
         }
         else {
             return true
@@ -183,11 +184,12 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
             let userRef = ref.child("User").child(uid)
             
             let user = ["name": "\(firstName)",
-                "age": birthday,
-                "email": email,
-                "phone": phone,
-                "surname": surname,
-                "confirmPass": confPass]
+                "age": "\(birthday)",
+                "email": "\(email)",
+                "phone": "\(phone)",
+                "surname": "\(surname)",
+                "confirmPass": "\(confPass)",
+                "image": "\(image)"]
                 
             
             userRef.updateChildValues(user, withCompletionBlock: {(err,ref) in
@@ -198,21 +200,21 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
                 }
                 
                 
-                self.user.password = pass
-                self.user.confirmPass = confPass
-                self.user.name = firstName
-                self.user.birthday = birthday
-                self.user.email = email
-                self.user.phone = phone
-                self.user.profileImage = image
-                self.user.surname = surname
+                self.user?.password = pass
+                self.user?.confirmPass = confPass
+                self.user?.name = firstName
+                self.user?.birthday = birthday
+                self.user?.email = email
+                self.user?.phone = phone
+                self.user?.profileImage = image
+                self.user?.surname = surname
                 
                 
-                User.saveOnUserDefaults(users: self.user)
+//                User.saveOnUserDefaults(users: self.user)
 
                 print("user saved succesfully")
             })
-            self.navigationController?.popViewController(animated: true)
+//            self.navigationController?.popViewController(animated: true)
         }
         
     }

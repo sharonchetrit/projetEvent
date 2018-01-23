@@ -8,8 +8,8 @@
 
 import UIKit
 import FBSDKLoginKit
-import Firebase
 import FirebaseAuth
+import Firebase
 
 
 class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
@@ -21,6 +21,7 @@ class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextF
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        checkIfUserIn()
         // Do any additional setup after loading the view.
     }
     
@@ -53,7 +54,7 @@ class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextF
                 print(error.localizedDescription)
                 return
             }
-//            self.fetchFB()
+            self.fetchFB()
             print(credential)
 
         }
@@ -108,13 +109,28 @@ class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextF
     
     func fetchFB()
     {
+        let graphRequest: FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, first_name, last_name, email"])
         if (FBSDKAccessToken.current() != nil) {
-            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name"]).start(completionHandler: {(_ connection: FBSDKGraphRequestConnection, _ result: Any, _ error: Error?) -> Void in
+            graphRequest.start(completionHandler: {(connection, result : Any?, error) -> Void in
                 if error == nil {
-
-                    print("fetched user:\(result)")
+                    if let dictionary = result as? Dictionary<String,Any> {
+                        let firstName : String = dictionary["first_name"] as! String
+                        let lastName : String = dictionary["last_name"] as! String
+                        let username : String = dictionary["name"] as! String
+                        print("fetched name: \(username), first: \(firstName), last: \(lastName), email: ")
+                        
+                    }
+                    print("fetched user:\(String(describing: result))")
                 }
-                } as! FBSDKGraphRequestHandler)
+            })
+        }
+    }
+    
+    func checkIfUserIn()
+    {
+        if  FBSDKAccessToken.current() != nil || Auth.auth().currentUser?.uid != nil
+        {
+            performSegue(withIdentifier: "loginToMainSegue", sender: nil)
         }
     }
 }

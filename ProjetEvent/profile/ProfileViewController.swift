@@ -8,6 +8,9 @@
 
 import UIKit
 import ViewDeck
+import Firebase
+import FirebaseAuth
+import FBSDKCoreKit
 
 class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
@@ -27,7 +30,8 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
-    lazy var user : User = User.sharedInstance
+//    lazy var user : User = User.sharedInstance
+    var user : User?
     
    
     
@@ -53,15 +57,15 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         imageView.layer.cornerRadius = imageView.frame.width / 4.0
         imageView.clipsToBounds = true
         
-        self.firstNameTxt.text = self.user.name
-        self.surnameTxt.text = self.user.surname
-        self.phoneTxt.text = self.user.phone
-        self.birthTxt.text = self.user.birthday
-        self.passwordTxt.text = self.user.password
-        self.emailTxt.text = self.user.email
-        self.confirmPassTxt.text = self.user.confirmPass
+        self.firstNameTxt.text = self.user?.name
+        self.surnameTxt.text = self.user?.surname
+        self.phoneTxt.text = self.user?.phone
+        self.birthTxt.text = self.user?.birthday
+        self.passwordTxt.text = self.user?.password
+        self.emailTxt.text = self.user?.email
+        self.confirmPassTxt.text = self.user?.confirmPass
         
-        if let image : UIImage = self.user.profileImage
+        if let image : UIImage = self.user?.profileImage
         {
             self.imageView.image = image
         }
@@ -108,17 +112,17 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
             return
         }
         
-        self.user.password = pass
-        self.user.confirmPass = confPass
-        self.user.name = first_name
-        self.user.birthday = birthday
-        self.user.email = email
-        self.user.phone = phone
-        self.user.profileImage = image
-        self.user.surname = surname
+        self.user?.password = pass
+        self.user?.confirmPass = confPass
+        self.user?.name = first_name
+        self.user?.birthday = birthday
+        self.user?.email = email
+        self.user?.phone = phone
+        self.user?.profileImage = image
+        self.user?.surname = surname
         
         
-        User.saveOnUserDefaults(users: self.user)
+//        User.saveOnUserDefaults(users: self.user)
         
         let alertView = UIAlertController(title: "Welcome", message: "You updated your account", preferredStyle: .alert)
         
@@ -145,7 +149,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         if textField == birthTxt {
             
             // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
-            if (birthTxt?.text?.characters.count == 2) || (birthTxt?.text?.characters.count == 5) {
+            if (birthTxt?.text?.count == 2) || (birthTxt?.text?.count == 5) {
                 //Handle backspace being pressed
                 if !(string == "") {
                     // append the text
@@ -153,13 +157,13 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
                 }
             }
             // check the condition not exceed 9 chars
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+            return !(textField.text!.count > 9 && (string.count ) > range.length)
         }
         if textField == phoneTxt {
             if (phoneTxt?.text?.first == "+"){
-                return !(textField.text!.characters.count > 12 && (string.characters.count ) > range.length)
+                return !(textField.text!.count > 12 && (string.count ) > range.length)
             }
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+            return !(textField.text!.count > 9 && (string.count ) > range.length)
         }
         else {
             return true

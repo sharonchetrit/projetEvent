@@ -14,7 +14,7 @@ import FirebaseDatabase
 
 class User : NSObject
 {
-    static var sharedInstance = openFromUserDefaults()
+//    static var sharedInstance = openFromUserDefaults()
     
     var name: String!
     var surname: String!
@@ -53,6 +53,10 @@ class User : NSObject
             if let phone = dict["phone"] as? String
             {
                 self.phone = phone
+            }
+            if let image = dict["image"] as? UIImage
+            {
+                self.profileImage = image
             }
           
             self.ref = snapshot.ref
@@ -95,42 +99,42 @@ class User : NSObject
         super.init()
     }
 
-
-    func serialize() -> Dictionary<String,Any>
-    {
-        var dict : Dictionary<String,Any> = Dictionary()
-
-        dict["name"] = self.name
-        dict["surname"] = self.surname
-        dict["birthday"] = self.birthday
-        dict["email"] = self.email
-        dict["phone"] = self.phone
-        dict["password"] = self.password
-        dict["confirmPass"] = self.confirmPass
-
-        if let data : Data = UIImagePNGRepresentation(self.profileImage!)
-        {
-            dict["profileImage"] = data
-        }
-
-
-        return dict
-    }
-
-    static func openFromUserDefaults() -> User
-    {
-
-        if let userDicts : Dictionary<String,Any> = UserDefaults.standard.object(forKey: "User") as? Dictionary<String, Any>
-        {
-            return User(dictionary: userDicts)
-        }
-
-        return User()
-    }
-
-    static func saveOnUserDefaults(users: User )
-    {
-        UserDefaults.standard.set(users.serialize(), forKey: "User")
-    }
+//
+//    func serialize() -> Dictionary<String,Any>
+//    {
+//        var dict : Dictionary<String,Any> = Dictionary()
+//
+//        dict["name"] = self.name
+//        dict["surname"] = self.surname
+//        dict["birthday"] = self.birthday
+//        dict["email"] = self.email
+//        dict["phone"] = self.phone
+//        dict["password"] = self.password
+//        dict["confirmPass"] = self.confirmPass
+//
+//        if let data : Data = UIImagePNGRepresentation(self.profileImage!)
+//        {
+//            dict["profileImage"] = data
+//        }
+//
+//
+//        return dict
+//    }
+//
+//    static func openFromUserDefaults() -> User
+//    {
+//
+//        if let userDicts : Dictionary<String,Any> = UserDefaults.standard.object(forKey: "User") as? Dictionary<String, Any>
+//        {
+//            return User(dictionary: userDicts)
+//        }
+//
+//        return User()
+//    }
+//
+//    static func saveOnUserDefaults(users: User )
+//    {
+//        UserDefaults.standard.set(users.serialize(), forKey: "User")
+//    }
 }
 

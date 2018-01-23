@@ -61,11 +61,13 @@ class MenuViewController: BaseViewController {
     {
         handleLogOut()
         navigationController?.popViewController(animated: true)
+        
+        
     }
     
     func handleLogOut()
     {
-        if Auth.auth().currentUser?.uid != nil {
+        if Auth.auth().currentUser?.uid != nil || FBSDKAccessToken.current() != nil {
             do
             {
                 try Auth.auth().signOut()
@@ -78,24 +80,21 @@ class MenuViewController: BaseViewController {
     }
     
     
-    @IBAction func fetchButton(_ sender: Any)
-    {
-        fetchFB()
-    }
+
     
-    func fetchFB()
-    {
-        if (FBSDKAccessToken.current() != nil) {
-            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name"]).start(completionHandler: {(connection, result : Any?, error) -> Void in
-                if error == nil {
-                   if let dictionary = result as? Dictionary<String,Any> {
-                        let username : String = dictionary["name"] as! String
-                        print("fetched name:\(username)")
-                        
-                    }
-                    print("fetched user:\(result)")
-                }
-                })
-        }
-    }
+//    func fetchFB()
+//    {
+//        if (FBSDKAccessToken.current() != nil) {
+//            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name"]).start(completionHandler: {(connection, result : Any?, error) -> Void in
+//                if error == nil {
+//                   if let dictionary = result as? Dictionary<String,Any> {
+//                        let username : String = dictionary["name"] as! String
+//                        print("fetched name:\(username)")
+//
+//                    }
+//                    print("fetched user:\(result)")
+//                }
+//                })
+//        }
+//    }
 }
