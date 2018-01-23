@@ -8,7 +8,10 @@
 
 import UIKit
 
-class CreditCardViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
+class CreditCardViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,AddCreditCardtDelegate {
+    
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     lazy var creditCards : [CreditCard] = {
@@ -26,6 +29,15 @@ class CreditCardViewController: BaseViewController,UITableViewDelegate,UITableVi
         
         self.tableView.register(UINib(nibName: "CreditCardTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "Cell")
         tableView.reloadData()
+    }
+    
+    func addCreditCard(creditCard: CreditCard)
+    {
+        self.creditCards.append(creditCard)
+        
+        CreditCard.saveOnUserDefaults(creditCards: self.creditCards)
+        
+        self.tableView.reloadData()
     }
     
     @IBAction func menu(_ sender: Any)
@@ -106,10 +118,10 @@ class CreditCardViewController: BaseViewController,UITableViewDelegate,UITableVi
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let addVC : AddEventViewController = segue.destination as? AddEventViewController
+        if let addVC : AddCreditCardViewController = segue.destination as? AddCreditCardViewController
         {
-            addVC.delegate = self as! AddEventDelegate
-            addVC.event = sender as? Event
+            addVC.delegate = self
+            addVC.creditCard = sender as? CreditCard
         }
     }
     

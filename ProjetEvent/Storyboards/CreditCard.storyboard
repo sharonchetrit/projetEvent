@@ -12,9 +12,8 @@
         <!--Navigation Controller-->
         <scene sceneID="EsK-Ka-Sm5">
             <objects>
-                <navigationController id="PpN-kb-87K" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="PpN-kb-87K" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ega-40-7Vx">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -42,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qpC-Ty-MhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="391" y="233"/>
+            <point key="canvasLocation" x="175" y="242"/>
         </scene>
         <!--Add Credit Card View Controller-->
         <scene sceneID="pdK-C2-ywb">
@@ -57,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fjr-eW-5hp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1143" y="220"/>
+            <point key="canvasLocation" x="1041" y="242"/>
         </scene>
     </scenes>
 </document>
