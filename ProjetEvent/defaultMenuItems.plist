@@ -4,14 +4,6 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>Credit Card</string>
-		<key>selector</key>
-		<string>creditCards:</string>
-		<key>cellType</key>
-		<string>MenuItemTableViewCell</string>
-	</dict>
-	<dict>
-		<key>title</key>
 		<string>Profile</string>
 		<key>selector</key>
 		<string>profile:</string>
@@ -39,6 +31,14 @@
 		<string>Events</string>
 		<key>selector</key>
 		<string>events:</string>
+		<key>cellType</key>
+		<string>MenuItemTableViewCell</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Credit Card</string>
+		<key>selector</key>
+		<string>creditCards:</string>
 		<key>cellType</key>
 		<string>MenuItemTableViewCell</string>
 	</dict>
