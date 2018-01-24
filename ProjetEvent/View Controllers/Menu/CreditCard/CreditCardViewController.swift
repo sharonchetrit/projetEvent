@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreditCardViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class CreditCardViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource,AddCreditCardDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -80,6 +80,14 @@ class CreditCardViewController: BaseViewController, UITableViewDelegate, UITable
         CreditCard.saveOnUserDefaults(creditCards: self.creditCards)
         
         self.tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let addVC : AddCreditCardViewController = segue.destination as? AddCreditCardViewController
+        {
+            addVC.delegate = self 
+            addVC.creditcard = sender as? CreditCard
+        }
     }
     
 }

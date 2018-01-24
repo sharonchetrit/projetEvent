@@ -85,7 +85,6 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
         let event : Event = self.events[indexPath.row]
         
         self.tableView.deselectRow(at: indexPath, animated: false)
-        
         self.performSegue(withIdentifier: "AddEventSegway", sender: event)
     }
     

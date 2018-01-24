@@ -25,7 +25,6 @@ class MenuItem: NSObject
     static func loadSampleFromPlist() -> [MenuItem]
     {
         var menuItem : [MenuItem] = []
-        
         var menuArray : [Any] = []
         
         if let path = Bundle.main.path(forResource: "defaultMenuItems", ofType: "plist")

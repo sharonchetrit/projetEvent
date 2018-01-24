@@ -18,17 +18,13 @@ class ShareViewController: BaseViewController, UINavigationControllerDelegate {
     }
     
     @IBOutlet weak var shareFB: FBSDKShareButton!
-    
     @IBOutlet weak var sharebtn: UIButton!
-    
     
     @IBAction func menu(_ sender: Any) {
 //        self.viewDeckController?.open(.left, animated: true)
         self.dismiss(animated: true, completion: nil)
     }
     
-    
-   
     @IBAction func shareToEmail(_ sender: Any) {
         guard MFMailComposeViewController.canSendMail() else {
             return

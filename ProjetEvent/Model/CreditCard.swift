@@ -10,7 +10,6 @@ import Foundation
 
 class CreditCard : NSObject, NSCoding
 {
-    
     var name: String
     var number: String
     var date: String
@@ -41,7 +40,7 @@ class CreditCard : NSObject, NSCoding
         dict["name"] = self.name
         dict["number"] = self.number
         dict["date"] = self.date
-        dict["cryptogran"] = self.cryptogram
+        dict["cryptogram"] = self.cryptogram
         
         return dict
     }

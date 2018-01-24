@@ -30,7 +30,6 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     lazy var user : User = User.sharedInstance
     
    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -73,8 +72,6 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
 //
 //        let data = UserDefaults.standard.object(forKey: "savedImage") as! NSData
 //        imageView.image = UIImage(data: data as Data)
-        
-        
         
     }
     

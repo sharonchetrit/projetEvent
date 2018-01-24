@@ -11,11 +11,8 @@ import UIKit
 class CreditCardTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblName: UILabel!
-    
     @IBOutlet weak var lblNumber: UILabel!
-    
     @IBOutlet weak var lblDate: UILabel!
-    
     @IBOutlet weak var lblCryptogram: UILabel!
     
     func updateWithCreditCard(creditcard: CreditCard) {

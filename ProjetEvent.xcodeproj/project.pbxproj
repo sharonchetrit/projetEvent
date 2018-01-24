@@ -36,6 +36,7 @@
 		2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F1051FFCD1E700895E02 /* ViewController.xib */; };
 		2F194F3E201498B90052C0AA /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F194F3D201498B90052C0AA /* CreditCard.swift */; };
 		2F194F4020149D2D0052C0AA /* CreditCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F194F3F20149D2D0052C0AA /* CreditCardTableViewController.swift */; };
+		2F7C8DA420162987006ED87A /* FormCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7C8DA320162987006ED87A /* FormCreditCardViewController.swift */; };
 		2FE5F31E200B9ADD0084A4A4 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */; };
 		2FE5F31F200B9ADD0084A4A4 /* MenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */; };
 		2FE5F320200B9ADD0084A4A4 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */; };
@@ -99,6 +100,7 @@
 		2F17F1051FFCD1E700895E02 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2F194F3D201498B90052C0AA /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		2F194F3F20149D2D0052C0AA /* CreditCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewController.swift; sourceTree = "<group>"; };
+		2F7C8DA320162987006ED87A /* FormCreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCreditCardViewController.swift; sourceTree = "<group>"; };
 		2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemTableViewCell.xib; sourceTree = "<group>"; };
 		2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
@@ -150,6 +152,8 @@
 		04EF8D741FFE6D4400AEF046 /* profile */ = {
 			isa = PBXGroup;
 			children = (
+				2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */,
+				2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */,
 				04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */,
 				04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */,
 			);
@@ -204,20 +208,29 @@
 				2F04602420021699004D6E00 /* MenuViewController.swift */,
 				2F04602520021699004D6E00 /* MenuViewController.xib */,
 				2FE5F31D200B9ADD0084A4A4 /* MenuItemTableViewCell.swift */,
-				2FFC8486200DFC5A003DE6B4 /* CreditCardViewController.swift */,
-				2FFC8487200DFC5A003DE6B4 /* CreditCardViewController.xib */,
-				2F194F3F20149D2D0052C0AA /* CreditCardTableViewController.swift */,
-				2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */,
-				2F1665E2201605B90026EF94 /* AddCreditCardViewController.xib */,
 				2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */,
-				2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */,
-				2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */,
 				2F04602B200216A6004D6E00 /* RattingViewController.swift */,
 				2F046028200216A6004D6E00 /* RattingViewController.xib */,
 				2F04602A200216A6004D6E00 /* ShareViewController.swift */,
 				2F046029200216A6004D6E00 /* ShareViewController.xib */,
+				2F0CC02F201771C800916878 /* CreditCard */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		2F0CC02F201771C800916878 /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				2FFC8487200DFC5A003DE6B4 /* CreditCardViewController.xib */,
+				2FFC8486200DFC5A003DE6B4 /* CreditCardViewController.swift */,
+				2F194F3F20149D2D0052C0AA /* CreditCardTableViewController.swift */,
+				2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */,
+				2F1665E2201605B90026EF94 /* AddCreditCardViewController.xib */,
+				2F7C8DA320162987006ED87A /* FormCreditCardViewController.swift */,
+				2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */,
+				2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */,
+			);
+			path = CreditCard;
 			sourceTree = "<group>";
 		};
 		2F17F0DE1FFCCA2700895E02 = {
@@ -274,8 +287,6 @@
 		32BA5926200B9885008444C0 /* currentTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */,
-				2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */,
 				32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */,
 				32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */,
 				32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */,
@@ -478,6 +489,7 @@
 				2F0460142002163A004D6E00 /* Event.swift in Sources */,
 				2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */,
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
+				2F7C8DA420162987006ED87A /* FormCreditCardViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
 				32BA5934200B98AE008444C0 /* MenuItem.swift in Sources */,

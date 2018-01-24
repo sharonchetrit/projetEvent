@@ -12,13 +12,9 @@ class ProfileTableViewCell: MenuItemTableViewCell
 {
     
     @IBOutlet weak var profileImageView: UIImageView!
-    
     @IBOutlet weak var lblName: UILabel!
-    
     @IBOutlet weak var lblLastName: UILabel!
-    
     @IBOutlet weak var lblMail: UILabel!
-    
     @IBOutlet weak var lblTel: UILabel!
     
     

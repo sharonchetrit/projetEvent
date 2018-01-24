@@ -17,8 +17,8 @@ protocol AddEventDelegate : NSObjectProtocol // MUST inherit from NSObjectProtoc
 class AddEventViewController: BaseViewController,UITextFieldDelegate {
     
     weak var event : Event?
-    @IBOutlet weak var navBar: UINavigationBar!
     
+    @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var txtFieldEvent: UITextField!
     @IBOutlet weak var txtFieldDepart: UITextField!
     @IBOutlet weak var txtFieldArrive: UITextField!
