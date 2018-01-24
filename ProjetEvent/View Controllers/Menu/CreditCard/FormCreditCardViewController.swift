@@ -77,6 +77,26 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
         return true
     }
     
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        //Format Date of Birth dd-MM-yyyy
+//
+//        //initially identify your textfield
+//
+//        if textField == dateTxtfield {
+//
+//            // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
+//            if (dateTxtfield?.text?.characters.count == 2) || (dateTxtfield?.text?.characters.count == 5) {
+//                //Handle backspace being pressed
+//                if !(string == "") {
+//                    // append the text
+//                    dateTxtfield?.text = (dateTxtfield?.text)! + "-"
+//                }
+//            }
+//            // check the condition not exceed 9 chars
+//            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+//        }
+//
+//    }
     @IBAction func save(_ sender : Any? )
     {
     

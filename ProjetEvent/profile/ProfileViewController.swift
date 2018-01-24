@@ -12,7 +12,6 @@ import UIKit
 class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     
-    
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
