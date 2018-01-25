@@ -13,7 +13,7 @@ import FBSDKShareKit
 
 class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
-   //var tableData = ["Share", "Rate", "Profile", "Event", "Credit Card"]
+  // var tableData = ["Share", "Rate", "Profile", "Event", "Credit Card"]
     
     @IBOutlet weak var tblView: UITableView!
     
@@ -38,7 +38,7 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return self.menuItems.count
-        //return tableData.count
+       // return tableData.count
     }
     
     
@@ -51,7 +51,7 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         cell.updateOnMenuItem(menuItem)
         
         
-//      //cell.textLabel?.text = tableData[indexPath.row]
+//      cell.textLabel?.text = tableData[indexPath.row]
 //      cell.textLabel?.text = menuItem.title
 //      cell.backgroundColor = UIColor.black
 //      cell.textLabel?.textColor = UIColor.red

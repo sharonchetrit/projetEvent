@@ -19,7 +19,10 @@ class ProfileTableViewCell: MenuItemTableViewCell
     
     
     @IBAction func editProfile(_ sender: Any) {
+
     }
+    
+    
     
     override func updateOnMenuItem(_ menuItem: MenuItem)
     {
