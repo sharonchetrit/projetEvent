@@ -13,9 +13,10 @@ import FirebaseAuth
 import FBSDKCoreKit
 
 class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
-
     
     
+    
+    @IBOutlet var tapAddPhoto: UITapGestureRecognizer!
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -30,10 +31,9 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
-//    lazy var user : User = User.sharedInstance
     var user : User?
     
-   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,31 +54,34 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         self.updateSaveButton()
         self.registerForKeyboardNotifications()
         
-        imageView.layer.cornerRadius = imageView.frame.width / 4.0
+        imageView.layer.cornerRadius = imageView.frame.width / 2.0
         imageView.clipsToBounds = true
         
-        self.firstNameTxt.text = self.user?.name
-        self.surnameTxt.text = self.user?.surname
-        self.phoneTxt.text = self.user?.phone
-        self.birthTxt.text = self.user?.birthday
-        self.passwordTxt.text = self.user?.password
-        self.emailTxt.text = self.user?.email
-        self.confirmPassTxt.text = self.user?.confirmPass
+        imageView.addGestureRecognizer(tapAddPhoto)
+        imageView.isUserInteractionEnabled = true
         
-        if let image : UIImage = self.user?.profileImage
+        fetchUserData()
+        
+    }
+    
+    func fetchUserData()
+    {
+        if let user = User.sharedInstance()
         {
-            self.imageView.image = image
+            self.user = user
+            self.firstNameTxt.text = self.user?.name
+            self.surnameTxt.text = self.user?.surname
+            self.phoneTxt.text = self.user?.phone
+            self.birthTxt.text = self.user?.birthday
+            self.passwordTxt.text = self.user?.password
+            self.emailTxt.text = self.user?.email
+            self.confirmPassTxt.text = self.user?.confirmPass
+            
+            if let image : UIImage = self.user?.profileImage
+            {
+                self.imageView.image = image
+            }
         }
-//
-//        let image = UIImage(named: "Photo")
-//        let imageData: NSData = UIImagePNGRepresentation(image!)! as NSData
-//
-//        UserDefaults.standard.set(imageData, forKey: "savedImage")
-//
-//        let data = UserDefaults.standard.object(forKey: "savedImage") as! NSData
-//        imageView.image = UIImage(data: data as Data)
-        
-        
         
     }
     
@@ -99,8 +102,8 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
             let email : String = self.emailTxt.text,
             let phone : String = self.phoneTxt.text,
             let image : UIImage = self.imageView.image
-        
-        else
+            
+            else
         {
             let alertView = UIAlertController(title: "ERROR", message: "Confirm Password Incorect", preferredStyle: .alert)
             
@@ -112,26 +115,38 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
             return
         }
         
-        self.user?.password = pass
-        self.user?.confirmPass = confPass
-        self.user?.name = first_name
-        self.user?.birthday = birthday
-        self.user?.email = email
-        self.user?.phone = phone
-        self.user?.profileImage = image
-        self.user?.surname = surname
-        
-        
-//        User.saveOnUserDefaults(users: self.user)
-        
-        let alertView = UIAlertController(title: "Welcome", message: "You updated your account", preferredStyle: .alert)
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        alertView.addAction(cancelAction)
-        
-        self.present(alertView, animated: true, completion: nil)
-}
+        let updatedUser = User(name: first_name, surname: surname, birthday: birthday, email: email, phone: phone, password: pass, confirmPass: confPass, profileImage: image)
 
+        User.updateData(user: updatedUser) { (user) in
+            
+            if user != nil
+            {
+                self.user = user
+                
+                self.user?.password = pass
+                self.user?.confirmPass = confPass
+                self.user?.name = first_name
+                self.user?.birthday = birthday
+                self.user?.email = email
+                self.user?.phone = phone
+                self.user?.profileImage = image
+                self.user?.surname = surname
+                
+                let alertView = UIAlertController(title: "Welcome", message: "You updated your account", preferredStyle: .alert)
+                
+                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                alertView.addAction(cancelAction)
+                
+                self.present(alertView, animated: true, completion: nil)
+            }
+            
+            
+        }
+        
+
+        
+    }
+    
     
     
     func registerForKeyboardNotifications() {
@@ -139,7 +154,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillBeHidden(_:)), name: .UIKeyboardWillHide, object: nil)
     }
-   
+    
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         //Format Date of Birth dd-MM-yyyy
@@ -178,7 +193,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         
         let pictureAction = UIAlertAction(title: "Take a picture", style: .default, handler:{ action in
             
-        let picker : UIImagePickerController = UIImagePickerController()
+            let picker : UIImagePickerController = UIImagePickerController()
             picker.delegate = self
             
             picker.sourceType = .camera
@@ -189,7 +204,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         
         let libraryAction = UIAlertAction(title: "Choose from library", style: .default, handler:{ action in
             
-        let picker : UIImagePickerController = UIImagePickerController()
+            let picker : UIImagePickerController = UIImagePickerController()
             picker.delegate = self
             
             picker.sourceType = .photoLibrary
@@ -214,12 +229,12 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         if let linkedTextField : LinkedTextField = textField as? LinkedTextField
         {
             if( linkedTextField.nextField != nil )
-        {
-            linkedTextField.nextField?.becomeFirstResponder()
-        }else
-        {
-            linkedTextField.resignFirstResponder()
-            
+            {
+                linkedTextField.nextField?.becomeFirstResponder()
+            }else
+            {
+                linkedTextField.resignFirstResponder()
+                
             }
         }
         return true
@@ -272,5 +287,5 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     {
         self.viewDeckController?.open(.left, animated: true)
     }
-
+    
 }

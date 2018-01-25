@@ -14,18 +14,20 @@ import FirebaseDatabase
 
 class User : NSObject
 {
-//    static var sharedInstance = openFromUserDefaults()
+    private static var sharedUser : User?
+
     
-    var name: String!
-    var surname: String!
-    var birthday: String!
-    var email: String!
-    var phone: String!
-    var password: String!
-    var confirmPass: String!
+    
+    var name: String?
+    var surname: String?
+    var birthday: String?
+    var email: String?
+    var phone: String?
+    var password: String?
+    var confirmPass: String?
     var profileImage: UIImage?
     var ref: DatabaseReference?
-    var key: String!
+    var key: String?
     
     
     init(snapshot: DataSnapshot)
@@ -42,7 +44,7 @@ class User : NSObject
             {
                 self.surname = surname
             }
-            if let birthday = dict["birthday"] as? String
+            if let birthday = dict["age"] as? String
             {
                 self.birthday = birthday
             }
@@ -76,65 +78,81 @@ class User : NSObject
         self.profileImage = profileImage
     }
 
-    init(dictionary: Dictionary<String,Any>)
-    {
-        self.name = dictionary["name"] as? String
-        self.surname = dictionary["surname"] as? String
-        self.birthday = dictionary["birthday"] as? String
-        self.email = dictionary["email"] as? String
-        self.phone = dictionary["phone"] as? String
-        self.password = dictionary["password"] as? String
-        self.confirmPass = dictionary["confirmPass"] as? String
-
-        if let data : Data = dictionary["profileImage"] as? Data
-        {
-            self.profileImage = UIImage(data: data)
-        }
-
-//        self.profileImage = dictionary["profileImage"] as? UIImage
-    }
-
+  
     override init()
     {
         super.init()
     }
+    
+    static func sharedInstance() -> User?
+    {
+        if sharedUser == nil
+        {
+            self.fetchUserData(closure: { (user) in
+                
+                if user != nil
+                {
+                    sharedUser = user
+                }
+            })
+            
+            sharedUser = User()
+        }
+        
+        return sharedUser
+    }
+    
+    static func fetchUserData(closure: @escaping (User?) -> Void)
+    {
+        guard let uid = Auth.auth().currentUser?.uid
+            else
+        {
+            closure(nil)
+            return
+        }
+        
+        Database.database().reference().child("User").child(uid).observeSingleEvent(of: .value) { (snapshot) in
+            
+            sharedUser = User(snapshot: snapshot)
+            closure(sharedUser)
+            
+        }
+        
+    }
+    
+    static func updateData(user: User, closure: @escaping (User?) -> Void) {
+        guard let uid = Auth.auth().currentUser?.uid
+        else {
+            closure(nil)
+            return
+        }
 
-//
-//    func serialize() -> Dictionary<String,Any>
-//    {
-//        var dict : Dictionary<String,Any> = Dictionary()
-//
-//        dict["name"] = self.name
-//        dict["surname"] = self.surname
-//        dict["birthday"] = self.birthday
-//        dict["email"] = self.email
-//        dict["phone"] = self.phone
-//        dict["password"] = self.password
-//        dict["confirmPass"] = self.confirmPass
-//
-//        if let data : Data = UIImagePNGRepresentation(self.profileImage!)
-//        {
-//            dict["profileImage"] = data
-//        }
-//
-//
-//        return dict
-//    }
-//
-//    static func openFromUserDefaults() -> User
-//    {
-//
-//        if let userDicts : Dictionary<String,Any> = UserDefaults.standard.object(forKey: "User") as? Dictionary<String, Any>
-//        {
-//            return User(dictionary: userDicts)
-//        }
-//
-//        return User()
-//    }
-//
-//    static func saveOnUserDefaults(users: User )
-//    {
-//        UserDefaults.standard.set(users.serialize(), forKey: "User")
-//    }
+//        let key = user.ref?.key
+        let updateUser = Database.database().reference().child("User").child(uid)
+        let dataToUpdate = ["age": user.birthday,
+                            "confirmPass": user.confirmPass,
+                            "email":user.email,
+                            "name": user.name,
+                            "phone": user.phone,
+                            "surname": user.surname]
+        
+//        updateUser.updateChildValues(dataToUpdate)
+        
+        updateUser.updateChildValues(dataToUpdate) { (error, data) in
+            if error == nil
+            {
+                sharedUser = user
+                closure(user)
+            }
+            else
+            {
+                closure(nil)
+            }
+        }
+        
+    }
+    
+    
+
 }
 

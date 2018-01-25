@@ -13,6 +13,7 @@ import FirebaseDatabase
 
 class CreateAccountViewController: BaseViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
+    @IBOutlet var tapImg: UITapGestureRecognizer!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var firstNameTxt: UITextField!
     @IBOutlet weak var surnameTxt: UITextField!
@@ -27,7 +28,6 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var scroll: UIScrollView!
     
-//    lazy var user : User = User.sharedInstance
     var user : User?
     
     override func viewDidLoad() {
@@ -40,8 +40,10 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
         self.scroll.contentSize = self.containerView.frame.size
         self.scroll.addSubview(self.containerView)
         
-        imageView.layer.cornerRadius = imageView.frame.width / 4.0
+        imageView.layer.cornerRadius = imageView.frame.width / 2.0
         imageView.clipsToBounds = true
+        imageView.addGestureRecognizer(tapImg)
+        imageView.isUserInteractionEnabled = true
         
     }
     
@@ -209,14 +211,8 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
                 self.user?.profileImage = image
                 self.user?.surname = surname
                 
-                
-//                User.saveOnUserDefaults(users: self.user)
-
                 print("user saved succesfully")
             })
-//            self.navigationController?.popViewController(animated: true)
         }
-        
     }
-    
 }

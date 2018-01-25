@@ -128,9 +128,19 @@ class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextF
     
     func checkIfUserIn()
     {
-        if  FBSDKAccessToken.current() != nil || Auth.auth().currentUser?.uid != nil
+        if Auth.auth().currentUser?.uid != nil
         {
-            performSegue(withIdentifier: "loginToMainSegue", sender: nil)
+            User.fetchUserData { (user) in
+                
+                if user != nil
+                {
+                    self.performSegue(withIdentifier: "loginToMainSegue", sender: nil)
+                }
+            }
+        }
+        else if FBSDKAccessToken.current() != nil
+        {
+            // for another time
         }
     }
 }

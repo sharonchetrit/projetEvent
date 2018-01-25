@@ -144,10 +144,10 @@
 				2F17F1051FFCD1E700895E02 /* ViewController.xib */,
 				2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */,
 				32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */,
-				04C6AD10200F5A9600B1E8D7 /* login */,
 				2F04602320021689004D6E00 /* Menu */,
+				04C6AD11200F5ADF00B1E8D7 /* create Account */,
+				04C6AD10200F5A9600B1E8D7 /* login */,
 				04EF8D741FFE6D4400AEF046 /* profile */,
-				2F0460172002164A004D6E00 /* Events */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -161,7 +161,8 @@
 				2F04601B20021662004D6E00 /* EventViewController.swift */,
 				2F04601A20021662004D6E00 /* EventViewController.xib */,
 			);
-			path = Events;
+			name = Events;
+			path = "View Controllers/Events";
 			sourceTree = "<group>";
 		};
 		2F04602320021689004D6E00 /* Menu */ = {
@@ -200,8 +201,8 @@
 			children = (
 				2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */,
 				2F04603020021730004D6E00 /* LinkedTextField.swift */,
-				04C6AD11200F5ADF00B1E8D7 /* create Account */,
 				2F04601120021626004D6E00 /* View Controllers */,
+				2F0460172002164A004D6E00 /* Events */,
 				04EF8D771FFE706100AEF046 /* Model */,
 				32CC801C1FFCD6470090EB8A /* Storyboards */,
 				2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */,
