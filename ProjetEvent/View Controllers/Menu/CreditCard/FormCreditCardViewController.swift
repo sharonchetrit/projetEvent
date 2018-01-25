@@ -29,6 +29,7 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
     {
         updateSaveButtonState()
     }
+    
     func updateSaveButtonState() {
         // Save button is enabled when txtsFields are empty
         let name = nameTxtfield.text ?? ""
@@ -54,11 +55,13 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
             {
                 return false
             }
+            
         }
         else if textField == dateTxtfield {
             
             // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
-            if (dateTxtfield?.text?.characters.count == 2) || (dateTxtfield?.text?.characters.count == 5) {
+            if (dateTxtfield?.text?.count == 2) //|| (dateTxtfield?.text?.characters.count == 5)
+            {
                 //Handle backspace being pressed
                 if !(string == "") {
                     // append the text
@@ -66,11 +69,29 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
                 }
             }
             // check the condition not exceed 9 chars
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+            return !(textField.text!.count > 4 && (string.count ) > range.length)
+        }
+        
+        else if textField == numberTxtfield {
+            
+            // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
+            if (numberTxtfield?.text?.count == 4) || (numberTxtfield?.text?.count == 9) || (numberTxtfield?.text?.count == 14)
+            {
+                //Handle backspace being pressed
+                if !(string == "") {
+                    // append the text
+                    numberTxtfield?.text = (numberTxtfield?.text)! + "-"
+                }
+            }
+            // check the condition not exceed 9 chars
+            return !(textField.text!.count > 18 && (string.count ) > range.length)
         }
         
         return true
     }
+   
+    
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         

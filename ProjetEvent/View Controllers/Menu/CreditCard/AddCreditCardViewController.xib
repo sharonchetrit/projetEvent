@@ -67,7 +67,7 @@
                     <rect key="frame" x="16" y="67" width="343" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                     <connections>
                         <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="FKa-lM-pgI"/>
                         <outlet property="delegate" destination="-1" id="jKr-FZ-bEr"/>
@@ -84,7 +84,7 @@
                     </connections>
                 </textField>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.83314203741214377" green="0.82911719665169858" blue="0.83716687817258884" alpha="0.29973779965753422" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="bYJ-Ui-VIo" firstAttribute="height" secondItem="xlq-X6-ZEW" secondAttribute="height" id="92K-8y-aYn"/>
                 <constraint firstItem="TBW-9o-aCG" firstAttribute="top" secondItem="zdV-tx-FYN" secondAttribute="bottom" constant="23" id="AQ0-tb-UzW"/>

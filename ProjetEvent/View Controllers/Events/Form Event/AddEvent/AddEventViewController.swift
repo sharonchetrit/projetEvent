@@ -42,21 +42,10 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
         
     }
     
-
-    
-    
     @IBAction func cancel(_ sender: Any?)
     {
-        
         self.dismiss(animated: true)
     }
-    
-//    @IBAction func save(_ sender: Any?)
-//    {
-//        self.dismiss(animated: true)
-//    }
-//
-    
     
     
     @IBAction  func save(_ sender: Any?)
@@ -113,8 +102,6 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
         return true
     }
     
-    
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         //Format Date of Birth dd-MM-yyyy
         
@@ -153,15 +140,10 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
         
     }
     
-    
-    
     @IBAction func textEditingChanged(_ sender: UITextField) {
         updateSaveButtonState()
     }
-    
-    
-    
-    
+
     @IBOutlet weak var saveButton: UIBarButtonItem! // declaration of saveButton
     
     
@@ -189,7 +171,5 @@ class AddEventViewController: BaseViewController,UITextFieldDelegate {
         
         event = Event(name: name, depart: depart, arrive: arrive, eventDescription: desc)
     }
-    
-    
     
 }
