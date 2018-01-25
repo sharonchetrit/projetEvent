@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import FacebookShare
+import FBSDKShareKit
 
 class BaseViewController: UIViewController {
     
@@ -40,7 +42,7 @@ class BaseViewController: UIViewController {
         }
     }
     
-    @IBAction func share(_ sender: FBSDKShareButton)
+    @IBAction func share(_ sender: Any?)
     {
         
         let content = FBSDKShareLinkContent()

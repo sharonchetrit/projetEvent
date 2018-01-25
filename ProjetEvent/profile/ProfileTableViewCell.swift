@@ -23,11 +23,15 @@ class ProfileTableViewCell: MenuItemTableViewCell
     
     override func updateOnMenuItem(_ menuItem: MenuItem)
     {
-        self.profileImageView.image = User.sharedInstance.profileImage
-        self.lblName.text = User.sharedInstance.name
-        self.lblLastName.text = User.sharedInstance.surname
-        self.lblMail.text = User.sharedInstance.email
-        self.lblTel.text = User.sharedInstance.phone
+        if let image = User.sharedInstance()?.profileImage
+        {
+            self.profileImageView.image = image
+        }
+        
+        self.lblName.text = User.sharedInstance()?.name
+        self.lblLastName.text = User.sharedInstance()?.surname
+        self.lblMail.text = User.sharedInstance()?.email
+        self.lblTel.text = User.sharedInstance()?.phone
         
         profileImageView.layer.cornerRadius = profileImageView.frame.width / 2
         profileImageView.clipsToBounds = true

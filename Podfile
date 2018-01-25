@@ -6,7 +6,15 @@ target 'ProjetEvent' do
   use_frameworks!
 
   # Pods for ProjetEvent
+
   pod 'ViewDeck'
-  #pod 'ShareKit'
-  
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+
+
 end

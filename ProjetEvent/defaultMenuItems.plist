@@ -42,5 +42,13 @@
 		<key>cellType</key>
 		<string>MenuItemTableViewCell</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Log Out</string>
+		<key>selector</key>
+		<string>logOut:</string>
+		<key>cellType</key>
+		<string>MenuItemTableViewCell</string>
+	</dict>
 </array>
 </plist>

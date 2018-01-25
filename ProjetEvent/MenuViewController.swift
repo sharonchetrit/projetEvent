@@ -10,6 +10,9 @@ import UIKit
 import StoreKit
 import ViewDeck
 import FBSDKShareKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -127,4 +130,54 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    func displayUserInfo()
+    {
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        
+        Database.database().reference().child("User").child(uid).observeSingleEvent(of: .value) { (snapshot) in
+            print(snapshot)
+        }
+        
+    }
+    
+    @IBAction func logOut(_ sender: Any)
+    {
+        handleLogOut()
+        navigationController?.popViewController(animated: true)
+        
+        
+    }
+    
+    func handleLogOut()
+    {
+        if Auth.auth().currentUser?.uid != nil || FBSDKAccessToken.current() != nil {
+            do
+            {
+                try Auth.auth().signOut()
+            self.dismiss(animated: true, completion: nil)
+            } catch let logOutError
+            {
+                print(logOutError.localizedDescription)
+            }
+        }
+    }
+    
+    
+
+    
+//    func fetchFB()
+//    {
+//        if (FBSDKAccessToken.current() != nil) {
+//            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name"]).start(completionHandler: {(connection, result : Any?, error) -> Void in
+//                if error == nil {
+//                   if let dictionary = result as? Dictionary<String,Any> {
+//                        let username : String = dictionary["name"] as! String
+//                        print("fetched name:\(username)")
+//
+//                    }
+//                    print("fetched user:\(result)")
+//                }
+//                })
+//        }
+//    }
 }
