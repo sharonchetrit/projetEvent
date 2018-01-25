@@ -8,6 +8,7 @@ target 'ProjetEvent' do
   # Pods for ProjetEvent
 
   pod 'ViewDeck'
+  pod 'MBProgressHUD', '~> 1.1.0'
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'

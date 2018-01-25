@@ -11,6 +11,7 @@ import ViewDeck
 import Firebase
 import FirebaseAuth
 import FBSDKCoreKit
+import MBProgressHUD
 
 class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
@@ -116,29 +117,39 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         }
         
         let updatedUser = User(name: first_name, surname: surname, birthday: birthday, email: email, phone: phone, password: pass, confirmPass: confPass, profileImage: image)
+        
+        MBProgressHUD.showAdded(to: self.mainView, animated: true)
 
         User.updateData(user: updatedUser) { (user) in
             
-            if user != nil
-            {
-                self.user = user
+            DispatchQueue.main.async {
                 
-                self.user?.password = pass
-                self.user?.confirmPass = confPass
-                self.user?.name = first_name
-                self.user?.birthday = birthday
-                self.user?.email = email
-                self.user?.phone = phone
-                self.user?.profileImage = image
-                self.user?.surname = surname
+                MBProgressHUD.hide(for: self.mainView, animated: true)
                 
-                let alertView = UIAlertController(title: "Welcome", message: "You updated your account", preferredStyle: .alert)
+                if user != nil
+                {
+                    self.user = user
+                    
+                    self.user?.password = pass
+                    self.user?.confirmPass = confPass
+                    self.user?.name = first_name
+                    self.user?.birthday = birthday
+                    self.user?.email = email
+                    self.user?.phone = phone
+                    self.user?.profileImage = image
+                    self.user?.surname = surname
+                    
+                    let alertView = UIAlertController(title: "Welcome", message: "You updated your account", preferredStyle: .alert)
+                    
+                    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                    alertView.addAction(cancelAction)
+                    
+                    self.present(alertView, animated: true, completion: nil)
+                }
                 
-                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-                alertView.addAction(cancelAction)
-                
-                self.present(alertView, animated: true, completion: nil)
             }
+            
+            
             
             
         }

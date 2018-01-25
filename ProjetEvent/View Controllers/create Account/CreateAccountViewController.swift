@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import MBProgressHUD
 
 class CreateAccountViewController: BaseViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
@@ -172,47 +173,78 @@ class CreateAccountViewController: BaseViewController, UIImagePickerControllerDe
             let image : UIImage = self.imageView.image,
             let confPass = confirmPassTxt.text
             else {return}
-        Auth.auth().createUser(withEmail: email, password: pass){ (user, error) in
-            if error != nil
-            {
-                print(error as Any)
-                return
-            }
-            guard let uid = user?.uid else
-            {return}
+        
+        let newUser : User = User(name: firstName, surname: surname, birthday: birthday, email: email, phone: phone, password: pass, confirmPass: confPass, profileImage: image)
+        
+        MBProgressHUD.showAdded(to: self.mainView, animated: true)
+        
+        User.handleRegister(user: newUser) { (user) in
             
-            let ref = Database.database().reference(fromURL: "https://projevent-457b4.firebaseio.com/")
-            
-            let userRef = ref.child("User").child(uid)
-            
-            let user = ["name": "\(firstName)",
-                "age": "\(birthday)",
-                "email": "\(email)",
-                "phone": "\(phone)",
-                "surname": "\(surname)",
-                "confirmPass": "\(confPass)",
-                "image": "\(image)"]
+            DispatchQueue.main.async {
                 
-            
-            userRef.updateChildValues(user, withCompletionBlock: {(err,ref) in
-                if err != nil
+                MBProgressHUD.hide(for: self.mainView, animated: true)
+                
+                if( user != nil )
                 {
-                    print(err as Any)
-                    return
+                    self.user = user
+                    self.user?.password = pass
+                    self.user?.confirmPass = confPass
+                    self.user?.name = firstName
+                    self.user?.birthday = birthday
+                    self.user?.email = email
+                    self.user?.phone = phone
+                    self.user?.profileImage = image
+                    self.user?.surname = surname
                 }
                 
-                
-                self.user?.password = pass
-                self.user?.confirmPass = confPass
-                self.user?.name = firstName
-                self.user?.birthday = birthday
-                self.user?.email = email
-                self.user?.phone = phone
-                self.user?.profileImage = image
-                self.user?.surname = surname
-                
-                print("user saved succesfully")
-            })
+            }
+            
+            
+            
         }
+        
+        
+//        Auth.auth().createUser(withEmail: email, password: pass){ (user, error) in
+//            if error != nil
+//            {
+//                print(error as Any)
+//                return
+//            }
+//            guard let uid = user?.uid else
+//            {return}
+//
+//            let ref = Database.database().reference(fromURL: "https://projevent-457b4.firebaseio.com/")
+//
+//            let userRef = ref.child("User").child(uid)
+//
+//            let user = ["name": "\(firstName)",
+//                "age": "\(birthday)",
+//                "email": "\(email)",
+//                "phone": "\(phone)",
+//                "surname": "\(surname)",
+//                "confirmPass": "\(confPass)",
+//                "image": "\(image)"]
+//
+//
+//            userRef.updateChildValues(user, withCompletionBlock: {(err,ref) in
+//                if err != nil
+//                {
+//                    print(err as Any)
+//                    return
+//                }
+//
+//
+//                self.user?.password = pass
+//                self.user?.confirmPass = confPass
+//                self.user?.name = firstName
+//                self.user?.birthday = birthday
+//                self.user?.email = email
+//                self.user?.phone = phone
+//                self.user?.profileImage = image
+//                self.user?.surname = surname
+//
+//                print("user saved succesfully")
+//            })
+//        }
     }
 }

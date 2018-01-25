@@ -152,7 +152,60 @@ class User : NSObject
         
     }
     
-    
+    static func handleRegister(user : User, closure: @escaping (User?) -> Void)
+    {
+        guard let firstName = user.name,
+            let surname = user.surname,
+            let birthday = user.birthday,
+            let email = user.email,
+            let phone = user.phone,
+            let pass = user.password,
+            let image : UIImage = user.profileImage,
+            let confPass = user.confirmPass
+            else {
+                return
+                
+        }
+        
+        Auth.auth().createUser(withEmail: email, password: pass){ (newUser, error) in
+            if error != nil
+            {
+                print(error as Any)
+                closure(nil)
+                return
+            }
+            guard let uid = newUser?.uid else
+            {return}
+            
+            let ref = Database.database().reference(fromURL: "https://projevent-457b4.firebaseio.com/")
+            
+            let userRef = ref.child("User").child(uid)
+            
+            let userDict = ["name": "\(firstName)",
+                "age": "\(birthday)",
+                "email": "\(email)",
+                "phone": "\(phone)",
+                "surname": "\(surname)",
+                "confirmPass": "\(confPass)",
+                "image": "\(image)"]
+            
+            
+            userRef.updateChildValues(userDict, withCompletionBlock: {(err,ref) in
+                if err != nil
+                {
+                    print(err as Any)
+                    closure(nil)
+                    return
+                }
+                
+                sharedUser = user
+                
+                closure(sharedUser)
+                
+                print("user saved succesfully")
+            })
+        }
+    }
 
 }
 

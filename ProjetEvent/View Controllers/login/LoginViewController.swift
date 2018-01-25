@@ -10,7 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import FirebaseAuth
 import Firebase
-
+import MBProgressHUD
 
 class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
 
@@ -130,12 +130,22 @@ class LoginViewController: BaseViewController, FBSDKLoginButtonDelegate, UITextF
     {
         if Auth.auth().currentUser?.uid != nil
         {
+            MBProgressHUD.showAdded(to: self.mainView, animated: true)
+            
             User.fetchUserData { (user) in
                 
-                if user != nil
-                {
-                    self.performSegue(withIdentifier: "loginToMainSegue", sender: nil)
+                DispatchQueue.main.async {
+                    
+                    MBProgressHUD.hide(for: self.mainView, animated: true)
+                    
+                    if user != nil
+                    {
+                        self.performSegue(withIdentifier: "loginToMainSegue", sender: nil)
+                    }
+                    
                 }
+                
+                
             }
         }
         else if FBSDKAccessToken.current() != nil
