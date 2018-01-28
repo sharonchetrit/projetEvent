@@ -24,7 +24,6 @@
 		2F04602F200216A6004D6E00 /* RattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602B200216A6004D6E00 /* RattingViewController.swift */; };
 		2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04603020021730004D6E00 /* LinkedTextField.swift */; };
 		2F152496201A1C21005A759C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F152495201A1C21005A759C /* LaunchScreen.storyboard */; };
-		2F152498201A1DDE005A759C /* LauchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F152497201A1DDE005A759C /* LauchScreenViewController.swift */; };
 		2F1665D92015DF000026EF94 /* CreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */; };
 		2F1665DA2015DF000026EF94 /* CreditCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */; };
 		2F1665E3201605B90026EF94 /* AddCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */; };
@@ -87,7 +86,6 @@
 		2F04602B200216A6004D6E00 /* RattingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RattingViewController.swift; path = ProjetEvent/RattingViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04603020021730004D6E00 /* LinkedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedTextField.swift; sourceTree = "<group>"; };
 		2F152495201A1C21005A759C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2F152497201A1DDE005A759C /* LauchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauchScreenViewController.swift; sourceTree = "<group>"; };
 		2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
 		2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardTableViewCell.xib; sourceTree = "<group>"; };
 		2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCreditCardViewController.swift; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 				2F046028200216A6004D6E00 /* RattingViewController.xib */,
 				2F04602A200216A6004D6E00 /* ShareViewController.swift */,
 				2F046029200216A6004D6E00 /* ShareViewController.xib */,
-				2F152497201A1DDE005A759C /* LauchScreenViewController.swift */,
 				2F0CC02F201771C800916878 /* CreditCard */,
 			);
 			path = Menu;
@@ -498,7 +495,6 @@
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
 				2F7C8DA420162987006ED87A /* FormCreditCardViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
-				2F152498201A1DDE005A759C /* LauchScreenViewController.swift in Sources */,
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
 				32BA5934200B98AE008444C0 /* MenuItem.swift in Sources */,
 				32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */,

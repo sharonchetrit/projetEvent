@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Capture d’écran 2018-01-25 à 16.11.16" translatesAutoresizingMaskIntoConstraints="NO" id="lP1-bT-UPj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capture d’écran 2018-01-25 à 16.11.16" translatesAutoresizingMaskIntoConstraints="NO" id="lP1-bT-UPj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
@@ -26,7 +26,7 @@
                         <constraints>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="lP1-bT-UPj" secondAttribute="trailing" id="7Q3-VU-Uut"/>
                             <constraint firstItem="lP1-bT-UPj" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="SmY-7R-LPb"/>
-                            <constraint firstItem="lP1-bT-UPj" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="odg-k7-Hyn"/>
+                            <constraint firstItem="lP1-bT-UPj" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="-20" id="odg-k7-Hyn"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="lP1-bT-UPj" secondAttribute="bottom" id="t4f-AB-uTD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>

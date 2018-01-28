@@ -45,7 +45,6 @@
                         <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="wLh-RZ-8zE"/>
                         <outlet property="delegate" destination="-1" id="EDD-9d-B6N"/>
                         <outlet property="nextField" destination="Lgs-V4-aUz" id="0Qt-6C-z6g"/>
-                        <outlet property="pasteDelegate" destination="b70-Rr-mO9" id="riB-AL-dWi"/>
                     </connections>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Arrival" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w8F-Xl-1Zf" customClass="LinkedTextField" customModule="ProjetEvent" customModuleProvider="target">

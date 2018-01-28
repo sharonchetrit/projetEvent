@@ -141,7 +141,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         if textField == birthTxt {
             
             // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
-            if (birthTxt?.text?.characters.count == 2) || (birthTxt?.text?.characters.count == 5) {
+            if (birthTxt?.text?.count == 2) || (birthTxt?.text?.count == 5) {
                 //Handle backspace being pressed
                 if !(string == "") {
                     // append the text
@@ -149,13 +149,13 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
                 }
             }
             // check the condition not exceed 9 chars
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+            return !(textField.text!.count > 9 && (string.count ) > range.length)
         }
         if textField == phoneTxt {
             if (phoneTxt?.text?.first == "+"){
-                return !(textField.text!.characters.count > 12 && (string.characters.count ) > range.length)
+                return !(textField.text!.count > 12 && (string.count ) > range.length)
             }
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+            return !(textField.text!.count > 9 && (string.count ) > range.length)
         }
         else {
             return true
