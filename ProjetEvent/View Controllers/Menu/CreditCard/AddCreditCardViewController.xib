@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,47 +25,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sVc-rt-EaU">
-                    <rect key="frame" x="16" y="136" width="339" height="60"/>
-                    <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card owner name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xlq-X6-ZEW">
-                            <rect key="frame" x="0.0" y="0.0" width="339" height="30"/>
-                            <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="FKa-lM-pgI"/>
-                            </connections>
-                        </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card number..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYJ-Ui-VIo">
-                            <rect key="frame" x="0.0" y="30" width="339" height="30"/>
-                            <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="QqE-Nk-H4W"/>
-                            </connections>
-                        </textField>
-                    </subviews>
-                </stackView>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiry date..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdV-tx-FYN">
-                    <rect key="frame" x="16" y="211" width="339" height="30"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="jMY-wN-5DB"/>
-                    </connections>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TBW-9o-aCG">
-                    <rect key="frame" x="16" y="256" width="339" height="30"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="zuP-wI-h0b"/>
-                    </connections>
-                </textField>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E81-uf-rRd">
                     <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                     <items>
@@ -84,25 +43,70 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiry date..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdV-tx-FYN">
+                    <rect key="frame" x="16" y="193" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="jMY-wN-5DB"/>
+                        <outlet property="delegate" destination="-1" id="I8w-nn-K0C"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TBW-9o-aCG">
+                    <rect key="frame" x="16" y="246" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="zuP-wI-h0b"/>
+                        <outlet property="delegate" destination="-1" id="QVE-Ww-tEX"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card owner name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xlq-X6-ZEW">
+                    <rect key="frame" x="16" y="87" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                    <connections>
+                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="FKa-lM-pgI"/>
+                        <outlet property="delegate" destination="-1" id="jKr-FZ-bEr"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card number..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYJ-Ui-VIo">
+                    <rect key="frame" x="16" y="140" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="QqE-Nk-H4W"/>
+                        <outlet property="delegate" destination="-1" id="Xpi-VA-BoI"/>
+                    </connections>
+                </textField>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.83314203741214377" green="0.82911719665169858" blue="0.83716687817258884" alpha="0.29973779965753422" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TBW-9o-aCG" secondAttribute="bottom" constant="381" id="1bS-HE-fSt"/>
-                <constraint firstItem="E81-uf-rRd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B47-kt-Gak"/>
-                <constraint firstItem="sVc-rt-EaU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="E4m-IU-CIY"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TBW-9o-aCG" secondAttribute="trailing" constant="20" id="Eqi-HR-7nG"/>
-                <constraint firstItem="TBW-9o-aCG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ExG-dW-NH0"/>
-                <constraint firstItem="E81-uf-rRd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="OZi-zV-vKU"/>
-                <constraint firstItem="sVc-rt-EaU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="116" id="PAa-nw-6Bh"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zdV-tx-FYN" secondAttribute="trailing" constant="20" id="aWY-wb-YwC"/>
-                <constraint firstItem="zdV-tx-FYN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ak6-k0-ONQ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sVc-rt-EaU" secondAttribute="trailing" constant="20" id="biF-RT-yep"/>
-                <constraint firstItem="TBW-9o-aCG" firstAttribute="top" secondItem="zdV-tx-FYN" secondAttribute="bottom" constant="15" id="eRX-Vo-BJB"/>
-                <constraint firstAttribute="trailing" secondItem="E81-uf-rRd" secondAttribute="trailing" id="y2n-VA-Q4K"/>
-                <constraint firstItem="zdV-tx-FYN" firstAttribute="top" secondItem="bYJ-Ui-VIo" secondAttribute="bottom" constant="15" id="ysv-uC-dfW"/>
+                <constraint firstItem="bYJ-Ui-VIo" firstAttribute="height" secondItem="xlq-X6-ZEW" secondAttribute="height" id="92K-8y-aYn"/>
+                <constraint firstItem="TBW-9o-aCG" firstAttribute="top" secondItem="zdV-tx-FYN" secondAttribute="bottom" constant="23" id="AQ0-tb-UzW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="E81-uf-rRd" secondAttribute="top" id="Co6-6L-G5V"/>
+                <constraint firstItem="TBW-9o-aCG" firstAttribute="height" secondItem="xlq-X6-ZEW" secondAttribute="height" id="Fv6-4h-34Q"/>
+                <constraint firstItem="TBW-9o-aCG" firstAttribute="trailing" secondItem="xlq-X6-ZEW" secondAttribute="trailing" id="G03-rI-fOx"/>
+                <constraint firstItem="zdV-tx-FYN" firstAttribute="height" secondItem="xlq-X6-ZEW" secondAttribute="height" id="GGr-dl-cQs"/>
+                <constraint firstItem="xlq-X6-ZEW" firstAttribute="top" secondItem="E81-uf-rRd" secondAttribute="bottom" constant="23" id="IIN-kp-w35"/>
+                <constraint firstItem="bYJ-Ui-VIo" firstAttribute="top" secondItem="xlq-X6-ZEW" secondAttribute="bottom" constant="23" id="Nrk-L0-2Lp"/>
+                <constraint firstItem="zdV-tx-FYN" firstAttribute="leading" secondItem="xlq-X6-ZEW" secondAttribute="leading" id="Ogd-dt-hm8"/>
+                <constraint firstItem="bYJ-Ui-VIo" firstAttribute="trailing" secondItem="xlq-X6-ZEW" secondAttribute="trailing" id="RZC-Ld-kyR"/>
+                <constraint firstItem="bYJ-Ui-VIo" firstAttribute="leading" secondItem="xlq-X6-ZEW" secondAttribute="leading" id="VzC-fX-Zh1"/>
+                <constraint firstItem="xlq-X6-ZEW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="XhY-qL-D3U"/>
+                <constraint firstItem="zdV-tx-FYN" firstAttribute="trailing" secondItem="xlq-X6-ZEW" secondAttribute="trailing" id="amg-mY-uWf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E81-uf-rRd" secondAttribute="trailing" id="d0X-2h-pSc"/>
+                <constraint firstItem="zdV-tx-FYN" firstAttribute="top" secondItem="bYJ-Ui-VIo" secondAttribute="bottom" constant="23" id="dGx-is-oSB"/>
+                <constraint firstItem="E81-uf-rRd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jlW-V1-595"/>
+                <constraint firstItem="TBW-9o-aCG" firstAttribute="leading" secondItem="xlq-X6-ZEW" secondAttribute="leading" id="sLv-Ga-EjH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xlq-X6-ZEW" secondAttribute="trailing" constant="16" id="uRa-pS-8K0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="44" y="81"/>
+            <point key="canvasLocation" x="34.5" y="69.5"/>
         </view>
     </objects>
 </document>

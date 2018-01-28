@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         FirebaseApp.configure()
+        sleep(UInt32(2.0))
+        
         
         return true
     }

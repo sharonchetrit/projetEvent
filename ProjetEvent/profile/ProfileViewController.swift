@@ -18,6 +18,7 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
     
     
     @IBOutlet var tapAddPhoto: UITapGestureRecognizer!
+
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     

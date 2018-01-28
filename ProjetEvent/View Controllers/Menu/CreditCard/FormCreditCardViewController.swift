@@ -29,6 +29,7 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
     {
         updateSaveButtonState()
     }
+    
     func updateSaveButtonState() {
         // Save button is enabled when txtsFields are empty
         let name = nameTxtfield.text ?? ""
@@ -48,16 +49,49 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
     {
-        if textField == self.nameTxtfield && string != "" // if deleting
+        if textField == self.cryptoTxtfield && string != "" // if deleting
         {
-            if let v = textField.text?.count, v >= 1
+            if let v = textField.text?.count, v >= 3
             {
                 return false
             }
+            
+        }
+        else if textField == dateTxtfield {
+            
+            // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
+            if (dateTxtfield?.text?.count == 2) //|| (dateTxtfield?.text?.characters.count == 5)
+            {
+                //Handle backspace being pressed
+                if !(string == "") {
+                    // append the text
+                    dateTxtfield?.text = (dateTxtfield?.text)! + "-"
+                }
+            }
+            // check the condition not exceed 9 chars
+            return !(textField.text!.count > 4 && (string.count ) > range.length)
+        }
+        
+        else if textField == numberTxtfield {
+            
+            // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
+            if (numberTxtfield?.text?.count == 4) || (numberTxtfield?.text?.count == 9) || (numberTxtfield?.text?.count == 14)
+            {
+                //Handle backspace being pressed
+                if !(string == "") {
+                    // append the text
+                    numberTxtfield?.text = (numberTxtfield?.text)! + "-"
+                }
+            }
+            // check the condition not exceed 9 chars
+            return !(textField.text!.count > 18 && (string.count ) > range.length)
         }
         
         return true
     }
+   
+    
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
@@ -82,3 +116,4 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
     
     }
 }
+

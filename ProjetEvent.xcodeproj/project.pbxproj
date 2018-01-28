@@ -19,6 +19,7 @@
 		2F04602620021699004D6E00 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602420021699004D6E00 /* MenuViewController.swift */; };
 		2F04602720021699004D6E00 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04602520021699004D6E00 /* MenuViewController.xib */; };
 		2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04603020021730004D6E00 /* LinkedTextField.swift */; };
+		2F152496201A1C21005A759C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F152495201A1C21005A759C /* LaunchScreen.storyboard */; };
 		2F1665D92015DF000026EF94 /* CreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */; };
 		2F1665DA2015DF000026EF94 /* CreditCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */; };
 		2F1665E3201605B90026EF94 /* AddCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */; };
@@ -40,16 +41,23 @@
 		2FFC8488200DFC5A003DE6B4 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFC8486200DFC5A003DE6B4 /* CreditCardViewController.swift */; };
 		2FFC8489200DFC5A003DE6B4 /* CreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFC8487200DFC5A003DE6B4 /* CreditCardViewController.xib */; };
 		2FFC848B200E01D1003DE6B4 /* CreditCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFC848A200E01D1003DE6B4 /* CreditCards.storyboard */; };
-		323A21EB2019ED2B00CE8E0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 323A21EA2019ED2B00CE8E0D /* GoogleService-Info.plist */; };
-		323A21EF2019ED5000CE8E0D /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323A21ED2019ED5000CE8E0D /* CreateAccountViewController.xib */; };
-		323A21F02019ED5000CE8E0D /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323A21EE2019ED5000CE8E0D /* CreateAccountViewController.swift */; };
-		323A21F22019ED5B00CE8E0D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323A21F12019ED5B00CE8E0D /* Color.swift */; };
-		323A21F62019EFF600CE8E0D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323A21F42019EFF600CE8E0D /* LoginViewController.xib */; };
-		323A21F72019EFF600CE8E0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323A21F52019EFF600CE8E0D /* LoginViewController.swift */; };
+		3276464B201DD80700F8A21B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3276464A201DD80700F8A21B /* GoogleService-Info.plist */; };
+		32764652201DD82600F8A21B /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3276464D201DD82500F8A21B /* CreateAccountViewController.xib */; };
+		32764653201DD82600F8A21B /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276464E201DD82500F8A21B /* CreateAccountViewController.swift */; };
+		32764654201DD82600F8A21B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32764650201DD82600F8A21B /* LoginViewController.xib */; };
+		32764655201DD82600F8A21B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32764651201DD82600F8A21B /* LoginViewController.swift */; };
+		32BA591C200B984D008444C0 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */; };
+		32BA591D200B984D008444C0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5917200B984D008444C0 /* Bolts.framework */; };
+		32BA591E200B984D008444C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */; };
+		32BA591F200B984D008444C0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5919200B984D008444C0 /* FBSDKShareKit.framework */; };
+		32BA5920200B984D008444C0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA591A200B984D008444C0 /* FBSDKLoginKit.framework */; };
+		32BA5921200B984E008444C0 /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA591B200B984D008444C0 /* FBSDKPlacesKit.framework */; };
 		32BA592B200B9886008444C0 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5924200B9885008444C0 /* AddEventViewController.swift */; };
 		32BA592C200B9886008444C0 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5925200B9885008444C0 /* AddEventViewController.xib */; };
 		32BA592D200B9886008444C0 /* CurrentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */; };
 		32BA592E200B9886008444C0 /* CurrentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */; };
+		32BA592F200B9886008444C0 /* CurrentEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */; };
+		32BA5930200B9886008444C0 /* CurrentEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA592A200B9885008444C0 /* CurrentEventTableViewCell.swift */; };
 		32BA5933200B98AE008444C0 /* defaultMenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5931200B98AD008444C0 /* defaultMenuItems.plist */; };
 		32BA5934200B98AE008444C0 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5932200B98AD008444C0 /* MenuItem.swift */; };
 		32BA5936200B98C5008444C0 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5935200B98C5008444C0 /* events.plist */; };
@@ -74,6 +82,7 @@
 		2F04602420021699004D6E00 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ProjetEvent/MenuViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04602520021699004D6E00 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuViewController.xib; path = ProjetEvent/MenuViewController.xib; sourceTree = SOURCE_ROOT; };
 		2F04603020021730004D6E00 /* LinkedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedTextField.swift; sourceTree = "<group>"; };
+		2F152495201A1C21005A759C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
 		2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardTableViewCell.xib; sourceTree = "<group>"; };
 		2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCreditCardViewController.swift; sourceTree = "<group>"; };
@@ -98,16 +107,23 @@
 		2FFC8486200DFC5A003DE6B4 /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
 		2FFC8487200DFC5A003DE6B4 /* CreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardViewController.xib; sourceTree = "<group>"; };
 		2FFC848A200E01D1003DE6B4 /* CreditCards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreditCards.storyboard; sourceTree = "<group>"; };
-		323A21EA2019ED2B00CE8E0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		323A21ED2019ED5000CE8E0D /* CreateAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
-		323A21EE2019ED5000CE8E0D /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
-		323A21F12019ED5B00CE8E0D /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		323A21F42019EFF600CE8E0D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		323A21F52019EFF600CE8E0D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3276464A201DD80700F8A21B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3276464D201DD82500F8A21B /* CreateAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		3276464E201DD82500F8A21B /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		32764650201DD82600F8A21B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		32764651201DD82600F8A21B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		32BA5917200B984D008444C0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		32BA5919200B984D008444C0 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		32BA591A200B984D008444C0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		32BA591B200B984D008444C0 /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKPlacesKit.framework; sourceTree = "<group>"; };
 		32BA5924200B9885008444C0 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		32BA5925200B9885008444C0 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
 		32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTableViewCell.swift; sourceTree = "<group>"; };
 		32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentTableViewCell.xib; sourceTree = "<group>"; };
+		32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentEventTableViewCell.xib; sourceTree = "<group>"; };
+		32BA592A200B9885008444C0 /* CurrentEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentEventTableViewCell.swift; sourceTree = "<group>"; };
 		32BA5931200B98AD008444C0 /* defaultMenuItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = defaultMenuItems.plist; path = ProjetEvent/defaultMenuItems.plist; sourceTree = SOURCE_ROOT; };
 		32BA5932200B98AD008444C0 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = ProjetEvent/MenuItem.swift; sourceTree = SOURCE_ROOT; };
 		32BA5935200B98C5008444C0 /* events.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
@@ -124,6 +140,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BA591D200B984D008444C0 /* Bolts.framework in Frameworks */,
+				32BA591E200B984D008444C0 /* FBSDKCoreKit.framework in Frameworks */,
+				32BA5920200B984D008444C0 /* FBSDKLoginKit.framework in Frameworks */,
+				32BA591F200B984D008444C0 /* FBSDKShareKit.framework in Frameworks */,
+				32BA5921200B984E008444C0 /* FBSDKPlacesKit.framework in Frameworks */,
+				32BA591C200B984D008444C0 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,9 +185,8 @@
 				2F17F1051FFCD1E700895E02 /* ViewController.xib */,
 				2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */,
 				32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */,
-				323A21F12019ED5B00CE8E0D /* Color.swift */,
-				323A21F32019EFF600CE8E0D /* login */,
-				323A21EC2019ED5000CE8E0D /* create Account */,
+				3276464C201DD82500F8A21B /* create Account */,
+				3276464F201DD82600F8A21B /* login */,
 				2F04602320021689004D6E00 /* Menu */,
 				04EF8D741FFE6D4400AEF046 /* profile */,
 				2F0460172002164A004D6E00 /* Events */,
@@ -244,25 +265,25 @@
 				2F17F0F11FFCCA2700895E02 /* Assets.xcassets */,
 				2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */,
 				2F17F0F61FFCCA2700895E02 /* Info.plist */,
-				323A21EA2019ED2B00CE8E0D /* GoogleService-Info.plist */,
+				3276464A201DD80700F8A21B /* GoogleService-Info.plist */,
 			);
 			path = ProjetEvent;
 			sourceTree = "<group>";
 		};
-		323A21EC2019ED5000CE8E0D /* create Account */ = {
+		3276464C201DD82500F8A21B /* create Account */ = {
 			isa = PBXGroup;
 			children = (
-				323A21ED2019ED5000CE8E0D /* CreateAccountViewController.xib */,
-				323A21EE2019ED5000CE8E0D /* CreateAccountViewController.swift */,
+				3276464D201DD82500F8A21B /* CreateAccountViewController.xib */,
+				3276464E201DD82500F8A21B /* CreateAccountViewController.swift */,
 			);
 			path = "create Account";
 			sourceTree = "<group>";
 		};
-		323A21F32019EFF600CE8E0D /* login */ = {
+		3276464F201DD82600F8A21B /* login */ = {
 			isa = PBXGroup;
 			children = (
-				323A21F42019EFF600CE8E0D /* LoginViewController.xib */,
-				323A21F52019EFF600CE8E0D /* LoginViewController.swift */,
+				32764650201DD82600F8A21B /* LoginViewController.xib */,
+				32764651201DD82600F8A21B /* LoginViewController.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -289,6 +310,8 @@
 			children = (
 				32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */,
 				32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */,
+				32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */,
+				32BA592A200B9885008444C0 /* CurrentEventTableViewCell.swift */,
 			);
 			path = currentTableViewCell;
 			sourceTree = "<group>";
@@ -299,6 +322,7 @@
 				2F17F0EE1FFCCA2700895E02 /* Main.storyboard */,
 				32CC80161FFCD5CC0090EB8A /* Event.storyboard */,
 				2FFC848A200E01D1003DE6B4 /* CreditCards.storyboard */,
+				2F152495201A1C21005A759C /* LaunchScreen.storyboard */,
 				32CC80181FFCD5DA0090EB8A /* Menu.storyboard */,
 				32CC801A1FFCD5E90090EB8A /* Profile.storyboard */,
 			);
@@ -317,6 +341,12 @@
 		7DC4EAEDF1097BE2E70B61AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32BA5917200B984D008444C0 /* Bolts.framework */,
+				32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */,
+				32BA591A200B984D008444C0 /* FBSDKLoginKit.framework */,
+				32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */,
+				32BA591B200B984D008444C0 /* FBSDKPlacesKit.framework */,
+				32BA5919200B984D008444C0 /* FBSDKShareKit.framework */,
 				333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */,
 			);
 			name = Frameworks;
@@ -386,25 +416,27 @@
 			files = (
 				2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */,
 				32BA592E200B9886008444C0 /* CurrentTableViewCell.xib in Resources */,
-				323A21EB2019ED2B00CE8E0D /* GoogleService-Info.plist in Resources */,
 				2F04601F20021662004D6E00 /* EventViewController.xib in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
 				2F04602120021662004D6E00 /* CurrentEventsVC.xib in Resources */,
+				32BA592F200B9886008444C0 /* CurrentEventTableViewCell.xib in Resources */,
 				04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */,
+				32764652201DD82600F8A21B /* CreateAccountViewController.xib in Resources */,
+				2F152496201A1C21005A759C /* LaunchScreen.storyboard in Resources */,
 				2FE5F320200B9ADD0084A4A4 /* ProfileTableViewCell.xib in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
 				2FFC848B200E01D1003DE6B4 /* CreditCards.storyboard in Resources */,
 				32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */,
 				32BA5936200B98C5008444C0 /* events.plist in Resources */,
 				32BA5933200B98AE008444C0 /* defaultMenuItems.plist in Resources */,
-				323A21EF2019ED5000CE8E0D /* CreateAccountViewController.xib in Resources */,
-				323A21F62019EFF600CE8E0D /* LoginViewController.xib in Resources */,
 				2FE5F31F200B9ADD0084A4A4 /* MenuItemTableViewCell.xib in Resources */,
 				2F04602720021699004D6E00 /* MenuViewController.xib in Resources */,
 				2FFC8489200DFC5A003DE6B4 /* CreditCardViewController.xib in Resources */,
+				3276464B201DD80700F8A21B /* GoogleService-Info.plist in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
 				32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */,
 				32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */,
+				32764654201DD82600F8A21B /* LoginViewController.xib in Resources */,
 				2F1665E4201605B90026EF94 /* AddCreditCardViewController.xib in Resources */,
 				32BA592C200B9886008444C0 /* AddEventViewController.xib in Resources */,
 				2F1665DA2015DF000026EF94 /* CreditCardTableViewCell.xib in Resources */,
@@ -472,7 +504,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323A21F72019EFF600CE8E0D /* LoginViewController.swift in Sources */,
 				2F1665D92015DF000026EF94 /* CreditCardTableViewCell.swift in Sources */,
 				2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */,
 				2FFC8488200DFC5A003DE6B4 /* CreditCardViewController.swift in Sources */,
@@ -481,22 +512,23 @@
 				2F0460142002163A004D6E00 /* Event.swift in Sources */,
 				2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */,
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
-				323A21F22019ED5B00CE8E0D /* Color.swift in Sources */,
 				2F7C8DA420162987006ED87A /* FormCreditCardViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
 				32BA5934200B98AE008444C0 /* MenuItem.swift in Sources */,
 				32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */,
-				323A21F02019ED5000CE8E0D /* CreateAccountViewController.swift in Sources */,
+				32BA5930200B9886008444C0 /* CurrentEventTableViewCell.swift in Sources */,
 				2F04602620021699004D6E00 /* MenuViewController.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
 				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
 				2F194F3E201498B90052C0AA /* CreditCard.swift in Sources */,
 				2FE5F31E200B9ADD0084A4A4 /* ProfileTableViewCell.swift in Sources */,
 				2F1665E3201605B90026EF94 /* AddCreditCardViewController.swift in Sources */,
+				32764653201DD82600F8A21B /* CreateAccountViewController.swift in Sources */,
 				2FE5F321200B9ADD0084A4A4 /* MenuItemTableViewCell.swift in Sources */,
 				04EF8D761FFE6DF400AEF046 /* User.swift in Sources */,
 				2F194F4020149D2D0052C0AA /* CreditCardTableViewController.swift in Sources */,
+				32764655201DD82600F8A21B /* LoginViewController.swift in Sources */,
 				32BA592D200B9886008444C0 /* CurrentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,7 +668,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9549XCZNE7;
+				DEVELOPMENT_TEAM = V7X4HS8M86;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -644,7 +676,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Developers.institute.ProjetEvent;
+				PRODUCT_BUNDLE_IDENTIFIER = institute.developer.ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = ./ProjetEvent/SlideMenu.h;
@@ -659,7 +691,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9549XCZNE7;
+				DEVELOPMENT_TEAM = V7X4HS8M86;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -667,7 +699,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Developers.institute.ProjetEvent;
+				PRODUCT_BUNDLE_IDENTIFIER = institute.developer.ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = ./ProjetEvent/SlideMenu.h;

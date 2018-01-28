@@ -60,6 +60,7 @@ class AddCreditCardViewController: FormCreditCardViewController
         
         navigationController?.popViewController(animated: true)
     }
-    
-}
-        
+    @IBAction override func textEditingChanged(_ sender: UITextField) {
+        updateSaveButtonState()
+    }
+} 

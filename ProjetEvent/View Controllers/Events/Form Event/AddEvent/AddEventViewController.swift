@@ -42,21 +42,10 @@ class AddEventViewController: BaseViewController, UITextFieldDelegate {
         
     }
     
-
-    
-    
     @IBAction func cancel(_ sender: Any?)
     {
-        
         self.dismiss(animated: true)
     }
-    
-//    @IBAction func save(_ sender: Any?)
-//    {
-//        self.dismiss(animated: true)
-//    }
-//
-    
     
     
     @IBAction  func save(_ sender: Any?)
@@ -113,8 +102,6 @@ class AddEventViewController: BaseViewController, UITextFieldDelegate {
         return true
     }
     
-    
-    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         //Format Date of Birth dd-MM-yyyy
         
@@ -123,7 +110,7 @@ class AddEventViewController: BaseViewController, UITextFieldDelegate {
         if textField == txtFieldDepart {
             
             // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
-            if (txtFieldDepart?.text?.characters.count == 2) || (txtFieldDepart?.text?.characters.count == 5) {
+            if (txtFieldDepart?.text?.count == 2) || (txtFieldDepart?.text?.count == 5) {
                 //Handle backspace being pressed
                 if !(string == "") {
                     // append the text
@@ -131,12 +118,12 @@ class AddEventViewController: BaseViewController, UITextFieldDelegate {
                 }
             }
             // check the condition not exceed 9 chars
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+            return !(textField.text!.count > 9 && (string.count ) > range.length)
         }
         if textField == txtFieldArrive {
             
             // check the chars length dd -->2 at the same time calculate the dd-MM --> 5
-            if (txtFieldArrive?.text?.characters.count == 2) || (txtFieldArrive?.text?.characters.count == 5) {
+            if (txtFieldArrive?.text?.count == 2) || (txtFieldArrive?.text?.count == 5) {
                 //Handle backspace being pressed
                 if !(string == "") {
                     // append the text
@@ -144,7 +131,7 @@ class AddEventViewController: BaseViewController, UITextFieldDelegate {
                 }
             }
             // check the condition not exceed 9 chars
-            return !(textField.text!.characters.count > 9 && (string.characters.count ) > range.length)
+            return !(textField.text!.count > 9 && (string.count ) > range.length)
         }
             
         else {
@@ -153,15 +140,10 @@ class AddEventViewController: BaseViewController, UITextFieldDelegate {
         
     }
     
-    
-    
     @IBAction func textEditingChanged(_ sender: UITextField) {
         updateSaveButtonState()
     }
-    
-    
-    
-    
+
     @IBOutlet weak var saveButton: UIBarButtonItem! // declaration of saveButton
     
     
@@ -189,7 +171,5 @@ class AddEventViewController: BaseViewController, UITextFieldDelegate {
         
         event = Event(name: name, depart: depart, arrive: arrive, eventDescription: desc)
     }
-    
-    
     
 }
