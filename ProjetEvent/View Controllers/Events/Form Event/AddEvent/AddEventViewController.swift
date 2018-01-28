@@ -14,7 +14,7 @@ protocol AddEventDelegate : NSObjectProtocol // MUST inherit from NSObjectProtoc
     func updateEvent(event: Event)
 }
 
-class AddEventViewController: BaseViewController,UITextFieldDelegate {
+class AddEventViewController: BaseViewController, UITextFieldDelegate {
     
     weak var event : Event?
     
