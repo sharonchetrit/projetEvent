@@ -90,7 +90,13 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     {
         tableView.deselectRow(at: indexPath, animated: false)
         let menuItem = self.menuItems[indexPath.row]
-        self.perform(menuItem.selector, with: nil)
+        
+        if self.responds(to: menuItem.selector )
+        {
+            self.perform(menuItem.selector, with: nil)
+        }
+        
+        
     }
     
     @IBAction func ratting(_ sender: Any)
