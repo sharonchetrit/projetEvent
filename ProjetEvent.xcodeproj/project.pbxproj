@@ -50,8 +50,6 @@
 		32BA592C200B9886008444C0 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5925200B9885008444C0 /* AddEventViewController.xib */; };
 		32BA592D200B9886008444C0 /* CurrentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */; };
 		32BA592E200B9886008444C0 /* CurrentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */; };
-		32BA592F200B9886008444C0 /* CurrentEventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */; };
-		32BA5930200B9886008444C0 /* CurrentEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA592A200B9885008444C0 /* CurrentEventTableViewCell.swift */; };
 		32BA5933200B98AE008444C0 /* defaultMenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5931200B98AD008444C0 /* defaultMenuItems.plist */; };
 		32BA5934200B98AE008444C0 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5932200B98AD008444C0 /* MenuItem.swift */; };
 		32BA5936200B98C5008444C0 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5935200B98C5008444C0 /* events.plist */; };
@@ -110,8 +108,6 @@
 		32BA5925200B9885008444C0 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
 		32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTableViewCell.swift; sourceTree = "<group>"; };
 		32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentTableViewCell.xib; sourceTree = "<group>"; };
-		32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentEventTableViewCell.xib; sourceTree = "<group>"; };
-		32BA592A200B9885008444C0 /* CurrentEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentEventTableViewCell.swift; sourceTree = "<group>"; };
 		32BA5931200B98AD008444C0 /* defaultMenuItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = defaultMenuItems.plist; path = ProjetEvent/defaultMenuItems.plist; sourceTree = SOURCE_ROOT; };
 		32BA5932200B98AD008444C0 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = ProjetEvent/MenuItem.swift; sourceTree = SOURCE_ROOT; };
 		32BA5935200B98C5008444C0 /* events.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
@@ -293,8 +289,6 @@
 			children = (
 				32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */,
 				32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */,
-				32BA5929200B9885008444C0 /* CurrentEventTableViewCell.xib */,
-				32BA592A200B9885008444C0 /* CurrentEventTableViewCell.swift */,
 			);
 			path = currentTableViewCell;
 			sourceTree = "<group>";
@@ -396,7 +390,6 @@
 				2F04601F20021662004D6E00 /* EventViewController.xib in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
 				2F04602120021662004D6E00 /* CurrentEventsVC.xib in Resources */,
-				32BA592F200B9886008444C0 /* CurrentEventTableViewCell.xib in Resources */,
 				04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */,
 				2FE5F320200B9ADD0084A4A4 /* ProfileTableViewCell.xib in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
@@ -494,7 +487,6 @@
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
 				32BA5934200B98AE008444C0 /* MenuItem.swift in Sources */,
 				32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */,
-				32BA5930200B9886008444C0 /* CurrentEventTableViewCell.swift in Sources */,
 				323A21F02019ED5000CE8E0D /* CreateAccountViewController.swift in Sources */,
 				2F04602620021699004D6E00 /* MenuViewController.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,

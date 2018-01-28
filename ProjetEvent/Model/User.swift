@@ -138,7 +138,7 @@ class User : NSObject
         
 //        updateUser.updateChildValues(dataToUpdate)
         
-        updateUser.updateChildValues(dataToUpdate) { (error, data) in
+        updateUser.updateChildValues(dataToUpdate as Any as! [AnyHashable : Any]) { (error, data) in
             if error == nil
             {
                 sharedUser = user

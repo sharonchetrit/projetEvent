@@ -18,7 +18,9 @@ class ProfileTableViewCell: MenuItemTableViewCell
     @IBOutlet weak var lblTel: UILabel!
     
     
-    @IBAction func editProfile(_ sender: Any) {
+    @IBAction func editProfile(_ sender: Any)
+    {
+        
     }
     
     override func updateOnMenuItem(_ menuItem: MenuItem)

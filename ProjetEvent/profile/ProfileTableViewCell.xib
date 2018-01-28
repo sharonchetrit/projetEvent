@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,39 +19,39 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="264.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="KIu-fz-YZR">
-                        <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="KIu-fz-YZR">
+                        <rect key="frame" x="0.0" y="15" width="95" height="95"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="95" id="aOx-oN-FYV"/>
                             <constraint firstAttribute="width" constant="95" id="hUs-SW-Lp5"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaV-5u-dJg">
-                        <rect key="frame" x="16" y="110" width="42" height="21"/>
+                        <rect key="frame" x="16" y="125" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuF-Vg-93I">
-                        <rect key="frame" x="16" y="146" width="42" height="21"/>
+                        <rect key="frame" x="16" y="161" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AA-Ta-hSk">
-                        <rect key="frame" x="16" y="182" width="42" height="21"/>
+                        <rect key="frame" x="16" y="197" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSM-lt-UFx">
-                        <rect key="frame" x="16" y="218" width="42" height="21"/>
+                        <rect key="frame" x="16" y="233" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNq-J1-tEs">
-                        <rect key="frame" x="105.5" y="32" width="110" height="30"/>
+                        <rect key="frame" x="105" y="47" width="110" height="30"/>
                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                         <state key="normal" title="Edit my profile">
                             <color key="titleColor" red="1" green="0.02654661375" blue="0.029965965939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -73,8 +73,8 @@
                     <constraint firstItem="LSM-lt-UFx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="g2J-fN-gFa"/>
                     <constraint firstItem="LSM-lt-UFx" firstAttribute="top" secondItem="5AA-Ta-hSk" secondAttribute="bottom" constant="15" id="hsp-SL-tND"/>
                     <constraint firstItem="KIu-fz-YZR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="srF-GJ-Fl7"/>
-                    <constraint firstItem="KIu-fz-YZR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zNL-Zu-WHP"/>
-                    <constraint firstAttribute="bottom" secondItem="LSM-lt-UFx" secondAttribute="bottom" constant="25.5" id="zaa-Sg-8pT"/>
+                    <constraint firstItem="KIu-fz-YZR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="zNL-Zu-WHP"/>
+                    <constraint firstAttribute="bottom" secondItem="LSM-lt-UFx" secondAttribute="bottom" constant="10.5" id="zaa-Sg-8pT"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
