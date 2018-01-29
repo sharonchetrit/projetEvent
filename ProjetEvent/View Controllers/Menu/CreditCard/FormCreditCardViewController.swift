@@ -9,12 +9,12 @@
 import UIKit
 
 
-
 class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
     
     
     weak var creditcard : CreditCard?
     
+    @IBOutlet weak var navigBar: UINavigationBar!
     
     @IBOutlet weak var saveMe: UIBarButtonItem!
     
@@ -43,6 +43,16 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let creditCard = creditcard
+        {
+            self.navigBar.topItem?.title = creditCard.name
+            nameTxtfield.text = creditcard?.name
+            numberTxtfield.text = creditcard?.number
+            dateTxtfield.text = creditcard?.date
+            cryptoTxtfield.text = creditcard?.cryptogram
+        }
+        
         updateSaveButtonState()
     }
     
@@ -113,7 +123,7 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
     
     @IBAction func save(_ sender : Any? )
     {
-    
+        
     }
 }
 

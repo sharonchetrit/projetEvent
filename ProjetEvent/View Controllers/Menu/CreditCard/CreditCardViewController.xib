@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,9 +22,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmO-FJ-wsM">
-                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                     <items>
-                        <navigationItem title="Title" id="1eX-uL-SEP">
+                        <navigationItem title="Credit Cards" id="1eX-uL-SEP">
                             <barButtonItem key="leftBarButtonItem" title="Menu" id="pH6-qb-Sze">
                                 <connections>
                                     <action selector="menu:" destination="-1" id="g5a-Nm-8qO"/>
@@ -39,7 +39,7 @@
                     </items>
                 </navigationBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dSt-BM-8pv">
-                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <rect key="frame" x="0.0" y="79" width="375" height="588"/>
                     <color key="backgroundColor" red="0.83314203740000004" green="0.82911719669999995" blue="0.83716687820000002" alpha="0.29973779969999997" colorSpace="custom" customColorSpace="displayP3"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Zfo-C1-g3q"/>
@@ -52,12 +52,13 @@
                 <constraint firstItem="tEa-2J-uL3" firstAttribute="trailing" secondItem="dSt-BM-8pv" secondAttribute="trailing" id="05L-tB-pUy"/>
                 <constraint firstItem="dSt-BM-8pv" firstAttribute="leading" secondItem="tEa-2J-uL3" secondAttribute="leading" id="3b0-dV-ObK"/>
                 <constraint firstItem="tEa-2J-uL3" firstAttribute="bottom" secondItem="dSt-BM-8pv" secondAttribute="bottom" id="8Cm-8h-1bq"/>
-                <constraint firstItem="tEa-2J-uL3" firstAttribute="top" secondItem="kmO-FJ-wsM" secondAttribute="top" id="duC-SA-Vev"/>
+                <constraint firstItem="tEa-2J-uL3" firstAttribute="top" secondItem="kmO-FJ-wsM" secondAttribute="top" constant="-15" id="duC-SA-Vev"/>
                 <constraint firstItem="kmO-FJ-wsM" firstAttribute="leading" secondItem="tEa-2J-uL3" secondAttribute="leading" id="hD1-Du-gd5"/>
                 <constraint firstItem="tEa-2J-uL3" firstAttribute="trailing" secondItem="kmO-FJ-wsM" secondAttribute="trailing" id="iSJ-ik-wyG"/>
                 <constraint firstItem="dSt-BM-8pv" firstAttribute="top" secondItem="kmO-FJ-wsM" secondAttribute="bottom" id="w5y-Mq-Ndc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="tEa-2J-uL3"/>
+            <point key="canvasLocation" x="32.5" y="71.5"/>
         </view>
     </objects>
 </document>
