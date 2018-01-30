@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,6 +16,7 @@
                 <outlet property="dateTxtfield" destination="zdV-tx-FYN" id="bcO-Y0-5wi"/>
                 <outlet property="mainView" destination="i5M-Pr-FkT" id="dRm-2l-RhR"/>
                 <outlet property="nameTxtfield" destination="xlq-X6-ZEW" id="1rp-MT-54v"/>
+                <outlet property="navigBar" destination="E81-uf-rRd" id="12x-YP-Arf"/>
                 <outlet property="numberTxtfield" destination="bYJ-Ui-VIo" id="w5h-ck-1cz"/>
                 <outlet property="saveMe" destination="6ah-8U-oib" id="hUi-St-Ggn"/>
             </connections>
@@ -25,6 +26,46 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiry date..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdV-tx-FYN">
+                    <rect key="frame" x="16" y="220" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="jMY-wN-5DB"/>
+                        <outlet property="delegate" destination="-1" id="I8w-nn-K0C"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TBW-9o-aCG">
+                    <rect key="frame" x="16" y="273" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="zuP-wI-h0b"/>
+                        <outlet property="delegate" destination="-1" id="QVE-Ww-tEX"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card owner name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xlq-X6-ZEW">
+                    <rect key="frame" x="16" y="114" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                    <connections>
+                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="FKa-lM-pgI"/>
+                        <outlet property="delegate" destination="-1" id="jKr-FZ-bEr"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card number..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYJ-Ui-VIo">
+                    <rect key="frame" x="16" y="167" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="QqE-Nk-H4W"/>
+                        <outlet property="delegate" destination="-1" id="Xpi-VA-BoI"/>
+                    </connections>
+                </textField>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E81-uf-rRd">
                     <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                     <items>
@@ -37,52 +78,12 @@
                             <barButtonItem key="rightBarButtonItem" title="Confirm" id="6ah-8U-oib">
                                 <color key="tintColor" red="1" green="0.02654661375" blue="0.029965965939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <action selector="saveMe:" destination="-1" id="MiZ-Nd-hsk"/>
+                                    <action selector="saveMe:" destination="-1" id="m49-F1-Kz3"/>
                                 </connections>
                             </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiry date..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdV-tx-FYN">
-                    <rect key="frame" x="16" y="193" width="343" height="30"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                    <connections>
-                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="jMY-wN-5DB"/>
-                        <outlet property="delegate" destination="-1" id="I8w-nn-K0C"/>
-                    </connections>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TBW-9o-aCG">
-                    <rect key="frame" x="16" y="246" width="343" height="30"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                    <connections>
-                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="zuP-wI-h0b"/>
-                        <outlet property="delegate" destination="-1" id="QVE-Ww-tEX"/>
-                    </connections>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card owner name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xlq-X6-ZEW">
-                    <rect key="frame" x="16" y="87" width="343" height="30"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                    <connections>
-                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="FKa-lM-pgI"/>
-                        <outlet property="delegate" destination="-1" id="jKr-FZ-bEr"/>
-                    </connections>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card number..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYJ-Ui-VIo">
-                    <rect key="frame" x="16" y="140" width="343" height="30"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                    <connections>
-                        <action selector="textEditingChanged:" destination="-1" eventType="editingDidEnd" id="QqE-Nk-H4W"/>
-                        <outlet property="delegate" destination="-1" id="Xpi-VA-BoI"/>
-                    </connections>
-                </textField>
             </subviews>
             <color key="backgroundColor" red="0.83314203741214377" green="0.82911719665169858" blue="0.83716687817258884" alpha="0.29973779965753422" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
@@ -92,7 +93,7 @@
                 <constraint firstItem="TBW-9o-aCG" firstAttribute="height" secondItem="xlq-X6-ZEW" secondAttribute="height" id="Fv6-4h-34Q"/>
                 <constraint firstItem="TBW-9o-aCG" firstAttribute="trailing" secondItem="xlq-X6-ZEW" secondAttribute="trailing" id="G03-rI-fOx"/>
                 <constraint firstItem="zdV-tx-FYN" firstAttribute="height" secondItem="xlq-X6-ZEW" secondAttribute="height" id="GGr-dl-cQs"/>
-                <constraint firstItem="xlq-X6-ZEW" firstAttribute="top" secondItem="E81-uf-rRd" secondAttribute="bottom" constant="23" id="IIN-kp-w35"/>
+                <constraint firstItem="xlq-X6-ZEW" firstAttribute="top" secondItem="E81-uf-rRd" secondAttribute="bottom" constant="50" id="IIN-kp-w35"/>
                 <constraint firstItem="bYJ-Ui-VIo" firstAttribute="top" secondItem="xlq-X6-ZEW" secondAttribute="bottom" constant="23" id="Nrk-L0-2Lp"/>
                 <constraint firstItem="zdV-tx-FYN" firstAttribute="leading" secondItem="xlq-X6-ZEW" secondAttribute="leading" id="Ogd-dt-hm8"/>
                 <constraint firstItem="bYJ-Ui-VIo" firstAttribute="trailing" secondItem="xlq-X6-ZEW" secondAttribute="trailing" id="RZC-Ld-kyR"/>

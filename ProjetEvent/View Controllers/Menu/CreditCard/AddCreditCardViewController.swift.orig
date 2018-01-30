@@ -43,7 +43,10 @@ class AddCreditCardViewController: FormCreditCardViewController
     
     @IBAction func saveMe(_ sender: Any)
     {
+<<<<<<< HEAD
+=======
         
+>>>>>>> 31549efc5b4d1989e51057b1507f451eeaf93772
         if let name : String = self.nameTxtfield.text
         {
             if let number : String = self.numberTxtfield.text

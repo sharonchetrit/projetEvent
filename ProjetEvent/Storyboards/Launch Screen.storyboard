@@ -18,16 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-01-28 at 13.49.50" translatesAutoresizingMaskIntoConstraints="NO" id="Plw-cj-n6H">
-                                <rect key="frame" x="0.0" y="0.0" width="385" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-01-25 at 16.09.31-1" translatesAutoresizingMaskIntoConstraints="NO" id="T8W-CW-1ei">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Plw-cj-n6H" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="TTw-0A-GH4"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="Plw-cj-n6H" secondAttribute="trailing" constant="-10" id="X0h-Cj-SHY"/>
-                            <constraint firstItem="Plw-cj-n6H" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="-20" id="hei-Tc-1bJ"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="Plw-cj-n6H" secondAttribute="bottom" id="qcl-1X-xxJ"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="T8W-CW-1ei" secondAttribute="trailing" id="EJ4-QU-lF8"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="T8W-CW-1ei" secondAttribute="bottom" id="F4z-KI-koO"/>
+                            <constraint firstItem="T8W-CW-1ei" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="-20" id="I2E-6E-osh"/>
+                            <constraint firstItem="T8W-CW-1ei" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="VF1-L0-dDd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2018-01-28 at 13.49.50" width="383" height="680"/>
+        <image name="Screen Shot 2018-01-25 at 16.09.31-1" width="259" height="462"/>
     </resources>
 </document>

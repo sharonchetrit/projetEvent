@@ -258,10 +258,8 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
         let birth = birthTxt.text ?? ""
         let email = emailTxt.text ?? ""
         let phone = phoneTxt.text ?? ""
-        let password = passwordTxt.text ?? ""
-        let confirmPass = confirmPassTxt.text ?? ""
         
-        saveButton.isEnabled = !name.isEmpty && !surname.isEmpty && !birth.isEmpty && !email.isEmpty && !phone.isEmpty && !password.isEmpty && !confirmPass.isEmpty
+        saveButton.isEnabled = !name.isEmpty && !surname.isEmpty && !birth.isEmpty && !email.isEmpty && !phone.isEmpty
     }
     
     

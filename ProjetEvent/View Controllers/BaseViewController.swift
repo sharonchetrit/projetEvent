@@ -18,7 +18,8 @@ class BaseViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+//        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "UserProfileUpdated"), object: nil, queue: nil) { (notifcation) in
+//        }
         // loading xib file of the subclass's name and then adding it to self.view from self.mainView
         
         let mainBundle = Bundle.main // the packet of all of the information inside the application such as the storyboard, xibs, pictures, and other multimedia.
