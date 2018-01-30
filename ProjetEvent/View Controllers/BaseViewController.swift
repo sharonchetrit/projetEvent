@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import FacebookShare
+import FBSDKShareKit
 
 class BaseViewController: UIViewController {
     
@@ -16,7 +18,8 @@ class BaseViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+//        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "UserProfileUpdated"), object: nil, queue: nil) { (notifcation) in
+//        }
         // loading xib file of the subclass's name and then adding it to self.view from self.mainView
         
         let mainBundle = Bundle.main // the packet of all of the information inside the application such as the storyboard, xibs, pictures, and other multimedia.
@@ -38,7 +41,19 @@ class BaseViewController: UIViewController {
                 self.view.addSubview(self.mainView)
             }
         }
+    }
+    
+    @IBAction func share(_ sender: Any?)
+    {
         
+        let content = FBSDKShareLinkContent()
+        content.contentURL = URL(string: "https://sharonchetrit.wixsite.com/event")
+        
+        let dialog: FBSDKShareDialog = FBSDKShareDialog()
+        dialog.fromViewController = self
+        dialog.shareContent = content
+        dialog.mode = .shareSheet
+        dialog.show()
         
     }
 

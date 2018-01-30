@@ -27,7 +27,7 @@
                         <navigationItem title="Title" id="JUi-Ww-rRE">
                             <barButtonItem key="leftBarButtonItem" title="Menu" id="jdi-7a-ufE">
                                 <connections>
-                                    <action selector="menu:" destination="-1" id="c6d-Ff-WAS"/>
+                                    <action selector="menu:" destination="-1" id="dor-Iu-792"/>
                                 </connections>
                             </barButtonItem>
                         </navigationItem>

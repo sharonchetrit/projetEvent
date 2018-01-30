@@ -7,11 +7,41 @@
 //
 
 import UIKit
+import MessageUI
 
-class ShareViewController: BaseViewController {
+
+class ShareViewController: BaseViewController, UINavigationControllerDelegate {
     
-    @IBAction func menu(_ sender: Any) {
-        self.viewDeckController?.open(.left, animated: true)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
+    @IBOutlet weak var shareFB: FBSDKShareButton!
+    @IBOutlet weak var sharebtn: UIButton!
+    
+    @IBAction func menu(_ sender: Any) {
+//        self.viewDeckController?.open(.left, animated: true)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func shareToEmail(_ sender: Any) {
+        guard MFMailComposeViewController.canSendMail() else {
+            return
+        }
+        let mailVC: MFMailComposeViewController = MFMailComposeViewController()
+        
+        
+        let url : String = "https://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8"
+        
+        let subject = "Share my app"
+        let body = "Please download this app here \(url)"
+        
+       mailVC.setSubject(subject)
+       mailVC.setMessageBody(body, isHTML: false)
+        
+        self.present(mailVC, animated: true, completion: { () in
+            print("Done🔨") })
+    }
 }
+
