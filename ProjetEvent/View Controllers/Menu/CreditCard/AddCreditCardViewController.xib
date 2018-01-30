@@ -26,24 +26,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E81-uf-rRd">
-                    <rect key="frame" x="0.0" y="30" width="375" height="44"/>
-                    <items>
-                        <navigationItem title="New Credit Card" id="6St-ID-yhk">
-                            <barButtonItem key="leftBarButtonItem" title="Back" id="UoF-H8-5rO">
-                                <connections>
-                                    <action selector="back:" destination="-1" id="uW9-uP-0OW"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem key="rightBarButtonItem" title="Confirm" id="6ah-8U-oib">
-                                <color key="tintColor" red="1" green="0.02654661375" blue="0.029965965939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="saveMe:" destination="-1" id="m49-F1-Kz3"/>
-                                </connections>
-                            </barButtonItem>
-                        </navigationItem>
-                    </items>
-                </navigationBar>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiry date..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zdV-tx-FYN">
                     <rect key="frame" x="16" y="220" width="343" height="30"/>
                     <nil key="textColor"/>
@@ -84,16 +66,34 @@
                         <outlet property="delegate" destination="-1" id="Xpi-VA-BoI"/>
                     </connections>
                 </textField>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E81-uf-rRd">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="New Credit Card" id="6St-ID-yhk">
+                            <barButtonItem key="leftBarButtonItem" title="Back" id="UoF-H8-5rO">
+                                <connections>
+                                    <action selector="back:" destination="-1" id="uW9-uP-0OW"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Confirm" id="6ah-8U-oib">
+                                <color key="tintColor" red="1" green="0.02654661375" blue="0.029965965939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="saveMe:" destination="-1" id="m49-F1-Kz3"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
             </subviews>
             <color key="backgroundColor" red="0.83314203741214377" green="0.82911719665169858" blue="0.83716687817258884" alpha="0.29973779965753422" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="bYJ-Ui-VIo" firstAttribute="height" secondItem="xlq-X6-ZEW" secondAttribute="height" id="92K-8y-aYn"/>
                 <constraint firstItem="TBW-9o-aCG" firstAttribute="top" secondItem="zdV-tx-FYN" secondAttribute="bottom" constant="23" id="AQ0-tb-UzW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="E81-uf-rRd" secondAttribute="top" constant="-10" id="Co6-6L-G5V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="E81-uf-rRd" secondAttribute="top" id="Co6-6L-G5V"/>
                 <constraint firstItem="TBW-9o-aCG" firstAttribute="height" secondItem="xlq-X6-ZEW" secondAttribute="height" id="Fv6-4h-34Q"/>
                 <constraint firstItem="TBW-9o-aCG" firstAttribute="trailing" secondItem="xlq-X6-ZEW" secondAttribute="trailing" id="G03-rI-fOx"/>
                 <constraint firstItem="zdV-tx-FYN" firstAttribute="height" secondItem="xlq-X6-ZEW" secondAttribute="height" id="GGr-dl-cQs"/>
-                <constraint firstItem="xlq-X6-ZEW" firstAttribute="top" secondItem="E81-uf-rRd" secondAttribute="bottom" constant="40" id="IIN-kp-w35"/>
+                <constraint firstItem="xlq-X6-ZEW" firstAttribute="top" secondItem="E81-uf-rRd" secondAttribute="bottom" constant="50" id="IIN-kp-w35"/>
                 <constraint firstItem="bYJ-Ui-VIo" firstAttribute="top" secondItem="xlq-X6-ZEW" secondAttribute="bottom" constant="23" id="Nrk-L0-2Lp"/>
                 <constraint firstItem="zdV-tx-FYN" firstAttribute="leading" secondItem="xlq-X6-ZEW" secondAttribute="leading" id="Ogd-dt-hm8"/>
                 <constraint firstItem="bYJ-Ui-VIo" firstAttribute="trailing" secondItem="xlq-X6-ZEW" secondAttribute="trailing" id="RZC-Ld-kyR"/>

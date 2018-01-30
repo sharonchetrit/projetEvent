@@ -70,7 +70,7 @@
                     </connections>
                 </textField>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzZ-Ce-Fzu">
-                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <rect key="frame" x="0.0" y="31" width="375" height="44"/>
                     <items>
                         <navigationItem title="Add Event" id="b70-Rr-mO9">
                             <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LGF-XM-ve2">
@@ -95,11 +95,11 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3xV-5f-NEX" secondAttribute="trailing" constant="30" id="KDP-qx-a80"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XRX-sb-fKt" secondAttribute="trailing" constant="30" id="Kmk-hJ-KId"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="w8F-Xl-1Zf" secondAttribute="trailing" constant="30" id="Rjd-cl-oCq"/>
+                <constraint firstItem="yzZ-Ce-Fzu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="ST0-9o-5eq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lgs-V4-aUz" secondAttribute="trailing" constant="30" id="SaB-wG-upZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yzZ-Ce-Fzu" secondAttribute="trailing" id="ZSJ-Uu-F8o"/>
                 <constraint firstItem="XRX-sb-fKt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55" id="ZrJ-25-HC8"/>
                 <constraint firstItem="yzZ-Ce-Fzu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gXP-Vc-eDA"/>
-                <constraint firstItem="yzZ-Ce-Fzu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gwy-RS-4yB"/>
                 <constraint firstItem="w8F-Xl-1Zf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55" id="ibO-eN-QjK"/>
                 <constraint firstItem="XRX-sb-fKt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="102" id="owl-GZ-tnG"/>
                 <constraint firstItem="Lgs-V4-aUz" firstAttribute="top" secondItem="XRX-sb-fKt" secondAttribute="bottom" constant="24" id="r3B-Mb-CTG"/>

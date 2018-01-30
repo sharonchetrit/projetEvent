@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hmz-CY-zL0">
-                    <rect key="frame" x="0.0" y="79" width="375" height="588"/>
+                    <rect key="frame" x="0.0" y="76" width="375" height="591"/>
                     <color key="backgroundColor" red="0.83314203740000004" green="0.82911719669999995" blue="0.83716687820000002" alpha="0.29973779969999997" colorSpace="custom" customColorSpace="displayP3"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="MPc-B9-SJU"/>
@@ -30,7 +30,7 @@
                     </connections>
                 </tableView>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoJ-wY-gZZ">
-                    <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                    <rect key="frame" x="0.0" y="32" width="375" height="44"/>
                     <items>
                         <navigationItem title="Project Event" id="bAP-ad-k8J">
                             <barButtonItem key="leftBarButtonItem" title="Menu" id="Bsh-He-vpO">
@@ -52,10 +52,10 @@
                 <constraint firstItem="UoJ-wY-gZZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Dg-We-qeM"/>
                 <constraint firstItem="Hmz-CY-zL0" firstAttribute="top" secondItem="UoJ-wY-gZZ" secondAttribute="bottom" id="5V7-Fk-UkO"/>
                 <constraint firstItem="Hmz-CY-zL0" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="BsI-jS-rsI"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="UoJ-wY-gZZ" secondAttribute="top" constant="-15" id="Sce-EO-9Mp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="UoJ-wY-gZZ" secondAttribute="top" constant="-12" id="Sce-EO-9Mp"/>
                 <constraint firstItem="UoJ-wY-gZZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="axX-Ka-ZEg"/>
                 <constraint firstItem="Hmz-CY-zL0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iB9-K7-XXx"/>
-                <constraint firstItem="Hmz-CY-zL0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="59" id="lKh-aC-Pc1"/>
+                <constraint firstItem="Hmz-CY-zL0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="56" id="lKh-aC-Pc1"/>
                 <constraint firstItem="Hmz-CY-zL0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="taz-BE-Zgy"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
