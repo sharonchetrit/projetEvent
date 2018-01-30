@@ -120,6 +120,4 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
         }
     }
     
-    
-    
 }

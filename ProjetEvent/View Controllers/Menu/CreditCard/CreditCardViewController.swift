@@ -89,5 +89,36 @@ class CreditCardViewController: BaseViewController, UITableViewDelegate, UITable
             addVC.creditcard = sender as? CreditCard
         }
     }
+
+    private func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (action, index) in
+            self.creditCards.remove(at: indexPath.row)
+            
+            CreditCard.saveOnUserDefaults(creditCards: self.creditCards)
+            
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        //    self.setEditing(false, animated: true)
+
+        }
+        
+        let editAction = UITableViewRowAction(style: .normal, title: "Edit") { (action, index) in
+            
+            let creditCard : CreditCard = self.creditCards[indexPath.row]
+            
+            self.performSegue(withIdentifier: "addCreditCardSegue", sender: creditCard)
+        }
+        
+        return [deleteAction, editAction]
+    }
     
 }

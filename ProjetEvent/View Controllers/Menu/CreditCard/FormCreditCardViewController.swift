@@ -28,6 +28,7 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
     @IBAction func textEditingChanged(_ sender : UITextField)
     {
         updateSaveButtonState()
+        
     }
     
     func updateSaveButtonState() {
@@ -43,6 +44,15 @@ class FormCreditCardViewController: BaseViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let creditcard = creditcard
+        {
+            self.navigationItem.title = creditcard.name
+            nameTxtfield.text = creditcard.name
+            numberTxtfield.text = creditcard.number
+            dateTxtfield.text = creditcard.date
+            cryptoTxtfield.text = creditcard.cryptogram
+        }
         updateSaveButtonState()
     }
     
