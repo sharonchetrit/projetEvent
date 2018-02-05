@@ -11,5 +11,7 @@
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
+#import <JSQMessagesViewController/JSQMessages.h>
+
 
 #endif /* SlideMenu_h */

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0498068E2027790B001851AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498068D2027790B001851AF /* Constants.swift */; };
+		0498069220286273001851AF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498069020286273001851AF /* ChatViewController.swift */; };
+		0498069320286273001851AF /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0498069120286273001851AF /* ChatViewController.xib */; };
 		04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */; };
 		04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */; };
 		04EF8D761FFE6DF400AEF046 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF8D751FFE6DF400AEF046 /* User.swift */; };
@@ -32,7 +35,6 @@
 		2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F1051FFCD1E700895E02 /* ViewController.xib */; };
 		2F194F3E201498B90052C0AA /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F194F3D201498B90052C0AA /* CreditCard.swift */; };
 		2F7C8DA420162987006ED87A /* FormCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7C8DA320162987006ED87A /* FormCreditCardViewController.swift */; };
-		2FDA26F9201DF40400EBED83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDA26F8201DF40400EBED83 /* LaunchScreen.storyboard */; };
 		2FE5F31E200B9ADD0084A4A4 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */; };
 		2FE5F31F200B9ADD0084A4A4 /* MenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */; };
 		2FE5F320200B9ADD0084A4A4 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */; };
@@ -66,6 +68,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0498068D2027790B001851AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0498069020286273001851AF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0498069120286273001851AF /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		04EF8D751FFE6DF400AEF046 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -95,7 +100,6 @@
 		2F17F1051FFCD1E700895E02 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2F194F3D201498B90052C0AA /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		2F7C8DA320162987006ED87A /* FormCreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCreditCardViewController.swift; sourceTree = "<group>"; };
-		2FDA26F8201DF40400EBED83 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemTableViewCell.xib; sourceTree = "<group>"; };
 		2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
@@ -147,6 +151,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0498068F20286249001851AF /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0498069020286273001851AF /* ChatViewController.swift */,
+				0498069120286273001851AF /* ChatViewController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		04EF8D741FFE6D4400AEF046 /* profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +178,7 @@
 				04EF8D751FFE6DF400AEF046 /* User.swift */,
 				2F0460122002163A004D6E00 /* Event.swift */,
 				2F194F3D201498B90052C0AA /* CreditCard.swift */,
+				0498068D2027790B001851AF /* Constants.swift */,
 				32BA5935200B98C5008444C0 /* events.plist */,
 				32BA5931200B98AD008444C0 /* defaultMenuItems.plist */,
 				32BA5932200B98AD008444C0 /* MenuItem.swift */,
@@ -179,6 +193,7 @@
 				2F17F1051FFCD1E700895E02 /* ViewController.xib */,
 				2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */,
 				32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */,
+				0498068F20286249001851AF /* Chat */,
 				3276464C201DD82500F8A21B /* create Account */,
 				3276464F201DD82600F8A21B /* login */,
 				2F04602320021689004D6E00 /* Menu */,
@@ -407,6 +422,7 @@
 				32BA592E200B9886008444C0 /* CurrentTableViewCell.xib in Resources */,
 				2F04601F20021662004D6E00 /* EventViewController.xib in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
+				0498069320286273001851AF /* ChatViewController.xib in Resources */,
 				2F04602120021662004D6E00 /* CurrentEventsVC.xib in Resources */,
 				04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */,
 				32764652201DD82600F8A21B /* CreateAccountViewController.xib in Resources */,
@@ -464,7 +480,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AFE0AD8EE2498EB733E53D35 /* [CP] Embed Pods Frameworks */ = {
@@ -474,11 +490,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewDeck/ViewDeck.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewDeck.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -492,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0498068E2027790B001851AF /* Constants.swift in Sources */,
 				2F1665D92015DF000026EF94 /* CreditCardTableViewCell.swift in Sources */,
 				2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */,
 				2FFC8488200DFC5A003DE6B4 /* CreditCardViewController.swift in Sources */,
@@ -513,6 +558,7 @@
 				2F1665E3201605B90026EF94 /* AddCreditCardViewController.swift in Sources */,
 				32764653201DD82600F8A21B /* CreateAccountViewController.swift in Sources */,
 				2FE5F321200B9ADD0084A4A4 /* MenuItemTableViewCell.swift in Sources */,
+				0498069220286273001851AF /* ChatViewController.swift in Sources */,
 				04EF8D761FFE6DF400AEF046 /* User.swift in Sources */,
 				32764655201DD82600F8A21B /* LoginViewController.swift in Sources */,
 				32BA592D200B9886008444C0 /* CurrentTableViewCell.swift in Sources */,

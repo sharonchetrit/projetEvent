@@ -116,6 +116,7 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
             slideMenuController.centerViewController = slideMenuController.profileController
             slideMenuController.closeSide(true)
         }
+        displayUserInfo()
     }
     
     
@@ -150,7 +151,10 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     @IBAction func logOut(_ sender: Any)
     {
         handleLogOut()
-        navigationController?.popViewController(animated: true)
+        
+        navigationController?.dismiss(animated: true, completion: {
+            
+        })
         
         
     }
@@ -172,19 +176,19 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
 
     
-//    func fetchFB()
-//    {
-//        if (FBSDKAccessToken.current() != nil) {
-//            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name"]).start(completionHandler: {(connection, result : Any?, error) -> Void in
-//                if error == nil {
-//                   if let dictionary = result as? Dictionary<String,Any> {
-//                        let username : String = dictionary["name"] as! String
-//                        print("fetched name:\(username)")
-//
-//                    }
-//                    print("fetched user:\(result)")
-//                }
-//                })
-//        }
-//    }
+    func fetchFB()
+    {
+        if (FBSDKAccessToken.current() != nil) {
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name"]).start(completionHandler: {(connection, result : Any?, error) -> Void in
+                if error == nil {
+                   if let dictionary = result as? Dictionary<String,Any> {
+                        let username : String = dictionary["name"] as! String
+                        print("fetched name:\(username)")
+
+                    }
+                    print("fetched user:\(String(describing: result))")
+                }
+                })
+        }
+    }
 }

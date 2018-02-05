@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import FacebookShare
 import FBSDKShareKit
+import JSQMessagesViewController
 
 class BaseViewController: UIViewController {
     

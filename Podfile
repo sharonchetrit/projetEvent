@@ -15,6 +15,7 @@ target 'ProjetEvent' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'JSQMessagesViewController'
 
 
 end
