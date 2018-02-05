@@ -147,18 +147,9 @@ class ProfileViewController: BaseViewController, UIImagePickerControllerDelegate
                     
                     self.present(alertView, animated: true, completion: nil)
                 }
-                
             }
-            
-            
-            
-            
         }
-        
-
-        
     }
-    
     
     
     func registerForKeyboardNotifications() {
