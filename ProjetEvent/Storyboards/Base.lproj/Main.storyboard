@@ -59,7 +59,7 @@
                         <viewLayoutGuide key="safeArea" id="ZQ6-44-2Wg"/>
                     </view>
                     <connections>
-                        <segue destination="T5V-pf-4w8" kind="show" identifier="" id="F7W-nO-LoH"/>
+                        <segue destination="T5V-pf-4w8" kind="show" identifier="nextView" id="OhX-pr-er8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jkR-u8-RtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -69,7 +69,7 @@
         <!--Project Event Deck Controller-->
         <scene sceneID="rgB-ku-Yug">
             <objects>
-                <viewController id="T5V-pf-4w8" customClass="ProjectEventDeckController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="nextView" id="T5V-pf-4w8" customClass="ProjectEventDeckController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VyC-9E-B6G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7p-YT-zp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2642" y="167"/>
+            <point key="canvasLocation" x="2513" y="215"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M4R-T3-2Rc">
