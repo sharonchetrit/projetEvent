@@ -13,6 +13,7 @@ import JSQMessagesViewController
 class ChatViewController: JSQMessagesViewController {
 
     var messages = [JSQMessage]()
+    var user = User?.self
     
     lazy var outgoingBubble: JSQMessagesBubbleImage = {
         return JSQMessagesBubbleImageFactory()!.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
@@ -36,8 +37,8 @@ class ChatViewController: JSQMessagesViewController {
         }
         else
         {
-            senderId = String(arc4random_uniform(999999))
-            senderDisplayName = ""
+            senderId = User.sharedInstance()
+            senderDisplayName = User.sharedInstance()?.name
             
             defaults.set(senderId, forKey: "jsq_id")
             defaults.synchronize()

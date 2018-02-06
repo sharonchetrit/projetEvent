@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="732" y="-527"/>
         </scene>
-        <!--Chat View Controller-->
+        <!--Event View Controller-->
         <scene sceneID="3Os-TK-X6S">
             <objects>
-                <viewController id="7ke-6U-2Tg" customClass="ChatViewController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7ke-6U-2Tg" customClass="EventViewController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="29k-dK-HrP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="1878" y="-526"/>
         </scene>
-        <!--Add Event View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="h2j-kv-23T">
             <objects>
-                <viewController id="7y4-Kh-K0v" customClass="AddEventViewController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7y4-Kh-K0v" customClass="ChatViewController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EwY-ig-xLl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
