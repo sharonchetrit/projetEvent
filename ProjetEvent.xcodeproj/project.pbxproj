@@ -174,10 +174,10 @@
 			children = (
 				04EF8D751FFE6DF400AEF046 /* User.swift */,
 				2F0460122002163A004D6E00 /* Event.swift */,
+				32BA5932200B98AD008444C0 /* MenuItem.swift */,
 				2F194F3D201498B90052C0AA /* CreditCard.swift */,
 				32BA5935200B98C5008444C0 /* events.plist */,
 				32BA5931200B98AD008444C0 /* defaultMenuItems.plist */,
-				32BA5932200B98AD008444C0 /* MenuItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
