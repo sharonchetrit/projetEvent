@@ -12,6 +12,7 @@ import FacebookShare
 import FBSDKShareKit
 import JSQMessagesViewController
 
+
 class BaseViewController: UIViewController {
     
     @IBOutlet weak var mainView:UIView!

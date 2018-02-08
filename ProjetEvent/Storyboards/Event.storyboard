@@ -13,8 +13,9 @@
         <!--Navigation Controller-->
         <scene sceneID="VNd-3S-n7x">
             <objects>
-                <navigationController storyboardIdentifier="EventsNav" navigationBarHidden="YES" id="qjN-hH-xUd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="EventsNav" id="qjN-hH-xUd" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ez-kG-O5S">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -35,9 +36,15 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="efK-Vx-QCa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EIZ-Ib-BhN"/>
+                    <navigationItem key="navigationItem" id="EIZ-Ib-BhN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zff-NP-fu1">
+                            <connections>
+                                <action selector="addEvent:" destination="7ke-6U-2Tg" id="ycH-gn-Yks"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <segue destination="7y4-Kh-K0v" kind="presentation" identifier="AddEventSegway" id="WDQ-Gt-Rdd"/>
+                        <segue destination="7y4-Kh-K0v" kind="show" identifier="AddEventSegway" id="WDQ-Gt-Rdd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0I-M4-LpR" userLabel="First Responder" sceneMemberID="firstResponder"/>

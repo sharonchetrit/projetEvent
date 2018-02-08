@@ -11,22 +11,24 @@ import Firebase
 import JSQMessagesViewController
 
 class ChatViewController: JSQMessagesViewController {
-
+    
     var messages = [JSQMessage]()
-    var user = User?.self
+    var user: User?
+ 
     
     lazy var outgoingBubble: JSQMessagesBubbleImage = {
-        return JSQMessagesBubbleImageFactory()!.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
+        return JSQMessagesBubbleImageFactory()!.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleRed())
     }()
     
     lazy var incomingBubble: JSQMessagesBubbleImage = {
-        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
+        return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.darkGray)
     }()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let defaults = UserDefaults.standard
         
         if  let id = defaults.string(forKey: "jsq_id"),
@@ -34,11 +36,12 @@ class ChatViewController: JSQMessagesViewController {
         {
             senderId = id
             senderDisplayName = name
+            
         }
         else
         {
-            senderId = User.sharedInstance()
-            senderDisplayName = User.sharedInstance()?.name
+            senderId = String(arc4random_uniform(999999))
+            senderDisplayName = ""
             
             defaults.set(senderId, forKey: "jsq_id")
             defaults.synchronize()
@@ -46,18 +49,23 @@ class ChatViewController: JSQMessagesViewController {
             showDisplayNameDialog()
         }
         
-        title = "Chat: \(senderDisplayName!)"
+        
+        title = "\(senderDisplayName!)"
+        fetchUserlist()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showDisplayNameDialog))
         tapGesture.numberOfTapsRequired = 1
         
         navigationController?.navigationBar.addGestureRecognizer(tapGesture)
-    
+        
         inputToolbar.contentView.leftBarButtonItem = nil
         collectionView.collectionViewLayout.incomingAvatarViewSize = CGSize.zero
         collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSize.zero
-    
-        let query = Constants.refs.databaseChats.queryLimited(toLast: 10)
+        
+        let uid = Auth.auth().currentUser?.uid
+        let currentUser = Database.database().reference().child("User").child(uid!)
+        let databaseChats = currentUser.child("chats")
+        let query = databaseChats.queryLimited(toLast: 10)
         
         _ = query.observe(.childAdded, with: { [weak self] snapshot in
             
@@ -102,7 +110,7 @@ class ChatViewController: JSQMessagesViewController {
                 
                 self?.senderDisplayName = textField.text
                 
-                self?.title = "Chat: \(self!.senderDisplayName!)"
+                self?.title = "\(self!.senderDisplayName!)"
                 
                 defaults.set(textField.text, forKey: "jsq_name")
                 defaults.synchronize()
@@ -134,13 +142,13 @@ class ChatViewController: JSQMessagesViewController {
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAt indexPath: IndexPath!) -> JSQMessageAvatarImageDataSource!
     {
-        return nil
+        return User.sharedInstance()?.profileImage as! JSQMessageAvatarImageDataSource!
     }
     
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, attributedTextForMessageBubbleTopLabelAt indexPath: IndexPath!) -> NSAttributedString!
     {
-        return messages[indexPath.item].senderId == senderId ? nil : NSAttributedString(string: messages[indexPath.item].senderDisplayName)
+        return messages[indexPath.item].senderId == senderId ? nil : NSAttributedString(string: messages[indexPath.item].senderDisplayName!)
     }
     
     
@@ -151,7 +159,10 @@ class ChatViewController: JSQMessagesViewController {
     
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!)
     {
-        let ref = Constants.refs.databaseChats.childByAutoId()
+        let uid = Auth.auth().currentUser?.uid
+        let currentUser = Database.database().reference().child("User").child(uid!)
+        let databaseChats = currentUser.child("chats")
+        let ref = databaseChats.childByAutoId()
         
         let message = ["sender_id": senderId, "name": senderDisplayName, "text": text]
         
@@ -159,4 +170,16 @@ class ChatViewController: JSQMessagesViewController {
         
         finishSendingMessage()
     }
+    
+    func fetchUserlist()
+    {
+        
+        Database.database().reference().child("User").observeSingleEvent(of: .value) {
+            (snapshot) in
+            let user = User(snapshot: snapshot)
+        }
+    }
+    
+    
+    
 }

@@ -12,8 +12,9 @@ struct Constants
 {
     struct refs
     {
-        static let databaseRoot = Database.database().reference()
-        static let databaseChats = databaseRoot.child("chats")
+        static let uid = Auth.auth().currentUser?.uid
+        static let currentUser = Database.database().reference().child("User").child(uid!)
+        static let databaseChats = currentUser.child("chats")
     }
 }
 

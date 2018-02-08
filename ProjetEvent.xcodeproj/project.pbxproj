@@ -15,11 +15,9 @@
 		04EF8D761FFE6DF400AEF046 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF8D751FFE6DF400AEF046 /* User.swift */; };
 		04F935A7201DF0A800CDB655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F935A6201DF0A800CDB655 /* LaunchScreen.storyboard */; };
 		2F0460142002163A004D6E00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0460122002163A004D6E00 /* Event.swift */; };
-		2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04601820021662004D6E00 /* CurrentEventsVC.swift */; };
 		2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04601920021662004D6E00 /* EventTableViewController.swift */; };
 		2F04601F20021662004D6E00 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04601A20021662004D6E00 /* EventViewController.xib */; };
 		2F04602020021662004D6E00 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04601B20021662004D6E00 /* EventViewController.swift */; };
-		2F04602120021662004D6E00 /* CurrentEventsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04601C20021662004D6E00 /* CurrentEventsVC.xib */; };
 		2F04602620021699004D6E00 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602420021699004D6E00 /* MenuViewController.swift */; };
 		2F04602720021699004D6E00 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04602520021699004D6E00 /* MenuViewController.xib */; };
 		2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04603020021730004D6E00 /* LinkedTextField.swift */; };
@@ -77,11 +75,9 @@
 		04F935A6201DF0A800CDB655 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12938E0ED91B3ED9FD123E98 /* Pods-ProjetEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.release.xcconfig"; sourceTree = "<group>"; };
 		2F0460122002163A004D6E00 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = ProjetEvent/Event.swift; sourceTree = SOURCE_ROOT; };
-		2F04601820021662004D6E00 /* CurrentEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentEventsVC.swift; path = ProjetEvent/CurrentEventsVC.swift; sourceTree = SOURCE_ROOT; };
 		2F04601920021662004D6E00 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTableViewController.swift; path = ProjetEvent/EventTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04601A20021662004D6E00 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventViewController.xib; path = ProjetEvent/EventViewController.xib; sourceTree = SOURCE_ROOT; };
 		2F04601B20021662004D6E00 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = ProjetEvent/EventViewController.swift; sourceTree = SOURCE_ROOT; };
-		2F04601C20021662004D6E00 /* CurrentEventsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CurrentEventsVC.xib; path = ProjetEvent/CurrentEventsVC.xib; sourceTree = SOURCE_ROOT; };
 		2F04602420021699004D6E00 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ProjetEvent/MenuViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04602520021699004D6E00 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuViewController.xib; path = ProjetEvent/MenuViewController.xib; sourceTree = SOURCE_ROOT; };
 		2F04603020021730004D6E00 /* LinkedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedTextField.swift; sourceTree = "<group>"; };
@@ -206,13 +202,12 @@
 		2F0460172002164A004D6E00 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				2F04601820021662004D6E00 /* CurrentEventsVC.swift */,
-				2F04601C20021662004D6E00 /* CurrentEventsVC.xib */,
 				2F04601B20021662004D6E00 /* EventViewController.swift */,
 				2F04601920021662004D6E00 /* EventTableViewController.swift */,
 				2F04601A20021662004D6E00 /* EventViewController.xib */,
-				32BA5926200B9885008444C0 /* currentTableViewCell */,
-				32BA5922200B9885008444C0 /* Form Event */,
+				32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */,
+				32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */,
+				32BA5923200B9885008444C0 /* AddEvent */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -295,14 +290,6 @@
 			path = login;
 			sourceTree = "<group>";
 		};
-		32BA5922200B9885008444C0 /* Form Event */ = {
-			isa = PBXGroup;
-			children = (
-				32BA5923200B9885008444C0 /* AddEvent */,
-			);
-			path = "Form Event";
-			sourceTree = "<group>";
-		};
 		32BA5923200B9885008444C0 /* AddEvent */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,15 +297,6 @@
 				32BA5925200B9885008444C0 /* AddEventViewController.xib */,
 			);
 			path = AddEvent;
-			sourceTree = "<group>";
-		};
-		32BA5926200B9885008444C0 /* currentTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */,
-				32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */,
-			);
-			path = currentTableViewCell;
 			sourceTree = "<group>";
 		};
 		32CC801C1FFCD6470090EB8A /* Storyboards */ = {
@@ -423,7 +401,6 @@
 				2F04601F20021662004D6E00 /* EventViewController.xib in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
 				0498069320286273001851AF /* ChatViewController.xib in Resources */,
-				2F04602120021662004D6E00 /* CurrentEventsVC.xib in Resources */,
 				04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */,
 				32764652201DD82600F8A21B /* CreateAccountViewController.xib in Resources */,
 				2FE5F320200B9ADD0084A4A4 /* ProfileTableViewCell.xib in Resources */,
@@ -543,7 +520,6 @@
 				32BA592B200B9886008444C0 /* AddEventViewController.swift in Sources */,
 				2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */,
 				2F0460142002163A004D6E00 /* Event.swift in Sources */,
-				2F04601D20021662004D6E00 /* CurrentEventsVC.swift in Sources */,
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
 				2F7C8DA420162987006ED87A /* FormCreditCardViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,

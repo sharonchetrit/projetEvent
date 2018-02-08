@@ -12,6 +12,7 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
 {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var img: UIBarButtonItem!
     
     lazy var events : [Event] = {
         if let userDefaultEvents = Event.openFromUserDefaults()
@@ -28,6 +29,12 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
 
         self.tableView.register(UINib(nibName: "CurrentTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "Cell")
         tableView.reloadData()
+        
+        title = ""
+        
+        tableView.layer.cornerRadius = tableView.frame.height / 15.0
+
+        
     }
     
     @IBAction func menu(_ sender: Any)
