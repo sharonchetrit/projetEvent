@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D93-8Z-Bi8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D93-8Z-Bi8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,8 +22,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="qex-sW-VZg"/>
                     <connections>
-                        <segue destination="T5V-pf-4w8" kind="presentation" identifier="loginToMainSegue" id="jOy-bp-rEG"/>
                         <segue destination="3yd-3j-COW" kind="show" identifier="createAccountSegue" id="HiY-iT-nDP"/>
+                        <segue destination="E4N-cU-pw3" kind="show" identifier="loginToMainSegue" id="hox-Af-GPE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ae2-Lz-cRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -41,17 +41,35 @@
                         <viewLayoutGuide key="safeArea" id="KXL-r6-xm8"/>
                     </view>
                     <connections>
-                        <segue destination="T5V-pf-4w8" kind="show" identifier="inscriptionToMainSegue" id="sVC-9E-miQ"/>
+                        <segue destination="E4N-cU-pw3" kind="show" identifier="inscriptionToMainSegue" id="Eju-gj-SWq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9q-Bh-pMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="335" y="936"/>
         </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="LRd-lG-naV">
+            <objects>
+                <viewController id="E4N-cU-pw3" customClass="TutorialViewController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ne4-lD-Ok1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZQ6-44-2Wg"/>
+                    </view>
+                    <connections>
+                        <segue destination="T5V-pf-4w8" kind="show" identifier="nextView" id="OhX-pr-er8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jkR-u8-RtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1487" y="315"/>
+        </scene>
         <!--Project Event Deck Controller-->
         <scene sceneID="rgB-ku-Yug">
             <objects>
-                <viewController id="T5V-pf-4w8" customClass="ProjectEventDeckController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="nextView" id="T5V-pf-4w8" customClass="ProjectEventDeckController" customModule="ProjetEvent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VyC-9E-B6G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7p-YT-zp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="72.413793103448285"/>
+            <point key="canvasLocation" x="2161" y="-512"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M4R-T3-2Rc">
@@ -81,10 +99,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xm7-rq-DCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-487" y="73"/>
+            <point key="canvasLocation" x="-682" y="73"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jOy-bp-rEG"/>
+        <segue reference="hox-Af-GPE"/>
     </inferredMetricsTieBreakers>
 </document>

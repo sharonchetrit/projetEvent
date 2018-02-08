@@ -10,7 +10,8 @@ import UIKit
 import JSQMessagesViewController
 
 class ViewController: UIViewController {
-
+    
+    
    /*
     
     var colors = [Color(name: "Share", color: UIColor.red),
