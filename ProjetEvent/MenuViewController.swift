@@ -137,6 +137,8 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+ 
+    
     func displayUserInfo()
     {
         guard let uid = Auth.auth().currentUser?.uid else {return}
@@ -150,18 +152,22 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     @IBAction func logOut(_ sender: Any)
     {
         handleLogOut()
-        navigationController?.popViewController(animated: true)
         
+        navigationController?.dismiss(animated: true, completion: {
+
+        })
+       
         
     }
     
+   
     func handleLogOut()
     {
         if Auth.auth().currentUser?.uid != nil || FBSDKAccessToken.current() != nil {
             do
             {
                 try Auth.auth().signOut()
-            self.dismiss(animated: true, completion: nil)
+                self.dismiss(animated: true, completion: nil)
             } catch let logOutError
             {
                 print(logOutError.localizedDescription)

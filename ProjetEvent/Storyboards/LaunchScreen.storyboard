@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-01-28 at 13.49.50" translatesAutoresizingMaskIntoConstraints="NO" id="Plw-cj-n6H">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple-touch-startup-image" translatesAutoresizingMaskIntoConstraints="NO" id="Plw-cj-n6H">
                                 <rect key="frame" x="0.0" y="0.0" width="385" height="667"/>
                             </imageView>
                         </subviews>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2018-01-28 at 13.49.50" width="383" height="680"/>
+        <image name="apple-touch-startup-image" width="1242" height="2208"/>
     </resources>
 </document>

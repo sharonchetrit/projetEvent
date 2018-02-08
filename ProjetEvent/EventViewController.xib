@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,17 +46,24 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nFV-Lw-lPd">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="UoJ-wY-gZZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Dg-We-qeM"/>
                 <constraint firstItem="Hmz-CY-zL0" firstAttribute="top" secondItem="UoJ-wY-gZZ" secondAttribute="bottom" id="5V7-Fk-UkO"/>
+                <constraint firstItem="nFV-Lw-lPd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="83l-BT-MQk"/>
                 <constraint firstItem="Hmz-CY-zL0" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="BsI-jS-rsI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nFV-Lw-lPd" secondAttribute="trailing" id="DXG-u7-a9s"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="UoJ-wY-gZZ" secondAttribute="top" constant="-12" id="Sce-EO-9Mp"/>
                 <constraint firstItem="UoJ-wY-gZZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="axX-Ka-ZEg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nFV-Lw-lPd" secondAttribute="bottom" id="dUA-EE-Zg4"/>
                 <constraint firstItem="Hmz-CY-zL0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iB9-K7-XXx"/>
                 <constraint firstItem="Hmz-CY-zL0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="56" id="lKh-aC-Pc1"/>
                 <constraint firstItem="Hmz-CY-zL0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="taz-BE-Zgy"/>
+                <constraint firstItem="nFV-Lw-lPd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wfS-pc-wfQ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="54.5"/>

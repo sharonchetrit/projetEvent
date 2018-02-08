@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page3" translatesAutoresizingMaskIntoConstraints="NO" id="YAn-8M-Tl6">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorialllllll3" translatesAutoresizingMaskIntoConstraints="NO" id="YAn-8M-Tl6">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lR-zb-Lj2">
@@ -30,7 +30,7 @@
                             <rect key="frame" x="321" y="18" width="33" height="30"/>
                             <state key="normal" title="Pass"/>
                             <connections>
-                                <action selector="btnPass:" destination="-1" eventType="touchUpInside" id="vmo-ZH-HJq"/>
+                                <action selector="btnPass:" destination="-1" eventType="touchUpInside" id="K9T-by-5eX"/>
                             </connections>
                         </button>
                     </subviews>
@@ -57,6 +57,6 @@
         </view>
     </objects>
     <resources>
-        <image name="page3" width="327" height="578"/>
+        <image name="tutorialllllll3" width="828" height="1472"/>
     </resources>
 </document>
