@@ -35,6 +35,13 @@ class ProjectEventDeckController: IIViewDeckController
         
     }()
     
+    lazy var creditCardController : UIViewController = {
+        
+        let storyboard : UIStoryboard = UIStoryboard(name: "CreditCards", bundle: Bundle.main)
+        
+        return storyboard.instantiateInitialViewController()!
+    }()
+    
     required init?(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)

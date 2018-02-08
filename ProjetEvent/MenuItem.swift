@@ -12,35 +12,36 @@ class MenuItem: NSObject
 {
     var title : String
     var selector : Selector
+    var cellType : String
     
     
     init( json: [String : Any])
     {
         self.title = json["title"] as! String
         self.selector = Selector(json["selector"] as! String)
+        self.cellType = json["cellType"] as! String
     }
     
     static func loadSampleFromPlist() -> [MenuItem]
     {
-        var sampleEmojis : [MenuItem] = []
-        
-        var emojiArray : [Any] = []
+        var menuItem : [MenuItem] = []
+        var menuArray : [Any] = []
         
         if let path = Bundle.main.path(forResource: "defaultMenuItems", ofType: "plist")
         {
-            emojiArray = NSArray(contentsOf: URL(fileURLWithPath: path)) as! [Any] // we get the array from the file here!!!!!!!
+            menuArray = NSArray(contentsOf: URL(fileURLWithPath: path)) as! [Any] // we get the array from the file here!!!!!!!
         }
-        if let array : [Dictionary<String,Any>] = emojiArray as! [Dictionary<String, Any>] {
+        if let array : [Dictionary<String,Any>] = menuArray as? [Dictionary<String, Any>] {
             // Use your dict here
             
             for dict in array
             {
                 let newEmoji = MenuItem(json: dict)
-                sampleEmojis.append(newEmoji)
+                menuItem.append(newEmoji)
             }
         }
         
-        return sampleEmojis
+        return menuItem
     }
-
 }
+

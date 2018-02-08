@@ -10,7 +10,6 @@ import UIKit
 import MessageUI
 
 
-
 class ShareViewController: BaseViewController, UINavigationControllerDelegate {
     
     
@@ -19,17 +18,13 @@ class ShareViewController: BaseViewController, UINavigationControllerDelegate {
     }
     
     @IBOutlet weak var shareFB: FBSDKShareButton!
-    
     @IBOutlet weak var sharebtn: UIButton!
-    
     
     @IBAction func menu(_ sender: Any) {
 //        self.viewDeckController?.open(.left, animated: true)
         self.dismiss(animated: true, completion: nil)
     }
     
-    
-   
     @IBAction func shareToEmail(_ sender: Any) {
         guard MFMailComposeViewController.canSendMail() else {
             return
@@ -37,10 +32,10 @@ class ShareViewController: BaseViewController, UINavigationControllerDelegate {
         let mailVC: MFMailComposeViewController = MFMailComposeViewController()
         
         
-        var url : String = "https://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8"
+        let url : String = "https://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8"
         
-        var subject = "Share my app"
-        var body = "Please download this app here \(url)"
+        let subject = "Share my app"
+        let body = "Please download this app here \(url)"
         
        mailVC.setSubject(subject)
        mailVC.setMessageBody(body, isHTML: false)

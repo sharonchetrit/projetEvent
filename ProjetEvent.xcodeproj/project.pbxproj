@@ -7,52 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0498068E2027790B001851AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498068D2027790B001851AF /* Constants.swift */; };
+		0498069220286273001851AF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0498069020286273001851AF /* ChatViewController.swift */; };
+		0498069320286273001851AF /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0498069120286273001851AF /* ChatViewController.xib */; };
 		04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */; };
 		04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */; };
 		04EF8D761FFE6DF400AEF046 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF8D751FFE6DF400AEF046 /* User.swift */; };
+		04F935A7201DF0A800CDB655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F935A6201DF0A800CDB655 /* LaunchScreen.storyboard */; };
 		2F0460142002163A004D6E00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0460122002163A004D6E00 /* Event.swift */; };
 		2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04601920021662004D6E00 /* EventTableViewController.swift */; };
 		2F04601F20021662004D6E00 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04601A20021662004D6E00 /* EventViewController.xib */; };
 		2F04602020021662004D6E00 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04601B20021662004D6E00 /* EventViewController.swift */; };
 		2F04602620021699004D6E00 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602420021699004D6E00 /* MenuViewController.swift */; };
 		2F04602720021699004D6E00 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04602520021699004D6E00 /* MenuViewController.xib */; };
-		2F04602C200216A6004D6E00 /* RattingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F046028200216A6004D6E00 /* RattingViewController.xib */; };
-		2F04602D200216A6004D6E00 /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F046029200216A6004D6E00 /* ShareViewController.xib */; };
-		2F04602E200216A6004D6E00 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602A200216A6004D6E00 /* ShareViewController.swift */; };
-		2F04602F200216A6004D6E00 /* RattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04602B200216A6004D6E00 /* RattingViewController.swift */; };
 		2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F04603020021730004D6E00 /* LinkedTextField.swift */; };
-		2F12D9AD2007709E00DA676A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12D9AC2007709E00DA676A /* MenuItem.swift */; };
-		2F12D9AF200770DE00DA676A /* defaultMenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F12D9AE200770DE00DA676A /* defaultMenuItems.plist */; };
+		2F1665D92015DF000026EF94 /* CreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */; };
+		2F1665DA2015DF000026EF94 /* CreditCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */; };
+		2F1665E3201605B90026EF94 /* AddCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */; };
+		2F1665E4201605B90026EF94 /* AddCreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1665E2201605B90026EF94 /* AddCreditCardViewController.xib */; };
 		2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */; };
 		2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0EC1FFCCA2700895E02 /* ViewController.swift */; };
 		2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0EE1FFCCA2700895E02 /* Main.storyboard */; };
 		2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0F11FFCCA2700895E02 /* Assets.xcassets */; };
-		2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */; };
 		2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */; };
-		2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */; };
 		2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F17F1051FFCD1E700895E02 /* ViewController.xib */; };
+		2F194F3E201498B90052C0AA /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F194F3D201498B90052C0AA /* CreditCard.swift */; };
+		2F7C8DA420162987006ED87A /* FormCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7C8DA320162987006ED87A /* FormCreditCardViewController.swift */; };
+		2FE5F31E200B9ADD0084A4A4 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */; };
+		2FE5F31F200B9ADD0084A4A4 /* MenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */; };
+		2FE5F320200B9ADD0084A4A4 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */; };
+		2FE5F321200B9ADD0084A4A4 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE5F31D200B9ADD0084A4A4 /* MenuItemTableViewCell.swift */; };
+		2FFC8488200DFC5A003DE6B4 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFC8486200DFC5A003DE6B4 /* CreditCardViewController.swift */; };
+		2FFC8489200DFC5A003DE6B4 /* CreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFC8487200DFC5A003DE6B4 /* CreditCardViewController.xib */; };
+		2FFC848B200E01D1003DE6B4 /* CreditCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFC848A200E01D1003DE6B4 /* CreditCards.storyboard */; };
+		3276464B201DD80700F8A21B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3276464A201DD80700F8A21B /* GoogleService-Info.plist */; };
+		32764652201DD82600F8A21B /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3276464D201DD82500F8A21B /* CreateAccountViewController.xib */; };
+		32764653201DD82600F8A21B /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276464E201DD82500F8A21B /* CreateAccountViewController.swift */; };
+		32764654201DD82600F8A21B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32764650201DD82600F8A21B /* LoginViewController.xib */; };
+		32764655201DD82600F8A21B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32764651201DD82600F8A21B /* LoginViewController.swift */; };
+		32BA591C200B984D008444C0 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */; };
+		32BA591D200B984D008444C0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5917200B984D008444C0 /* Bolts.framework */; };
+		32BA591E200B984D008444C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */; };
+		32BA591F200B984D008444C0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA5919200B984D008444C0 /* FBSDKShareKit.framework */; };
+		32BA5920200B984D008444C0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA591A200B984D008444C0 /* FBSDKLoginKit.framework */; };
+		32BA5921200B984E008444C0 /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA591B200B984D008444C0 /* FBSDKPlacesKit.framework */; };
+		32BA592B200B9886008444C0 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5924200B9885008444C0 /* AddEventViewController.swift */; };
+		32BA592C200B9886008444C0 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5925200B9885008444C0 /* AddEventViewController.xib */; };
+		32BA592D200B9886008444C0 /* CurrentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */; };
+		32BA592E200B9886008444C0 /* CurrentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */; };
+		32BA5933200B98AE008444C0 /* defaultMenuItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5931200B98AD008444C0 /* defaultMenuItems.plist */; };
+		32BA5934200B98AE008444C0 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BA5932200B98AD008444C0 /* MenuItem.swift */; };
+		32BA5936200B98C5008444C0 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32BA5935200B98C5008444C0 /* events.plist */; };
 		32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80161FFCD5CC0090EB8A /* Event.storyboard */; };
 		32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC80181FFCD5DA0090EB8A /* Menu.storyboard */; };
 		32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32CC801A1FFCD5E90090EB8A /* Profile.storyboard */; };
 		32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */; };
-		32CC803D200612B90090EB8A /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC8037200612B80090EB8A /* FBSDKMessengerShareKit.framework */; };
-		32CC803E200612B90090EB8A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC8038200612B80090EB8A /* Bolts.framework */; };
-		32CC803F200612B90090EB8A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC8039200612B80090EB8A /* FBSDKCoreKit.framework */; };
-		32CC8040200612B90090EB8A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC803A200612B80090EB8A /* FBSDKShareKit.framework */; };
-		32CC8041200612B90090EB8A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC803B200612B90090EB8A /* FBSDKLoginKit.framework */; };
-		32CC8042200612B90090EB8A /* FBSDKPlacesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CC803C200612B90090EB8A /* FBSDKPlacesKit.framework */; };
-		971F69A2200228E5005DE261 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971F69A0200228E5005DE261 /* AddEventViewController.swift */; };
-		971F69A3200228E5005DE261 /* AddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 971F69A1200228E5005DE261 /* AddEventViewController.xib */; };
-		971F69A620022D94005DE261 /* events.plist in Resources */ = {isa = PBXBuildFile; fileRef = 971F69A520022D94005DE261 /* events.plist */; };
-		97BE2B832004B65A00D1FF8F /* CurrentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE2B812004B65A00D1FF8F /* CurrentTableViewCell.swift */; };
-		97BE2B852004BA4500D1FF8F /* CurrentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */; };
 		F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0498068D2027790B001851AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0498069020286273001851AF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0498069120286273001851AF /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		04EF8D751FFE6DF400AEF046 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04F935A6201DF0A800CDB655 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12938E0ED91B3ED9FD123E98 /* Pods-ProjetEvent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.release.xcconfig"; sourceTree = "<group>"; };
 		2F0460122002163A004D6E00 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = ProjetEvent/Event.swift; sourceTree = SOURCE_ROOT; };
 		2F04601920021662004D6E00 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTableViewController.swift; path = ProjetEvent/EventTableViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -60,41 +80,53 @@
 		2F04601B20021662004D6E00 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = ProjetEvent/EventViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04602420021699004D6E00 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ProjetEvent/MenuViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04602520021699004D6E00 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuViewController.xib; path = ProjetEvent/MenuViewController.xib; sourceTree = SOURCE_ROOT; };
-		2F046028200216A6004D6E00 /* RattingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RattingViewController.xib; path = ProjetEvent/RattingViewController.xib; sourceTree = SOURCE_ROOT; };
-		2F046029200216A6004D6E00 /* ShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShareViewController.xib; path = ProjetEvent/ShareViewController.xib; sourceTree = SOURCE_ROOT; };
-		2F04602A200216A6004D6E00 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareViewController.swift; path = ProjetEvent/ShareViewController.swift; sourceTree = SOURCE_ROOT; };
-		2F04602B200216A6004D6E00 /* RattingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RattingViewController.swift; path = ProjetEvent/RattingViewController.swift; sourceTree = SOURCE_ROOT; };
 		2F04603020021730004D6E00 /* LinkedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedTextField.swift; sourceTree = "<group>"; };
-		2F12D9AC2007709E00DA676A /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = ProjetEvent/MenuItem.swift; sourceTree = SOURCE_ROOT; };
-		2F12D9AE200770DE00DA676A /* defaultMenuItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = defaultMenuItems.plist; path = ProjetEvent/defaultMenuItems.plist; sourceTree = SOURCE_ROOT; };
+		2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
+		2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardTableViewCell.xib; sourceTree = "<group>"; };
+		2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCreditCardViewController.swift; sourceTree = "<group>"; };
+		2F1665E2201605B90026EF94 /* AddCreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddCreditCardViewController.xib; sourceTree = "<group>"; };
 		2F17F0E71FFCCA2700895E02 /* ProjetEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F17F0EA1FFCCA2700895E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F17F0EC1FFCCA2700895E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F17F0EF1FFCCA2700895E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F17F0F11FFCCA2700895E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2F17F0F41FFCCA2700895E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F17F0F61FFCCA2700895E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2F17F1021FFCD1A300895E02 /* SlideMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideMenu.h; sourceTree = "<group>"; };
-		2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuVC.swift; sourceTree = "<group>"; };
 		2F17F1051FFCD1E700895E02 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		2F194F3D201498B90052C0AA /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		2F7C8DA320162987006ED87A /* FormCreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormCreditCardViewController.swift; sourceTree = "<group>"; };
+		2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemTableViewCell.xib; sourceTree = "<group>"; };
+		2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		2FE5F31D200B9ADD0084A4A4 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		2FFC8486200DFC5A003DE6B4 /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		2FFC8487200DFC5A003DE6B4 /* CreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardViewController.xib; sourceTree = "<group>"; };
+		2FFC848A200E01D1003DE6B4 /* CreditCards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreditCards.storyboard; sourceTree = "<group>"; };
+		3276464A201DD80700F8A21B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3276464D201DD82500F8A21B /* CreateAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		3276464E201DD82500F8A21B /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		32764650201DD82600F8A21B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		32764651201DD82600F8A21B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		32BA5917200B984D008444C0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		32BA5919200B984D008444C0 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		32BA591A200B984D008444C0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		32BA591B200B984D008444C0 /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKPlacesKit.framework; sourceTree = "<group>"; };
+		32BA5924200B9885008444C0 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		32BA5925200B9885008444C0 /* AddEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
+		32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTableViewCell.swift; sourceTree = "<group>"; };
+		32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentTableViewCell.xib; sourceTree = "<group>"; };
+		32BA5931200B98AD008444C0 /* defaultMenuItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = defaultMenuItems.plist; path = ProjetEvent/defaultMenuItems.plist; sourceTree = SOURCE_ROOT; };
+		32BA5932200B98AD008444C0 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = ProjetEvent/MenuItem.swift; sourceTree = SOURCE_ROOT; };
+		32BA5935200B98C5008444C0 /* events.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
 		32CC80161FFCD5CC0090EB8A /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
 		32CC80181FFCD5DA0090EB8A /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		32CC801A1FFCD5E90090EB8A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEventDeckController.swift; sourceTree = "<group>"; };
-		32CC8037200612B80090EB8A /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		32CC8038200612B80090EB8A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		32CC8039200612B80090EB8A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		32CC803A200612B80090EB8A /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		32CC803B200612B90090EB8A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		32CC803C200612B90090EB8A /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKPlacesKit.framework; sourceTree = "<group>"; };
 		333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjetEvent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2E307186830B6ACCA216EC /* Pods-ProjetEvent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjetEvent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent.debug.xcconfig"; sourceTree = "<group>"; };
-		971F69A0200228E5005DE261 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
-		971F69A1200228E5005DE261 /* AddEventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddEventViewController.xib; sourceTree = "<group>"; };
-		971F69A520022D94005DE261 /* events.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = events.plist; sourceTree = "<group>"; };
-		97BE2B812004B65A00D1FF8F /* CurrentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTableViewCell.swift; sourceTree = "<group>"; };
-		97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +134,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32CC803E200612B90090EB8A /* Bolts.framework in Frameworks */,
-				32CC803F200612B90090EB8A /* FBSDKCoreKit.framework in Frameworks */,
-				32CC8041200612B90090EB8A /* FBSDKLoginKit.framework in Frameworks */,
-				32CC8040200612B90090EB8A /* FBSDKShareKit.framework in Frameworks */,
-				32CC8042200612B90090EB8A /* FBSDKPlacesKit.framework in Frameworks */,
-				32CC803D200612B90090EB8A /* FBSDKMessengerShareKit.framework in Frameworks */,
+				32BA591D200B984D008444C0 /* Bolts.framework in Frameworks */,
+				32BA591E200B984D008444C0 /* FBSDKCoreKit.framework in Frameworks */,
+				32BA5920200B984D008444C0 /* FBSDKLoginKit.framework in Frameworks */,
+				32BA591F200B984D008444C0 /* FBSDKShareKit.framework in Frameworks */,
+				32BA5921200B984E008444C0 /* FBSDKPlacesKit.framework in Frameworks */,
+				32BA591C200B984D008444C0 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				F1BA46F15D4FC4A4851C3CF6 /* Pods_ProjetEvent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,17 +147,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		048F33DA20076EEB00125050 /* Plist */ = {
+		0498068F20286249001851AF /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				2F17F0F61FFCCA2700895E02 /* Info.plist */,
+				0498069020286273001851AF /* ChatViewController.swift */,
+				0498069120286273001851AF /* ChatViewController.xib */,
 			);
-			path = Plist;
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		04EF8D741FFE6D4400AEF046 /* profile */ = {
 			isa = PBXGroup;
 			children = (
+				2FE5F31C200B9ADD0084A4A4 /* ProfileTableViewCell.xib */,
+				2FE5F31A200B9ADD0084A4A4 /* ProfileTableViewCell.swift */,
 				04BFA8901FFCE390003B1A10 /* ProfileViewController.xib */,
 				04BFA88F1FFCE390003B1A10 /* ProfileViewController.swift */,
 			);
@@ -138,9 +173,11 @@
 			children = (
 				04EF8D751FFE6DF400AEF046 /* User.swift */,
 				2F0460122002163A004D6E00 /* Event.swift */,
-				2F12D9AC2007709E00DA676A /* MenuItem.swift */,
-				2F12D9AE200770DE00DA676A /* defaultMenuItems.plist */,
-				971F69A520022D94005DE261 /* events.plist */,
+				2F194F3D201498B90052C0AA /* CreditCard.swift */,
+				0498068D2027790B001851AF /* Constants.swift */,
+				32BA5935200B98C5008444C0 /* events.plist */,
+				32BA5931200B98AD008444C0 /* defaultMenuItems.plist */,
+				32BA5932200B98AD008444C0 /* MenuItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +189,9 @@
 				2F17F1051FFCD1E700895E02 /* ViewController.xib */,
 				2F17F0FE1FFCCF8700895E02 /* BaseViewController.swift */,
 				32CC801D1FFCD6970090EB8A /* ProjectEventDeckController.swift */,
+				0498068F20286249001851AF /* Chat */,
+				3276464C201DD82500F8A21B /* create Account */,
+				3276464F201DD82600F8A21B /* login */,
 				2F04602320021689004D6E00 /* Menu */,
 				04EF8D741FFE6D4400AEF046 /* profile */,
 				2F0460172002164A004D6E00 /* Events */,
@@ -162,11 +202,12 @@
 		2F0460172002164A004D6E00 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				2F04601920021662004D6E00 /* EventTableViewController.swift */,
 				2F04601B20021662004D6E00 /* EventViewController.swift */,
+				2F04601920021662004D6E00 /* EventTableViewController.swift */,
 				2F04601A20021662004D6E00 /* EventViewController.xib */,
-				97BE2B802004B44700D1FF8F /* currentTableViewCell */,
-				9759AC4E2006189200033490 /* Form Event */,
+				32BA5927200B9885008444C0 /* CurrentTableViewCell.swift */,
+				32BA5928200B9885008444C0 /* CurrentTableViewCell.xib */,
+				32BA5923200B9885008444C0 /* AddEvent */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -176,12 +217,25 @@
 			children = (
 				2F04602420021699004D6E00 /* MenuViewController.swift */,
 				2F04602520021699004D6E00 /* MenuViewController.xib */,
-				2F04602B200216A6004D6E00 /* RattingViewController.swift */,
-				2F046028200216A6004D6E00 /* RattingViewController.xib */,
-				2F04602A200216A6004D6E00 /* ShareViewController.swift */,
-				2F046029200216A6004D6E00 /* ShareViewController.xib */,
+				2FE5F31D200B9ADD0084A4A4 /* MenuItemTableViewCell.swift */,
+				2FE5F31B200B9ADD0084A4A4 /* MenuItemTableViewCell.xib */,
+				2F0CC02F201771C800916878 /* CreditCard */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		2F0CC02F201771C800916878 /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				2FFC8487200DFC5A003DE6B4 /* CreditCardViewController.xib */,
+				2FFC8486200DFC5A003DE6B4 /* CreditCardViewController.swift */,
+				2F1665E1201605B90026EF94 /* AddCreditCardViewController.swift */,
+				2F1665E2201605B90026EF94 /* AddCreditCardViewController.xib */,
+				2F7C8DA320162987006ED87A /* FormCreditCardViewController.swift */,
+				2F1665D72015DF000026EF94 /* CreditCardTableViewCell.swift */,
+				2F1665D82015DF000026EF94 /* CreditCardTableViewCell.xib */,
+			);
+			path = CreditCard;
 			sourceTree = "<group>";
 		};
 		2F17F0DE1FFCCA2700895E02 = {
@@ -210,13 +264,39 @@
 				2F04601120021626004D6E00 /* View Controllers */,
 				04EF8D771FFE706100AEF046 /* Model */,
 				32CC801C1FFCD6470090EB8A /* Storyboards */,
-				2F17F1031FFCD1C900895E02 /* SlideMenuVC.swift */,
 				2F17F1021FFCD1A300895E02 /* SlideMenu.h */,
 				2F17F0F11FFCCA2700895E02 /* Assets.xcassets */,
-				2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */,
-				048F33DA20076EEB00125050 /* Plist */,
+				2F17F0F61FFCCA2700895E02 /* Info.plist */,
+				3276464A201DD80700F8A21B /* GoogleService-Info.plist */,
 			);
 			path = ProjetEvent;
+			sourceTree = "<group>";
+		};
+		3276464C201DD82500F8A21B /* create Account */ = {
+			isa = PBXGroup;
+			children = (
+				3276464D201DD82500F8A21B /* CreateAccountViewController.xib */,
+				3276464E201DD82500F8A21B /* CreateAccountViewController.swift */,
+			);
+			path = "create Account";
+			sourceTree = "<group>";
+		};
+		3276464F201DD82600F8A21B /* login */ = {
+			isa = PBXGroup;
+			children = (
+				32764650201DD82600F8A21B /* LoginViewController.xib */,
+				32764651201DD82600F8A21B /* LoginViewController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		32BA5923200B9885008444C0 /* AddEvent */ = {
+			isa = PBXGroup;
+			children = (
+				32BA5924200B9885008444C0 /* AddEventViewController.swift */,
+				32BA5925200B9885008444C0 /* AddEventViewController.xib */,
+			);
+			path = AddEvent;
 			sourceTree = "<group>";
 		};
 		32CC801C1FFCD6470090EB8A /* Storyboards */ = {
@@ -224,6 +304,8 @@
 			children = (
 				2F17F0EE1FFCCA2700895E02 /* Main.storyboard */,
 				32CC80161FFCD5CC0090EB8A /* Event.storyboard */,
+				2FFC848A200E01D1003DE6B4 /* CreditCards.storyboard */,
+				04F935A6201DF0A800CDB655 /* LaunchScreen.storyboard */,
 				32CC80181FFCD5DA0090EB8A /* Menu.storyboard */,
 				32CC801A1FFCD5E90090EB8A /* Profile.storyboard */,
 			);
@@ -242,41 +324,15 @@
 		7DC4EAEDF1097BE2E70B61AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32CC8038200612B80090EB8A /* Bolts.framework */,
-				32CC8039200612B80090EB8A /* FBSDKCoreKit.framework */,
-				32CC803B200612B90090EB8A /* FBSDKLoginKit.framework */,
-				32CC8037200612B80090EB8A /* FBSDKMessengerShareKit.framework */,
-				32CC803C200612B90090EB8A /* FBSDKPlacesKit.framework */,
-				32CC803A200612B80090EB8A /* FBSDKShareKit.framework */,
+				32BA5917200B984D008444C0 /* Bolts.framework */,
+				32BA5918200B984D008444C0 /* FBSDKCoreKit.framework */,
+				32BA591A200B984D008444C0 /* FBSDKLoginKit.framework */,
+				32BA5916200B984D008444C0 /* FBSDKMessengerShareKit.framework */,
+				32BA591B200B984D008444C0 /* FBSDKPlacesKit.framework */,
+				32BA5919200B984D008444C0 /* FBSDKShareKit.framework */,
 				333A386D506C1B7506926C52 /* Pods_ProjetEvent.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		971F69A4200228EE005DE261 /* AddEvent */ = {
-			isa = PBXGroup;
-			children = (
-				971F69A0200228E5005DE261 /* AddEventViewController.swift */,
-				971F69A1200228E5005DE261 /* AddEventViewController.xib */,
-			);
-			path = AddEvent;
-			sourceTree = "<group>";
-		};
-		9759AC4E2006189200033490 /* Form Event */ = {
-			isa = PBXGroup;
-			children = (
-				971F69A4200228EE005DE261 /* AddEvent */,
-			);
-			path = "Form Event";
-			sourceTree = "<group>";
-		};
-		97BE2B802004B44700D1FF8F /* currentTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				97BE2B812004B65A00D1FF8F /* CurrentTableViewCell.swift */,
-				97BE2B822004B65A00D1FF8F /* CurrentTableViewCell.xib */,
-			);
-			path = currentTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,22 +397,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97BE2B852004BA4500D1FF8F /* CurrentTableViewCell.xib in Resources */,
-				2F17F0F51FFCCA2700895E02 /* LaunchScreen.storyboard in Resources */,
+				32BA592E200B9886008444C0 /* CurrentTableViewCell.xib in Resources */,
 				2F04601F20021662004D6E00 /* EventViewController.xib in Resources */,
-				2F04602C200216A6004D6E00 /* RattingViewController.xib in Resources */,
 				2F17F0F21FFCCA2700895E02 /* Assets.xcassets in Resources */,
-				971F69A3200228E5005DE261 /* AddEventViewController.xib in Resources */,
+				0498069320286273001851AF /* ChatViewController.xib in Resources */,
 				04BFA8921FFCE390003B1A10 /* ProfileViewController.xib in Resources */,
-				2F04602D200216A6004D6E00 /* ShareViewController.xib in Resources */,
+				32764652201DD82600F8A21B /* CreateAccountViewController.xib in Resources */,
+				2FE5F320200B9ADD0084A4A4 /* ProfileTableViewCell.xib in Resources */,
+				04F935A7201DF0A800CDB655 /* LaunchScreen.storyboard in Resources */,
 				2F17F1061FFCD1E700895E02 /* ViewController.xib in Resources */,
-				971F69A620022D94005DE261 /* events.plist in Resources */,
-				2F12D9AF200770DE00DA676A /* defaultMenuItems.plist in Resources */,
+				2FFC848B200E01D1003DE6B4 /* CreditCards.storyboard in Resources */,
 				32CC80191FFCD5DA0090EB8A /* Menu.storyboard in Resources */,
+				32BA5936200B98C5008444C0 /* events.plist in Resources */,
+				32BA5933200B98AE008444C0 /* defaultMenuItems.plist in Resources */,
+				2FE5F31F200B9ADD0084A4A4 /* MenuItemTableViewCell.xib in Resources */,
 				2F04602720021699004D6E00 /* MenuViewController.xib in Resources */,
+				2FFC8489200DFC5A003DE6B4 /* CreditCardViewController.xib in Resources */,
+				3276464B201DD80700F8A21B /* GoogleService-Info.plist in Resources */,
 				2F17F0F01FFCCA2700895E02 /* Main.storyboard in Resources */,
 				32CC801B1FFCD5E90090EB8A /* Profile.storyboard in Resources */,
 				32CC80171FFCD5CC0090EB8A /* Event.storyboard in Resources */,
+				32764654201DD82600F8A21B /* LoginViewController.xib in Resources */,
+				2F1665E4201605B90026EF94 /* AddCreditCardViewController.xib in Resources */,
+				32BA592C200B9886008444C0 /* AddEventViewController.xib in Resources */,
+				2F1665DA2015DF000026EF94 /* CreditCardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,11 +467,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProjetEvent/Pods-ProjetEvent-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewDeck/ViewDeck.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewDeck.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -421,23 +513,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0498068E2027790B001851AF /* Constants.swift in Sources */,
+				2F1665D92015DF000026EF94 /* CreditCardTableViewCell.swift in Sources */,
 				2F04603120021730004D6E00 /* LinkedTextField.swift in Sources */,
-				2F04602E200216A6004D6E00 /* ShareViewController.swift in Sources */,
+				2FFC8488200DFC5A003DE6B4 /* CreditCardViewController.swift in Sources */,
+				32BA592B200B9886008444C0 /* AddEventViewController.swift in Sources */,
 				2F04601E20021662004D6E00 /* EventTableViewController.swift in Sources */,
 				2F0460142002163A004D6E00 /* Event.swift in Sources */,
 				04BFA8911FFCE390003B1A10 /* ProfileViewController.swift in Sources */,
+				2F7C8DA420162987006ED87A /* FormCreditCardViewController.swift in Sources */,
 				2F17F0ED1FFCCA2700895E02 /* ViewController.swift in Sources */,
 				2F04602020021662004D6E00 /* EventViewController.swift in Sources */,
+				32BA5934200B98AE008444C0 /* MenuItem.swift in Sources */,
 				32CC801E1FFCD6970090EB8A /* ProjectEventDeckController.swift in Sources */,
-				971F69A2200228E5005DE261 /* AddEventViewController.swift in Sources */,
 				2F04602620021699004D6E00 /* MenuViewController.swift in Sources */,
 				2F17F0EB1FFCCA2700895E02 /* AppDelegate.swift in Sources */,
-				97BE2B832004B65A00D1FF8F /* CurrentTableViewCell.swift in Sources */,
 				2F17F0FF1FFCCF8700895E02 /* BaseViewController.swift in Sources */,
-				2F04602F200216A6004D6E00 /* RattingViewController.swift in Sources */,
-				2F12D9AD2007709E00DA676A /* MenuItem.swift in Sources */,
-				2F17F1041FFCD1C900895E02 /* SlideMenuVC.swift in Sources */,
+				2F194F3E201498B90052C0AA /* CreditCard.swift in Sources */,
+				2FE5F31E200B9ADD0084A4A4 /* ProfileTableViewCell.swift in Sources */,
+				2F1665E3201605B90026EF94 /* AddCreditCardViewController.swift in Sources */,
+				32764653201DD82600F8A21B /* CreateAccountViewController.swift in Sources */,
+				2FE5F321200B9ADD0084A4A4 /* MenuItemTableViewCell.swift in Sources */,
+				0498069220286273001851AF /* ChatViewController.swift in Sources */,
 				04EF8D761FFE6DF400AEF046 /* User.swift in Sources */,
+				32764655201DD82600F8A21B /* LoginViewController.swift in Sources */,
+				32BA592D200B9886008444C0 /* CurrentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,14 +550,6 @@
 				2F17F0EF1FFCCA2700895E02 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2F17F0F31FFCCA2700895E02 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2F17F0F41FFCCA2700895E02 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -576,22 +668,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
 				DEVELOPMENT_TEAM = 9549XCZNE7;
-				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Plist/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-=======
-				DEVELOPMENT_TEAM = T853SDQS2V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = ProjetEvent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
->>>>>>> 4dbb063b0f6c6db0dcf10514182ca73f3fd3c701
+				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ProjetEvent;
+				PRODUCT_BUNDLE_IDENTIFIER = Developers.institute.ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = ./ProjetEvent/SlideMenu.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,22 +691,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
 				DEVELOPMENT_TEAM = 9549XCZNE7;
-				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Plist/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-=======
-				DEVELOPMENT_TEAM = T853SDQS2V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = ProjetEvent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
->>>>>>> 4dbb063b0f6c6db0dcf10514182ca73f3fd3c701
+				INFOPLIST_FILE = "$(SRCROOT)/ProjetEvent/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ProjetEvent;
+				PRODUCT_BUNDLE_IDENTIFIER = Developers.institute.ProjetEvent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = ./ProjetEvent/SlideMenu.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

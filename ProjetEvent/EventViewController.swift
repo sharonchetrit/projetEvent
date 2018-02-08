@@ -11,9 +11,8 @@ import UIKit
 class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource,AddEventDelegate
 {
     
-    
-    
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var img: UIBarButtonItem!
     
     lazy var events : [Event] = {
         if let userDefaultEvents = Event.openFromUserDefaults()
@@ -30,6 +29,12 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
 
         self.tableView.register(UINib(nibName: "CurrentTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "Cell")
         tableView.reloadData()
+        
+        title = ""
+        
+        tableView.layer.cornerRadius = tableView.frame.height / 15.0
+
+        
     }
     
     @IBAction func menu(_ sender: Any)
@@ -87,7 +92,6 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
         let event : Event = self.events[indexPath.row]
         
         self.tableView.deselectRow(at: indexPath, animated: false)
-        
         self.performSegue(withIdentifier: "AddEventSegway", sender: event)
     }
     
@@ -122,7 +126,5 @@ class EventViewController: BaseViewController,UITableViewDelegate,UITableViewDat
             addVC.event = sender as? Event
         }
     }
-    
-    
     
 }
