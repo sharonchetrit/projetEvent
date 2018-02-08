@@ -4,7 +4,7 @@
 //
 //  Created by Mac on 04/01/2018.
 //  Copyright © 2018 Sharon Chetrit. All rights reserved.
-//
+
 
 import Foundation
 import UIKit
@@ -29,6 +29,33 @@ class User : NSObject
     var ref: DatabaseReference?
     var key: String?
     
+    init(dict: [String: AnyObject]) {
+        
+        if let name = dict["name"] as? String
+        {
+            self.name = name
+        }
+        if let surname = dict["surname"] as? String
+        {
+            self.surname = surname
+        }
+        if let birthday = dict["age"] as? String
+        {
+            self.birthday = birthday
+        }
+        if let email = dict["email"] as? String
+        {
+            self.email = email
+        }
+        if let phone = dict["phone"] as? String
+        {
+            self.phone = phone
+        }
+        if let image = dict["image"] as? UIImage
+        {
+            self.profileImage = image
+        }
+}
     
     init(snapshot: DataSnapshot)
     {
@@ -186,7 +213,6 @@ class User : NSObject
                 "email": "\(email)",
                 "phone": "\(phone)",
                 "surname": "\(surname)",
-                "confirmPass": "\(confPass)",
                 "image": "\(image)"]
             
             

@@ -116,6 +116,7 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
             slideMenuController.centerViewController = slideMenuController.profileController
             slideMenuController.closeSide(true)
         }
+        displayUserInfo()
     }
     
     
@@ -136,8 +137,6 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
             slideMenuController.closeSide(true)
         }
     }
-    
- 
     
     func displayUserInfo()
     {
@@ -161,20 +160,19 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
         
         
         navigationController?.dismiss(animated: true, completion: {
-
+            
         })
-       
+        
         
     }
     
-   
     func handleLogOut()
     {
         if Auth.auth().currentUser?.uid != nil || FBSDKAccessToken.current() != nil {
             do
             {
                 try Auth.auth().signOut()
-                self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
             } catch let logOutError
             {
                 print(logOutError.localizedDescription)
@@ -185,19 +183,19 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
 
     
-//    func fetchFB()
-//    {
-//        if (FBSDKAccessToken.current() != nil) {
-//            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name"]).start(completionHandler: {(connection, result : Any?, error) -> Void in
-//                if error == nil {
-//                   if let dictionary = result as? Dictionary<String,Any> {
-//                        let username : String = dictionary["name"] as! String
-//                        print("fetched name:\(username)")
-//
-//                    }
-//                    print("fetched user:\(result)")
-//                }
-//                })
-//        }
-//    }
+    func fetchFB()
+    {
+        if (FBSDKAccessToken.current() != nil) {
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name"]).start(completionHandler: {(connection, result : Any?, error) -> Void in
+                if error == nil {
+                   if let dictionary = result as? Dictionary<String,Any> {
+                        let username : String = dictionary["name"] as! String
+                        print("fetched name:\(username)")
+
+                    }
+                    print("fetched user:\(String(describing: result))")
+                }
+                })
+        }
+    }
 }

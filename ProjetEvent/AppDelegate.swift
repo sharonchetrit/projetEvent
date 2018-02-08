@@ -14,6 +14,7 @@ import FBSDKShareKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import JSQMessagesViewController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
