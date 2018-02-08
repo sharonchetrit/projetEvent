@@ -152,6 +152,13 @@ class MenuViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     {
         handleLogOut()
         
+//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "loginView") as! ProjectEventDeckController
+//
+//        self.present(nextViewController, animated:true, completion:nil)
+        
+        
         navigationController?.dismiss(animated: true, completion: {
             
         })
